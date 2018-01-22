@@ -13,16 +13,13 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
-
 html,body
 {
     width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    padding: 0px; 
 }
-
 a {
   color: #1dc8cd;
   transition: 0.5s;
@@ -239,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #intro .product-screens .product-screen-1 {
     position: static;
     padding-top: 30px;
@@ -585,7 +582,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #features .features-img {
     padding-top: 120px;
     margin-top: -200px;
@@ -702,7 +699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
     max-width: 100%;
     float: none;
@@ -794,7 +791,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #call-to-action-projects .cta-btn-container {
     display: flex;
     align-items: center;
@@ -842,7 +839,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
