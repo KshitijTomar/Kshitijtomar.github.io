@@ -92,8 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg,#16a085, #1cceab);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg,#16a085, #1cceab);
   position: relative;
 }
 
@@ -519,7 +519,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-img img {
-  margin-left: -15px;
+  /*margin-left: -15px;*/
+  /*margin-left: 0px;*/
   max-width: 100%;
 }
 
@@ -662,6 +663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   color: #777;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 #advanced-features i {
@@ -693,9 +695,59 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 30px 30px 0;
 }
 
+#advanced-features .advanced-feature-img-right-ieeedsc {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+  width: 60%;
+}
+#advanced-features .advanced-feature-img-left-pidilite{
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+  width: 55%;
+}
+#advanced-features .advanced-feature-img-right-smartmeter {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+  width: 50%;
+}
+#advanced-features .advanced-feature-img-left-carparking{
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+  width: 50%;
+}
 @media (max-width: 768px) {
+  #advanced-features p {
+  	text-align: center;
+  }
+  #advanced-features h3 {
+  	text-align: center;
+  }
+  #advanced-features a {
+  	text-align: center;
+  	width: 90%;
+  }
   #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
     max-width: 50%;
+  }
+  #advanced-features .advanced-feature-img-right-ieeedsc {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  #advanced-features .advanced-feature-img-left-pidilite{
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  #advanced-features .advanced-feature-img-right-smartmeter {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  #advanced-features .advanced-feature-img-left-carparking{
+    width: 100%;
+    padding: 0 0 30px 0;
   }
 }
 
@@ -771,6 +823,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .panel a:hover { 
     text-decoration: underline;
     color: #085;
+}
+.panel i{
+	padding: 0 30px 0 0; 
 }
 
 /* Call To Action Projects Section
