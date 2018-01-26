@@ -696,28 +696,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #advanced-features .advanced-feature-img-right-ieeedsc {
-  max-width: 100%;
+  max-width: 60%;
   float: right;
   padding: 0 0 30px 30px;
-  width: 60%;
 }
 #advanced-features .advanced-feature-img-left-pidilite{
-  max-width: 100%;
+  max-width: 55%;
   float: left;
   padding: 0 30px 30px 0;
-  width: 55%;
 }
 #advanced-features .advanced-feature-img-right-smartmeter {
-  max-width: 100%;
+  max-width: 50%;
   float: right;
   padding: 0 0 30px 30px;
-  width: 50%;
 }
 #advanced-features .advanced-feature-img-left-carparking{
-  max-width: 100%;
+  max-width: 50%;
   float: left;
   padding: 0 30px 30px 0;
-  width: 50%;
 }
 @media (max-width: 768px) {
   #advanced-features p {
@@ -734,19 +730,19 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-width: 50%;
   }
   #advanced-features .advanced-feature-img-right-ieeedsc {
-    width: 100%;
+    max-width: 100%;
     padding: 0 0 30px 0;
   }
   #advanced-features .advanced-feature-img-left-pidilite{
-    width: 100%;
+    max-width: 100%;
     padding: 0 0 30px 0;
   }
   #advanced-features .advanced-feature-img-right-smartmeter {
-    width: 100%;
+    max-width: 100%;
     padding: 0 0 30px 0;
   }
   #advanced-features .advanced-feature-img-left-carparking{
-    width: 100%;
+    max-width: 100%;
     padding: 0 0 30px 0;
   }
 }
