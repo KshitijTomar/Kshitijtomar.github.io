@@ -578,6 +578,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
 	.block img {
 	  width:100%;
+	  margin-top:-20px;
 	}
 }
 
