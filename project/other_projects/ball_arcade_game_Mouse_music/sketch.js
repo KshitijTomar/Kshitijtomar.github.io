@@ -15,59 +15,6 @@ var coin_sound;
 var gameover_sound;
 var song;
 
-//highscore from coockie
-var trigupdatehighscore=0;
-var highscore=0;
-updatehighscorecoockie(getCookie("score"));
-
-function updatehighscorecoockie(score){
-	if(getCookie("highscore")<score){
-		// highscore=getCookie("score");
-			document.cookie = 'score=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-			document.cookie = 'highscore=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-			setCookie("score", score);
-			setCookie("highscore", score);
-			document.cookie="highscore="+ score;
-			// alert("highscore updated");
-	}
-	highscore= (getCookie("highscore")?getCookie("highscore"):0);
-
-}
-function updatehighscore(){
-
-}
-
-
-
-
-// if(Score > highscore){
-// 	trig();
-// }
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-function setCookie(cname, cvalue) {
-    var d = new Date();
-    d.setTime(d.getTime() + (30*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-
-
 function preload(){
 	song = loadSound("playback.mp3");
 }
@@ -159,23 +106,9 @@ function draw() {
 	    fill(40,255,255);
 	    text('Refresh the page to RESTART the game',75, height-50);
 
-	    //add score to coockie
-	    document.cookie = "score="+Score;
-
-	    //get highscore
-	    
-	    if(Score > highscore){
-	    	// alert("trigger update highscore");
-	    	highscore = Score;
-			updatehighscorecoockie(Score);
-	    	if(trigupdatehighscore++ ==0){
-	    		location.href="updatehighscore.php?highscore="+highscore;
-	    	}
-	    }
 
 		
 	}
-
 
 	//text on top
 	textSize(14);
@@ -188,7 +121,6 @@ function draw() {
 	//Score
 	textSize(18);
 	fill(40,255,255);
-	text('Highscore : ' + highscore ,width-150, 30);
 	text('Score : ' + Score ,width-150, 50);
 	//Level
 	text('Level : ' + floor(level) ,width-150, 70);
