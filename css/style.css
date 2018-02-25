@@ -598,11 +598,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+
+
 #featured-services h4 a {
   color: #fff;
 }
 
-#featured-services h4:hover {
+#featured-services-single:hover h4 {
   color: #18d26e;
 }
 
@@ -615,6 +617,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
+}
+#quote  {
+  text-align: center;
+  margin: 0 auto; 
+}
+#quote p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  font-style: italic;
+}
+#quoter  {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #fff;
+}
+#featured-services right {
+  text-align: center;
+  margin: 30px;
 }
 
 /* About Us Section
@@ -1299,7 +1322,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   padding: 60px 0; 
-  background: url("http://polyformiran.com/wp-content/uploads/2014/03/background-contact-us.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url("http://polyformiran.com/wp-content/uploads/2014/03/background-contact-us.jpg") fixed center center;
    /*background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg);*/
   background-size: cover;
 }
