@@ -2,103 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>NPDS Mani Group</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+	<meta charset="utf-8">
+	<title>NPDS Mani Group</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
 
-  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+	<!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
 
-  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
+	<!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap CSS File -->
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Libraries CSS Files -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link href="css/style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Bell
     Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
-  ======================================================= -->
+    ======================================================= -->
+
+    <style type="text/css">
+    .underline h2 {
+    	text-decoration: none; 
+    	position: relative;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }   
+
+    .underline h2:after {
+    	position: absolute;
+    	content: '';
+    	height: 1px;
+    	bottom: -4px; 
+    	margin: 0 auto;
+    	left: 0;
+    	right: 0;
+    	width: 100px;
+    	background: #265fd3;
+
+    	/* optional animation */
+    	-o-transition:.5s;
+    	-ms-transition:.5s;
+    	-moz-transition:.5s;
+    	-webkit-transition:.5s;
+    	transition:.5s;
+    }
+
+
+    /* optional hover classes used with anmiation */
+    .underline h2:hover:after {
+    	width: 200px;
+    	background: #BB1E84;
+    }
+    #about p{
+    	font-size: 12px;
+    	text-align: justify;
+    }
+    #features .card{
+    	background-color: #ddd;
+    	padding: 20px;
+    }
+</style>
 </head>
 
 <body>
   <!-- Page Content
-    ================================================== -->
-  <!-- Hero -->
+  	================================================== -->
+  	<!-- Hero -->
 
-  <section class="hero">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12">
-          <!-- <a class="hero-brand" href="index.html" title="Home"> -->
-            <img class="hero-image" alt="Logo" src="img/logo.png">
-          <!-- </a> -->
-        </div>
-      </div>
+  	<section class="hero">
+  		<div class="container text-center">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<!-- <a class="hero-brand" href="index.html" title="Home"> -->
+  						<img class="hero-image" alt="Logo" src="img/logo.png">
+  						<!-- </a> -->
+  					</div>
+  				</div>
 
-      <div class="col-md-12">
-        <h1>
-            NPDS-MANI GROUP <!-- <sup>TM</sup> -->
-          </h1>
+  				<div class="col-md-12">
+  					<h1>
+  						NPDS-MANI GROUP <!-- <sup>TM</sup> -->
+  					</h1>
 
 
-        <p class="tagline">
-          This is a powerful theme with some great features that you can use in your future projects.
-        </p>
-        <a class="btn btn-full" href="#about">Click to know more</a>
-      </div>
-    </div>
+  					<p class="tagline">
+  						This is a powerful theme with some great features that you can use in your future projects.
+  					</p>
+  					<a class="btn btn-full" href="#about">Click to know more</a>
+  				</div>
+  			</div>
 
-  </section>
-  <!-- /Hero -->
+  		</section>
+  		<!-- /Hero -->
 
-  <!-- Header -->
-  <header id="header">
-    <div class="container">
+  		<!-- Header -->
+  		<header id="header">
+  			<div class="container">
 
-      <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img><b> NMG</b></a>
-        <!-- Uncomment below if you prefer to use a text image -->
-        <!--<h1><a href="#hero">Bell</a></h1>-->
-      </div>
+  				<div id="logo" class="pull-left">
+  					<a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img><b> NMG</b></a>
+  					<!-- Uncomment below if you prefer to use a text image -->
+  					<!--<h1><a href="#hero">Bell</a></h1>-->
+  				</div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="#about">About Us</a></li>
-          <li class="menu-has-children"><a href="#features">Services</a>
-            <ul>
-              <li><a href="#">IT and Software</a></li>
-              <li><a href="#">Air Ambulance Service</a></li>
-              <li><a href="#">Projects &amp; Model</a></li>
-              <li><a href="#">Mani Aerospace &amp; Drone Club</a></li>
-              <li><a href="#">Legal Aviation Assistancy</a></li>
-              <li><a href="#">Admission Consultacy Services</a></li>
-            </ul>
-          </li>
+  				<nav id="nav-menu-container">
+  					<ul class="nav-menu">
+  						<li><a href="#about">About Us</a></li>
+  						<li class="menu-has-children"><a href="#features">Services</a>
+  							<ul>
+  								<li><a href="#">IT and Software</a></li>
+  								<li><a href="#">Air Ambulance Service</a></li>
+  								<li><a href="#">Projects &amp; Model</a></li>
+  								<li><a href="#">Mani Aerospace &amp; Drone Club</a></li>
+  								<li><a href="#">Legal Aviation Assistancy</a></li>
+  								<li><a href="#">Admission Consultacy Services</a></li>
+  							</ul>
+  						</li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
@@ -117,247 +160,264 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li> -->
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
+        </li> -->
+        <!-- <li><a href="#contact">Contact Us</a></li> -->
+    </ul>
+</nav>
+<!-- #nav-menu-container -->
 
-      <nav class="nav social-nav pull-right d-none d-lg-inline">
-        <a href="https://www.facebook.com/Mani-Aerospace-Drone-Club-516500421796441"><i class="fa fa-facebook"></i></a> 
-        <a href="">
-          <div id="tooltip">
-            <i class="fa fa-phone"></i>
-            <span id="tooltiptext">+91 851 280 0851</span>
-          </div>
-        </a> 
-        <!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
-        <a href="mailto:mani_emailid@gmail.com">
-          <div id="tooltip">
-              <i class="fa fa-envelope"></i>
-            <span id="tooltiptext">mani_emailid@gmail.com</span>
-          </div>
-        </a>
-        
-      </nav>
-    </div>
-  </header>
-  <!-- #header -->
+<nav class="nav social-nav pull-right d-none d-lg-inline">
+	<a href="https://www.facebook.com/Mani-Aerospace-Drone-Club-516500421796441"><i class="fa fa-facebook"></i></a> 
+	<a href="">
+		<div id="tooltip">
+			<i class="fa fa-phone"></i>
+			<span id="tooltiptext">+91 851 280 0851</span>
+		</div>
+	</a> 
+	<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
+	<a href="mailto:mani_emailid@gmail.com">
+		<div id="tooltip">
+			<i class="fa fa-envelope"></i>
+			<span id="tooltiptext">mani_emailid@gmail.com</span>
+		</div>
+	</a>
 
-  <!-- About -->
+</nav>
+</div>
+</header>
+<!-- #header -->
 
-  <section class="about" id="about">
-    <div class="container text-center">
-      <h2>
-          <b>About NPDS-MANI Group</b>
-        </h2>
+<!-- About -->
 
-      <p>
-        Npds Mani Group in Dwarka, Delhi is a top player in the category Tutorials in the Delhi. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Delhi. Over the course of its journey, this business has established a firm foothold in it’s industry. The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective roles and put in a lot of effort to achieve the common vision and larger goals of the company. In the near future, this business aims to expand its line of products and services and cater to a larger client base. In Delhi, this establishment occupies a prominent location in Dwarka. It is an effortless task in commuting to this establishment as there are various modes of transport readily available. It is at , Near ICICI Bank, Palam Extension, Dwarka Sector 7, which makes it easy for first-time visitors in locating this establishment. It is known to provide top service in the following categories: Tutorials, Computer Training Institutes, Mechanical Engineering Institutes.
-      </p>
+<section class="about" id="about">
+	<div class="container text-center">
+		<h2>
+			<b>About NPDS Mani Group</b>
+		</h2>
+		<div class="row">
+			<div class="col-md-4 underline text-left">
+				<h2>Who are we</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a total Services provider company boasting of a proven track record in providing cost-effective, innovative and robust business solutions, in the ﬁeld of IT &SOFTWARE, AEROSPACE/AVIATION, EDUCATION HOSPITALITY, REAL ESTATE. We focus on combining web- based application development, market-savvy design, and reliable business strategy to advance a client’s business goals. We offer solutions right through all stages of project development, website design, web development, e-commerce applications, ofﬂine/online software, web hosting, IT outsourcing and web marketing. With the sound knowledge, we aim to deliver value to our customers through our innovative software solutions and services. Since our inception, we have steadily grown into a reputed provider of high-quality and cost-effective software development services. Our ability to evolve continuously, doubled with our ﬂexible approach towards the dynamic business world has helped us to gain success in short span of time.
+				</p>
+			</div>
 
-      <div class="row stats-row">
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
-          </div>
-        </div>
+			<div class="col-md-4 underline text-left">
+				<h2>What we do</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here at NPDS Mani Group, we believe in providing services that are phenomenally cost effective and caters to your every minute need. We do so by pursuing a methodical process that is structured to provide powerful efﬁciency to our development scale and furnishing our services in no time and a cost effective manner. We employ a deep analysis of our client’s requirements on a comprehensive level to understand every minute need and intricacies of those needs of the client that we aim to furnish through our services. Our dedicated professionals thrive to maintain high quality standards in every process and engagement in all the development stages to provide you with robust products that are a touchstone of perfection. Through our optimized development and management techniques we reduce the quality risk to an inﬁnitesimally small value.
+				</p>
+			</div>
 
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">79</span> Released Projects
-          </div>
-        </div>
+			<div class="col-md-4 underline text-left">
+				<h2>Why choose us</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here at NPDS Mani Group, we believe and thrive to be your ﬁrst choice. We metamorphose your eloquent idea into powerful and hardcore software reality that gives you a rich experience with its features and keeps you one step ahead in your business with its outstanding functionality. We focus on keeping a world class work environment for our professionals that helps them to bloom their talents and nurture personal growth in our organization. Our teams of experienced developers are immensely sound in technical knowledge and use their deep experience of handling hundreds of complex projects to provide you a swift and immaculate service.
+				</p>
+			</div>
 
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
-          </div>
-        </div>
+			
+		</div>
 
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /About -->
-  <!-- Parallax -->
+		<div class="row stats-row">
+			<div class="stats-col text-center col-md-3 col-sm-6">
+				<div class="circle">
+					<span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
+				</div>
+			</div>
 
-  <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-    <h2>
-        Welcome to NPDS-MANI GROUP
-      </h2>
+			<div class="stats-col text-center col-md-3 col-sm-6">
+				<div class="circle">
+					<span class="stats-no" data-toggle="counter-up">79</span> Released Projects
+				</div>
+			</div>
 
-    <p>
-      This is the most powerful theme with thousands of options that you have never seen before.
-    </p>
-    <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadget.png">
-  </div>
-  <!-- /Parallax -->
-  <!-- Features -->
+			<div class="stats-col text-center col-md-3 col-sm-6">
+				<div class="circle">
+					<span class="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
+				</div>
+			</div>
 
-  <section class="features" id="features">
-    <div class="container">
-      <h2 class="text-center">
-          <b>Services<b>
-        </h2>
+			<div class="stats-col text-center col-md-3 col-sm-6">
+				<div class="circle">
+					<span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /About -->
+<!-- Parallax -->
 
-      <div class="row">
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <a href="#">
-                <div class="feature-icon">
-                  <span class="fa fa-cloud"></span>
-                </div>
-            </div>
+<div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+	<h2>
+		Welcome to NPDS-MANI GROUP
+	</h2>
 
-            <div>
-                <h3>
-                  IT and Software
-                </h3>
-              </a>
+	<p>
+		This is the most powerful theme with thousands of options that you have never seen before.
+	</p>
+	<img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadget.png">
+</div>
+<!-- /Parallax -->
+<!-- Features -->
 
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
+<section class="features" id="features">
+	<div class="container">
+		<h2 class="text-center">
+			<b>Services<b>
+			</h2>
 
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <a href="#">
-              <div class="feature-icon">
-                <span class="fa fa-medkit"></span>
-              </div>
-            </div>
+			<div class="row">
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<a href="#">
+								<div class="feature-icon">
+									<span class="fa fa-cloud"></span>
+								</div>
+							</div>
 
-            <div>
-              <h3>
-                  Air Ambulance Service
-                </h3>
-              </a>
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
+							<div>
+								<h3>
+									IT and Software
+								</h3>
+							</a>
 
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <a href="#">
-              <div class="feature-icon">
-                <span class="fa fa-tasks"></span>
-              </div>
-            </div>
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
 
-            <div>
-                <h3>
-                  Projects &amp; Model
-                </h3>
-              </a>
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<a href="#">
+								<div class="feature-icon">
+									<span class="fa fa-medkit"></span>
+								</div>
+							</div>
 
-      <div class="row">
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-cubes"></span>
-              </div>
-            </div>
+							<div>
+								<h3>
+									Air Ambulance Service
+								</h3>
+							</a>
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
 
-            <div>
-              <h3>
-                  Mani Aerospace &amp; Drone Club
-                </h3>
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<a href="#">
+								<div class="feature-icon">
+									<span class="fa fa-tasks"></span>
+								</div>
+							</div>
 
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
+							<div>
+								<h3>
+									Projects &amp; Model
+								</h3>
+							</a>
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-plane"></span>
-              </div>
-            </div>
+			<div class="row">
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<div class="feature-icon">
+								<span class="fa fa-cubes"></span>
+							</div>
+						</div>
 
-            <div>
-              <h3>
-                  Legal Aviation Assistancy
-                </h3>
+						<div>
+							<h3>
+								Mani Aerospace &amp; Drone Club
+							</h3>
 
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
 
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-info"></span>
-              </div>
-            </div>
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<div class="feature-icon">
+								<span class="fa fa-plane"></span>
+							</div>
+						</div>
 
-            <div>
-              <h3>
-                  Admission Consultacy Services 
-                </h3>
+						<div>
+							<h3>
+								Legal Aviation Assistancy
+							</h3>
 
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Features -->
-  <!-- Call to Action -->
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
 
-  <section class="cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-          <h2>
-              Call to Action Section
-            </h2>
+				<div class="feature-col col-lg-4 col-xs-12">
+					<div class="card card-block text-center">
+						<div>
+							<div class="feature-icon">
+								<span class="fa fa-info"></span>
+							</div>
+						</div>
 
-          <p>
-            Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-          </p>
-        </div>
+						<div>
+							<h3>
+								Admission Consultacy Services 
+							</h3>
 
-        <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-          <a class="btn btn-ghost" href="#">Buy This Theme</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Call to Action -->
-  <!-- Portfolio -->
+							<p>
+								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Features -->
+	<!-- Call to Action -->
+
+	<section class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-sm-12 text-lg-left text-center">
+					<h2>
+						Call to Action Section
+					</h2>
+
+					<p>
+						Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
+					</p>
+				</div>
+
+				<div class="col-lg-3 col-sm-12 text-lg-right text-center">
+					<a class="btn btn-ghost" href="#">Buy This Theme</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Call to Action -->
+	<!-- Portfolio -->
 
   <!-- <section class="portfolio" id="portfolio">
     <div class="container text-center">
@@ -511,9 +571,9 @@
         </div>
       </div>
     </div>
-  </section> -->
-  <!-- /Portfolio -->
-  <!-- Team -->
+</section> -->
+<!-- /Portfolio -->
+<!-- Team -->
 
   <!-- <section class="team" id="team">
     <div class="container">
@@ -619,103 +679,103 @@
     </div>
     </div>
     </div>
-  </section> -->
-  <!-- /Team -->
-  <!-- @component: footer -->
+</section> -->
+<!-- /Team -->
+<!-- @component: footer -->
 
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2 class="section-title">Contact Us</h2>
-        </div>
-      </div>
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="section-title">Contact Us</h2>
+			</div>
+		</div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-4">
-          <div class="info">
-            <div>
-              <a href="">
-              <i class="fa fa-map-marker"></i>
-              <p>H 739, Dwarka, Delhi - 110075<br>Near ICICI Bank, Palam Extension, Dwarka Sector 7</p>
-            </a>
-            </div>
+		<div class="row justify-content-center">
+			<div class="col-lg-5 col-md-4">
+				<div class="info">
+					<div>
+						<a href="">
+							<i class="fa fa-map-marker"></i>
+							<p>H 739, Dwarka, Delhi - 110075<br>Near ICICI Bank, Palam Extension, Dwarka Sector 7</p>
+						</a>
+					</div>
 
-            <div>
-              <i class="fa fa-envelope" style="font-size: 25px;"></i>
-              <p>info@example.com</p>
-            </div>
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
-            </div>
+					<div>
+						<i class="fa fa-envelope" style="font-size: 25px;"></i>
+						<p>info@example.com</p>
+					</div>
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+1 5589 55488 55s</p>
+					</div>
 
-          </div>
-        </div>
+				</div>
+			</div>
 
-        <div class="col-lg-5 col-md-8">
-          <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-        </div>
+			<div class="col-lg-5 col-md-8">
+				<div class="form">
+					<div id="sendmessage">Your message has been sent. Thank you!</div>
+					<div id="errormessage"></div>
+					<form action="" method="post" role="form" class="contactForm">
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+							<div class="validation"></div>
+						</div>
+						<div class="text-center"><button type="submit">Send Message</button></div>
+					</form>
+				</div>
+			</div>
 
-      </div>
-    </div>
-  </section>
+		</div>
+	</div>
+</section>
 
-  <footer class="site-footer">
-    <div class="bottom">
-      <div class="container">
-        <div class="row">
+<footer class="site-footer">
+	<div class="bottom">
+		<div class="container">
+			<div class="row">
 
-          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-            <p class="copyright-text">
-              © NPDS-MANI GROUP
-            </p>
-            <div class="credits">
+				<div class="col-lg-6 col-xs-12 text-lg-left text-center">
+					<p class="copyright-text">
+						© NPDS-MANI GROUP
+					</p>
+					<div class="credits">
               <!--
                 All the links in the footer should remain intact.
                 You can delete the links only if you purchased the pro version.
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
-              -->
-              <a href="https://kshitijtomar.github.io/">Website by Kshitij Tomar</a>
-            </div>
-          </div>
+            -->
+            <a href="https://kshitijtomar.github.io/">Website by Kshitij Tomar</a>
+        </div>
+    </div>
 
-          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="index.html">Home</a>
-              </li>
+    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+    	<ul class="list-inline">
+    		<li class="list-inline-item">
+    			<a href="index.html">Home</a>
+    		</li>
 
-              <li class="list-inline-item">
-                <a href="#about">About Us</a>
-              </li>
+    		<li class="list-inline-item">
+    			<a href="#about">About Us</a>
+    		</li>
 
-              <li class="list-inline-item">
-                <a href="#features">Services</a>
-              </li>
+    		<li class="list-inline-item">
+    			<a href="#features">Services</a>
+    		</li>
 
               <!-- <li class="list-inline-item">
                 <a href="#portfolio">Portfolio</a>
@@ -727,36 +787,36 @@
 
               <li class="list-inline-item">
                 <a href="#contact">Contact</a>
-              </li> -->
-            </ul>
-          </div>
-
-        </div>
-      </div>
+            </li> -->
+        </ul>
     </div>
-  </footer>
-  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+</div>
+</div>
+</div>
+</footer>
+<a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 
 
-  <!-- Required JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/tether/js/tether.min.js"></script>
-  <script src="lib/stellar/stellar.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/easing/easing.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/parallax/parallax.js"></script>
-  <script src="lib/lockfixed/lockfixed.min.js"></script>
+<!-- Required JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/tether/js/tether.min.js"></script>
+<script src="lib/stellar/stellar.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/easing/easing.js"></script>
+<script src="lib/stickyjs/sticky.js"></script>
+<script src="lib/parallax/parallax.js"></script>
+<script src="lib/lockfixed/lockfixed.min.js"></script>
 
-  <!-- Template Specisifc Custom Javascript File -->
-  <script src="js/custom.js"></script>
+<!-- Template Specisifc Custom Javascript File -->
+<script src="js/custom.js"></script>
 
-  <script src="contactform/contactform.js"></script>
+<script src="contactform/contactform.js"></script>
 
 </body>
 </html>
