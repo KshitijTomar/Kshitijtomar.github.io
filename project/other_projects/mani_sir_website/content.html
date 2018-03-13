@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>NPDS Mani Group</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+
+	<!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+	<!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+	<!-- Bootstrap CSS File -->
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Libraries CSS Files -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Main Stylesheet File -->
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Bell
+    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+    ======================================================= -->
+
+    <style type="text/css">
+    body{
+    	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none;
+    }
+    @media (max-width: 61.9em){
+    	h3 {
+    		font-size: 26px;
+    	}
+    }
+    .underline h2{
+    	text-decoration: none; 
+    	position: relative;
+    	text-align: center;
+    	margin-bottom: 20px;
+    	color:#000;
+    }   
+
+    .underline h2:after {
+    	position: absolute;
+    	content: '';
+    	height: 1px;
+    	bottom: -4px; 
+    	margin: 0 auto;
+    	left: 0;
+    	right: 0;
+    	width: 100px;
+    	background: #265fd3;
+    	-o-transition:.5s;
+    	-ms-transition:.5s;
+    	-moz-transition:.5s;
+    	-webkit-transition:.5s;
+    	transition:.5s;
+    }
+    .underline h2:hover:after {
+    	width: 200px;
+    	background: #BB1E84;
+    }
+
+    .underline h1{
+    	text-decoration: none; 
+    	position: relative;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }   
+    .underline h1:after {
+    	position: absolute;
+    	content: '';
+    	height: 3px;
+    	bottom: -4px; 
+    	margin: 0 auto;
+    	left: 0;
+    	right: 0;
+    	width: 200px;
+    	background: #265fd3;
+    	-o-transition:.5s;
+    	-ms-transition:.5s;
+    	-moz-transition:.5s;
+    	-webkit-transition:.5s;
+    	transition:.5s;
+    }
+    .underline h1:hover:after {
+    	width: 300px;
+    	background: #BB1E84;
+    }
+    #pg_it_software p{
+    	text-align: justify;
+    }
+    .dynamic-content {
+    	display:none;
+    }
+    .web_content{
+    	padding: 20px 30px;
+    	font-size: 17px;
+    }
+    .web_content_title{
+    	color:#265fd3;
+    }
+
+
+
+
+
+    /* Style the tab */
+    .tab {
+    	float: left;
+    	border: 1px solid #ccc;
+    	background-color: #f1f1f1;
+    	width: 30%;
+    	min-height: 560px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+    	display: block;
+    	background-color: inherit;
+    	color: black;
+    	padding: 15px 16px;
+    	width: 100%;
+    	border: none;
+    	outline: none;
+    	text-align: left;
+    	cursor: pointer;
+    	transition: 0.3s;
+    	font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    	background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+    	background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    	float: left;
+    	padding: 10px 12px;
+    	border: 1px solid #ccc;
+    	min-height: 560px;
+    	width: 70%;
+    	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    }
+    .tabcontent p{
+    	padding: 10px;
+    }
+    @media only screen and (max-width: 950px) {
+    	.tab {
+    		float: none;
+    		height: auto;
+    		width: 100%;
+    		border-bottom: none;
+    		min-height: auto;
+    	}
+    	.tab button {
+    		padding: 10px 16px;
+    		width: 100%;
+    		border-bottom: 1px solid #ccc;
+    		outline: none;
+    		text-align: left;
+    		cursor: pointer;
+    		transition: 0.3s;
+    		font-size: 17px;
+    	}
+    	.tabcontent {
+    		min-height: auto;
+    		float: none;
+    		width: 100%;
+    		border: 1px solid #ccc;
+    		border-top:none;
+    		height: auto;
+    		min-height: 100px;
+    	}
+    }
+
+    /* Go from zero to full opacity */
+    @keyframes fadeEffect {
+    	from {opacity: 0;}
+    	to {opacity: 1;}
+    }
+
+    .icon_pad{
+    	margin-top: 30px;
+    }
+    .icon_pad:hover i{
+    	transform: translateY(-10px) scale(1.3);
+    	opacity: 0.9;
+    }
+
+    .image_hospital_aa{
+    	margin-top: 20px;
+    	margin-bottom: 50px;
+    	width: 100px;
+    	height: 100px;
+    	position: relative;
+    }
+    .image_hospital_aa img{
+    	max-height: 100%;  
+    	max-width: 100%; 
+    	width: auto;
+    	height: auto;
+    	position: absolute;  
+    	top: 0;  
+    	bottom: 0;  
+    	left: 0;  
+    	right: 0;  
+    	margin: auto;
+    }
+    .image_hospital_aa p{
+    	margin-top: 120px;
+    	font-weight: 600;
+    }
+</style>
+</head>
+
+<body>
+  <!-- Page Content
+  	================================================== -->
+  	<!-- Hero -->
+  	<!-- Header -->
+  	<header id="header">
+  		<div class="container">
+
+  			<div id="logo" class="pull-left">
+  				<a href="index.html">
+  					<img src="img/logo-nav.png"><b> NMG</b>
+  				</a>
+  				<!-- Uncomment below if you prefer to use a text image -->
+  				<!--<h1><a href="#hero">Bell</a></h1>-->
+  			</div>
+
+  			<nav id="nav-menu-container">
+  				<ul class="nav-menu">
+  					<li><a href="index.html">Home</a></li>
+  					<li><a href="index.html#about">About Us</a></li>
+  					<li class="menu-has-children"><a href="index.html#features">Services</a>
+  						<ul>
+  							<li><a href="content.html?dc=pgits">IT and Software</a></li>
+  							<li><a href="content.html?dc=pgaas">Air Ambulance Service</a></li>
+  							<li><a href="content.html?dc=pgpnm">Projects &amp; Model</a></li>
+  							<li><a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">Mani Aerospace &amp; Drone Club</a></li>
+  							<li><a href="content.html?dc=pglaa">Legal Aviation Assistancy</a></li>
+  							<li><a href="content.html?dc=pgacs">Admission Consultacy Services</a></li>
+  						</ul>
+  					</li>
+			          <!-- <li><a href="#portfolio">Portfolio</a></li>
+			          <li><a href="#team">Team</a></li>
+			          <li class="menu-has-children"><a href="">Drop Down</a>
+			            <ul>
+			              <li><a href="#">Drop Down 1</a></li>
+			              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+			                <ul>
+			                  <li><a href="#">Deep Drop Down 1</a></li>
+			                  <li><a href="#">Deep Drop Down 2</a></li>
+			                  <li><a href="#">Deep Drop Down 3</a></li>
+			                  <li><a href="#">Deep Drop Down 4</a></li>
+			                  <li><a href="#">Deep Drop Down 5</a></li>
+			                </ul>
+			              </li>
+			              <li><a href="#">Drop Down 3</a></li>
+			              <li><a href="#">Drop Down 4</a></li>
+			              <li><a href="#">Drop Down 5</a></li>
+			            </ul>
+			        </li> -->
+			        <!-- <li><a href="#contact">Contact Us</a></li> -->
+			    </ul>
+			</nav>
+			<!-- #nav-menu-container -->
+
+			<nav class="nav social-nav pull-right d-none d-lg-inline">
+				<a href="https://www.facebook.com/Mani-Aerospace-Drone-Club-516500421796441"><i class="fa fa-facebook"></i></a> 
+				<a href="">
+					<div id="tooltip">
+						<i class="fa fa-phone"></i>
+						<span id="tooltiptext">+91 851 280 0851</span>
+					</div>
+				</a> 
+				<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
+				<a href="mailto:mani_emailid@gmail.com">
+					<div id="tooltip">
+						<i class="fa fa-envelope"></i>
+						<span id="tooltiptext">mani_emailid@gmail.com</span>
+					</div>
+				</a>
+
+			</nav>
+		</div>
+	</header>
+	<!-- #header -->
+
+	<!-- CONTENT -->
+	<div id="default-content" class="dynamic-content text-center">
+		<img src="http://almaoasislonghai.com/wp-content/uploads/2016/03/coming-soon.png" style="width: 50%;margin-top: 8px;">
+	</div>
+
+
+	<div id="pg_it_software" class="dynamic-content">
+		<section class="pg_it_software" id="pg_it_software" style="padding: 50px 0;">
+
+			<div class="container text-center underline">
+				<h1>
+					IT & Software
+				</h1>
+			</div>
+
+			<div class="container-fluid text-center underline">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+						<br><br><br>
+						<h2 class="web_content_title">Industries we serve</h2><br>
+						<div>
+							<div class="row">
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-heartbeat" style="font-size: 60px;"></i>
+									<br>
+									Health
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-home" style="font-size: 60px;"></i>
+									<br>
+									Insurance
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-graduation-cap" style="font-size: 60px;"></i>
+									<br>
+									Education
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-users" style="font-size: 60px;"></i>
+									<br>
+									Consultancy
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-cogs" style="font-size: 60px;"></i>
+									<br>
+									Manufacturing
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-book" style="font-size: 60px;"></i>
+									<br>
+									Publication
+								</div>
+
+								<div class="icon_pad col-md-2 offset-md-2 text-center">
+									<i class="fa fa-bed" style="font-size: 60px;"></i>
+									<br>
+									Hotels
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-bus" style="font-size: 60px;"></i>
+									<br>
+									Tour & Travels
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-phone" style="font-size: 60px;"></i>
+									<br>
+									Telecommunication
+								</div>
+
+								<div class="icon_pad col-md-2 col-sm-4 text-center">
+									<i class="fa fa-truck" style="font-size: 60px;"></i>
+									<br>
+									Shipping
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="container text-center underline">
+					<br>
+					<div class="row">
+						<div class="col-md-6 col-sm-12 text-left">
+							<h3 class="web_content_title">Services We Offer</h3>
+							<div class="web_content">
+								1. Application Development<br>
+								2. Application Maintenance<br><br>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12 text-left">
+							<h4 class="web_content_title">What we do in Application Development & Maintenance</h4>
+							<div class="web_content" >
+								Application Development is basically categories in two ways:
+								<ol>
+									<li>Online Application</li>
+									<li>Offline Application</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12 text-left">
+							<h4 class="web_content_title">Online Application</h4>
+							<div class="web_content" >
+								We are dealing with following Applications:
+								<ul>
+									<li>Website Development</li>
+									<ul>
+										<li>HTML Website Development</li>
+										<li>PHP Website Development</li>
+										<li>Flash Websites</li>
+										<li>Magento Website Development</li>
+										<li>Custom Website Development</li>
+										<li>Social Network Websites</li>
+										<li>Classified Websites</li>
+									</ul>
+									<li>Website Designing</li>
+									<ul>
+										<li>Graphic Design illustration</li>
+										<li>I Phone Graphic Design</li>
+										<li>Photoshop Graphic Design</li>
+										<li>Android Graphic Design</li>
+										<li>Game Graphic Design</li>
+									</ul>
+									<li>E-Commerce Websites</li>
+									<li>Web-Portals</li>
+									<li>Complete School Management Software</li>
+									<li>Examination System</li>
+									<li>Cable Management Software</li>
+									<li>Cooperate Management Software</li>
+									<li>Search Engine Optimization</li>
+									<li>Payment Gateway Integration</li>
+									<li>SMS integration with your website</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12 text-left">
+							<h4 class="web_content_title">Technologies Expertise</h4>
+							<div class="web_content" >
+								<ul>
+									<li>PHP / MYSQL</li>
+									<li>.Net Framework</li>
+									<li>Java Framework</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>J Query</li>
+								</ul>
+							</div>
+							<h4 class="web_content_title">Offline Application</h4>
+							<div class="web_content" >
+								We are dealing with following Applications:
+								<ul>
+									<li>Complete School Management Software</li>
+									<li>Desktop Based EBook</li>
+									<li>Cable Management Software</li>
+									<li>Cooperate Management Software</li>
+									<li>Complete ERP Solution</li>
+									<li>Customized Software</li>
+								</ul>
+								Technologies we are using for Online Applications
+								<ul>
+									<li>.Net Framework</li>
+									<li>Java Framework</li>
+								</ul>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid text-center underline">
+				<div class="row">
+
+					<div class="col-md-12 text-left" style="padding: 20px;">
+						<h2 class="web_content_title">Other Services</h2>
+						<br>
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'Logo Designing')" id="defaultOpen">Logo Designing</button>
+							<button class="tablinks" onclick="openCity(event, 'Graphic Designing')">Graphic Designing</button>
+							<button class="tablinks" onclick="openCity(event, 'Web Design')">Web Design</button>
+							<button class="tablinks" onclick="openCity(event, 'Search Engine Optimization')">Search Engine Optimization</button>
+							<button class="tablinks" onclick="openCity(event, 'Social Media Marketing')">Social Media Marketing</button>
+							<button class="tablinks" onclick="openCity(event, 'E-mail Marketing')">E-mail Marketing</button>
+							<button class="tablinks" onclick="openCity(event, 'Content Writing')">Content Writing</button>
+							<button class="tablinks" onclick="openCity(event, 'Multimedia Animation')">Multimedia Animation</button>
+							<button class="tablinks" onclick="openCity(event, 'Product Development')">Product Development</button>
+							<button class="tablinks" onclick="openCity(event, 'MLM Software')">MLM Software</button>
+						</div>
+
+						<div id="Logo Designing" class="tabcontent">
+							<h3>Logo Designing</h3>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logos are very important to any business. These simple layouts serve as the company’s brand, trademark, and identity. It is something that would make your business stand out from the rest. It is also the seal that would remind your customers about your company. With all of those said, it is then very important that businesses carefully create logos for their firm. Their logo should be something suitable, remarkable, and interesting. The right logo could propel your business towards success. Businesses who are looking for expert ideas on what they should put in their corporate seal and how they should go about creating it must consult only with the experts in the field. Logo designing is not purely artwork. It also requires analysis, research, and evaluation.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is what we do at NPDS Mani Group. We can provide you with the service and that logo that you’re looking for all along. NPDS Mani Group is a Delhi-based company in India that offers premium corporate logo designing for business branding and identity.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our experts would analyze your business and industry, along with your company’s mission and vision to create the ideal logo that would carry your name. Our logo design team had impressed lots of clients worldwide. Trust us with this job as we are one of the most respected logo designing companies in India.
+							</p>
+						</div>
+
+						<div id="Graphic Designing" class="tabcontent">
+							<h3>Graphic Designing</h3>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the world that almost runs on advertising, it is quite imperative to beautify information as one is providing it. Most importantly if providing that information is going to fetch a plethora of business activity for you. That is why discounts are not just called discounts but bumper discounts and a bumper discount is a bonanza. We at DISTINCT TECHNOLOGIES understand the intuitive world of marketing and thus focus on providing creative graphic designs with carefully sorted out color schemes and themes that exactly complement the feel in your content. Every bit of information you provide is arranged in the most aesthetics of fashions to craft an eye catching design that mesmerizes its onlookers and makes a positive and lasting impression about your business. We provide designs in both digital and print media so that you don’t have to worry about the hassles of a computer when you can get it done in print. Our team of experts analyzes your every requirement and the target audience you would like to reach to provide immaculate cleverly thought design solutions that are impeccable in style and strongly appeals to its target audience.
+							</p>
+						</div>
+
+						<div id="Web Design" class="tabcontent">
+							<h3>Web Design</h3>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distinct Technologies is leading web Development Company in India aiming & providing you with the branded customized web solutions offering, high quality web design, web development, e-commerce web development pre- build CMS integration & customization, domain registration, web hosting & much more… Search engine optimization is also been one of our specialty, on which we can assist you to achieve higher ranking on search engines. With our longstanding experience we provide you with different types of web enabled services under one roof, we can ensure to develop top quality work from our side that’s gives your business an edge & ready to provide samples & references if needed in case. With our unparalleled expertise & intricate craftsmanship your companies surely gain an instant attention. Customer satisfaction is our prime motto & we ensure that we provide with 100% customized solutions to our clients. No matter how complex the project is, we are confident that you can count on NPDS MANI GROUP to deliver a refine quality within the time frame. We are committed & dedicated to build long lasting partnerships with our clients & ensure their satisfaction on our top list priority. Our business- driven approach separates us from the rest; we offer a wide range of web services at affordable prices from the inception by registering the domain name to search engine optimization & internet marketing.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We believe that a website of a company is the face of that company to their online visitors so it’s equally important the creation of professional website should be done in a way that leaves the user informed & impress with the aesthetic sense & side by side understanding their needs. Website is a medium that can potentially convert your visitors into the customers itself which can provide you with a fair return on your investment. Make a quality website with DISTINCT TECHNOLOGIES & convert Internet browsers/surfers to customers.
+							</p>
+						</div>
+
+						<div id="Search Engine Optimization" class="tabcontent">
+							<h3>Search Engine Optimization</h3>
+							<p>
+								<b>Search Engine Optimization in Brief</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEO or Search Engine Optimization is the process of optimizing the website to bring the websites position on the higher ranks on search engine results pages. In the process of SEO, when a user goes through any search engine and makes a search with a keyword then, it provides you the whole page listing in the top results. And this result shows the Page Rank of the website. Whether it is coming on the first page which means a good position or or on some other pages means need improvement. Mainly different methods followed to increase the traffic on the websites.
+								<br><br>
+								<b>Search Engine Optimization in Depth</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the process of SEO, it is done with the effective usage of Meta tags, placing the correct keywords in the original text and doing careful analysis of keyword density using popular SEO software tools and techniques. All these tools are good enough to increase the page rank and website traffic.
+								<br><br>
+								<b>To be always on top, choose us for SEO services</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are counted in the top SEO services company, providing Search engine optimization in Delhi. Our dedicated team of SEO professionals focuses only in enhancing your business by looking at the competitive marketplace for your chosen keywords. Being a Search engine optimization firm, we always ensures Guaranteed Top 10 search engine ranking on Google, Yahoo and MSN.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We at NPDS MANI GROUP stand to announce ourselves as a Reputable India SEO company which promises guaranteed SEO services at the cheap and affordable price. Providing SEO services at competitive rates, we guarantee you that we know all the rules of the search engines and will follow all the guidelines needed. Being a Search engine optimization consultant, we develop the strategies to reach the top with very advanced SEO techniques to explore better business prospects for the clients.
+
+
+							</p>
+						</div>
+
+						<div id="Social Media Marketing" class="tabcontent">
+							<h3>Social Media Marketing</h3>
+							<p>
+								<b>Social Media Marketing - Newest and best marketing tool</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you in a mood to start a new business, then it is sure that you will be thinking of its marketing work. As marketing is the major point of any business also the important aspect of any business strategy. The profit and loss of any business is equally depends on its marketing policies and ways of marketing. If the product is really good but not advertised nicely then the product will have no market and no buyers. So, in today fast changing world, when every work is done online then how can marketing be left behind. With the involvement of social media in marketing, it has become easier and quicker.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Social media marketing</b> is the latest and faster way of marketing done through social media such as blogs, community sites, video sharing sites etc. Today the popular sites like LinkedIn, Facebook, Twitter, Flickr and YouTube has more than five million visitors every day and are considered to be an important hub for marketing. Today social media marketing Facebook is the most common which has a large number of users, using the site on a regular basis.
+								<br>
+								<br>
+
+								<b>Importance of Social Media Marketing</b>
+							</p>
+							<ul>
+								<li>Today Social media marketing has become the part of the social media optimization. With the popularity and good results of social media marketing, promotion of business through social media are now also done by professionals of social media marketing company.</li>
+								<li>Consisting of several social media things like blogs, video sharing and community, through this type of marketing we can pass our information to vast number of people within a very short period of time.</li>
+								<li>Sponsoring the business using through these types of social media sites is a very smart business proposal since they provide a huge amount of constant traffic every day.</li>
+							</ul>
+							<p>
+								<b>Choose us for best social media marketing</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to SEO services, it's a well-known SEO company providing all types of SEO services. With the good name in the industry, this Social media marketing company Delhi has pushed various sites to a great height through its best services. Being a Social media marketing agency, we provide social media marketing with blogging, Facebook and even Twitter. Choose seoservices.co.in for your social media marketing of your business firm and find your company at the top in the search engine rankings.
+							</p> 
+						</div>
+
+						<div id="E-mail Marketing" class="tabcontent">
+							<h3>E-mail Marketing</h3>
+							<p>
+								<b>Email marketing - The biggest marketing tool of online business</b> 
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today everything is online, whether it's your business or you shopping, by just clicking a button, you can easily finish all your works. So when the internet has become so much important than it can also use as a good source of marketing. In Search Engine Optimization, Email marketing is used as a social media marketing and social media optimization tool. This online marketing is a great idea to raise the level of success. Being the most effective way to advertise on the internet, Email marketing is one of the effective ways to attract new customers by keeping touch with existing ones and minimizing operating cost.
+								<br>
+								<b>How its work?</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Being performed by a SEO company, email marketing is a form of direct marketing which is done by using an electronic mail as a means of communicating tool used among audience. In this process, email is sent to a potential or current user which can be considered as email marketing.
+								<br>
+								It is done by sending email messages to the new customers and the current customers to purchase the things quickly.
+								<br>
+								Some companies also do this by adding the advertisements to the other emails send by others.
+								<br>
+								Some emails messages are also send in the PPC formats.
+								<br>
+								<b>Need of Email marketing</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email marketing done by a SEO company encourages business and help in conveying the message to the direct audience through emails. It allows targeting and also data driven. Email marketing builds relationships, loyalty and trust and as a result derives direct sales. Including to all these it also support sales through other channels. Choose from different types of Email marketing
+								<ul>
+									<li>Direct email</li>
+									<li>Retention email</li>
+									<li>Advertising in other people's emails</li>
+								</ul>
+
+							</p>
+						</div>
+
+
+						<div id="Content Writing" class="tabcontent">
+							<h3>Content Writing</h3>
+							<p>
+								<b>Content - The King of the Website</b> 
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must be aware of the great saying that Content is the king and the Marketing is the Queen of any website. It is clear that content rules over whole of the websites. Where a good content can catch the whole attention and increase the traffic on your sites there only the old and wrong content can cause a great downfall in the traffic. Unique design, keyword rich and understandable content can make your website more attractive and also helps in gaining attention of the users.
+								<br>
+								<br>							
+								<b>How it is done?</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today content marketing is very common among all online business. The user can find overall view of the whole business type and its values by viewing the content only. By informative and catchy content on your site it can ensure regular flow of traffic leading to a powerful impact on the targeted audience.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Writing is a very important part of any SEO services providing company. Being done by expert content writers and copywriters, there are different ways of content writing according to the need and demand of the clients. Some of the common Web content writings are-
+							</p>
+							<ul>
+								<li>
+									<b>Website Content Writing:</b>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can you imagine of a website only with the images without any content? It is sure your answer will be no! Your website should contain the overall view of your business and should be more informative. It should be easily understandable and keyword rich through which the search can be easily done.<br>
+								</li>
+								<li>
+									<b>SEO Copywriting:</b>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any website, SEO copywriting is very important in website designing. Mainly the home page of the site leaves a great impression on any user, so taking from good landing page to proper headings and metatags each is done in this.<br>
+								</li>
+								<li>
+									<b>Blog writing:</b>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today blog is the only thing which is commonly used for all types of online promotions. Blog writing for a website is as much useful as updating new things on sites. It can be done on the daily basis taking very less time.<br>
+								</li>
+								<li>
+									<b>Article writing:</b>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The demand for the articles on different topics is increasing day by day. Users expect to gain vast knowledge of each and every thing through these types of articles.<br>
+								</li>
+							</ul>
+							<p>
+								<b>Why choose us for making the content of your website?</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a well-known SEO company, which provides best content writing in Delhi. With a large number of best copywriters, we provide content focusing direct to the targeted audience. Providing quality service in content, our content writers keeps focus on attracting more and more traffic on the website.<br>
+							</p>
+						</div>
+
+
+
+						<div id="Multimedia Animation" class="tabcontent">
+							<h3>Multimedia Animation</h3>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presenting your ideas, products, or your entire business to your clients is not an easy job. It requires you to use all possible resources to get the right idea across. When you only have one chance to present, there is no room for errors.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employ the best Multimedia Presentation experts to help you create an impressive profile for your business, services, and products. Captivate your clients and customers the first time. The more effective the presentation that you make, the higher are the chances that it would work as well as you have expected it.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multimedia presentations have to be interesting to be notable. The project has to be done by real professionals that have your company best interest in mind. This is the only way that you can be assured that your presentation is going to make a big impact on its audience.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a Delhi-based company in India that can help you with your Multimedia Presentationneeds. We have the talents, the expertise, and the technology needed to create a presentation that would impress your clients and customers. Trust us to deliver your company with sales and deals with our striking, professional works. We assure quality in every project that we do.
+							</p>
+						</div>
+
+
+						<div id="Product Development" class="tabcontent">
+							<h3>Product Development</h3>
+							<p>
+								Product development is a promotional technique in which whole new creation of product is done, with new & innovative techniques that offers & add advantage to the customers & helps to increase their brand value & reach to its potential customers.
+								<br>
+								Product development involve many different stages such as modifications of an existing product or improving it style of presentation, by adding different promotional technique to it such as -via mobile advertisement, e-mail marketing, banner ads on a specific websites.
+								<ul>
+									<li>We in help you to define your products in an outstanding manner to create a market niche for yourself. We help you to create a new pipeline of whole new products, or helps you in developing &extending the existing product line with our innovative product development skills, such as refreshing the existing product line by introducing new & exciting product development features.</li>
+
+									<li>We offers a completely different & highly effective strategy to enhance your product image via our extensive link building, digital promotions technique like e-mail ads as well as e-marketing techniques. Our work begins with extensive research together required information about the product & for the overall scope & development of the product.</li>
+
+									<li>We pay hard attention on- who will be the target audience of that very product? & pay emphasis on the usability of the product to reach the appropriate potential buyers.We believe in coming out with the best & try to do full justice to your product enhancement with our innovative product development techniques.</li>
+
+									<li>We aim at delivering successful product development services through our extensive research & massive link building- all this is done with a prime motive- to ensure to come out with the best output for the product development services. We in store the best for you!</li>
+								</ul>
+							</p>
+						</div>
+
+
+
+						<div id="MLM Software" class="tabcontent">
+							<h3>MLM Software</h3>
+							<p>
+								With the tremendous increase in the number of mobile phone users accessing the internet on their handheld, it is equally important to reach	& grab the opportunity to advance n your parameter to your target audience globally.
+								<ul>
+									<li>At NPDS MANI GROUP we offers you first rate mobile web designs services to help you reach your target audience worldwide with one touch solutions which can be easily accessed on any of the smart phone browsers & successfully accommodate their audience.</li>
+
+									<li>There are plenty of ways to develop their mobile web contents through XHTML, CSS, ASP.NET, and Hand help style sheets or whatever the method may be, We believe any mobile web development strategy must begin with considering the target audience.</li>
+
+									<li>A mobile optimized site must integrate & align with following firstly how the content is accessed, Secondly how the content is accessed? Technically speaking, contents before aesthetics, functions before form, helps in providing the users excessive bandwidth & a faster browsing experience.</li>
+
+									<li>Redefine the parameters of net accessing through the mobile web development with us like never before. According to the market survey, mobile handset proliferation is expected to increase about 3 billion subscribers worldwide. No, doubt it will surely be the next big thing in the online marketing zone.</li>
+
+									<li>We, in NPDS MANI GROUP helps you to utilize & exhibit your publish web contents beyond the desktop. We precisely keep focus on what the contextual relevance of such a site or app is? & comes up with the solution for the same & implicit in dselivering a rich, navigable content experience.</li>
+								</ul>
+							</p>
+						</div>
+
+						<script>
+							function openCity(evt, cityName) {
+								var i, tabcontent, tablinks;
+								tabcontent = document.getElementsByClassName("tabcontent");
+								for (i = 0; i < tabcontent.length; i++) {
+									tabcontent[i].style.display = "none";
+								}
+								tablinks = document.getElementsByClassName("tablinks");
+								for (i = 0; i < tablinks.length; i++) {
+									tablinks[i].className = tablinks[i].className.replace(" active", "");
+								}
+								document.getElementById(cityName).style.display = "block";
+								evt.currentTarget.className += " active";
+							}
+
+							document.getElementById("defaultOpen").click();
+						</script>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+
+	<div id="pg_air_ambulance" class="dynamic-content">
+		<section class="pg_air_ambulance" style="padding: 50px 0;">
+
+			<div class="container text-center underline">
+				<h1>
+					Air Ambulance Service
+				</h1>
+				<br>
+				<p><b>Emergency medical services (EMS)</b> role such as <b>HEMS (Helicopter Emergency Medical Service)</b>.</p>
+
+			</div>
+
+			<div class="container text-center underline">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 text-left">
+						<br><br><br>
+						<h2 class="web_content_title">GEMS and the AA</h2><br>
+						<div class="row text-center" style="opacity: 0.7;">
+							Our Doctors and Paramedics are well-qualified professionals, trained to manage patients in the most challenging of situations, and execute efficient and coordinated “bed-to- bed” transfers worldwide.<br><br>
+						</div>
+						<div class="row text-left">
+							Aspects of AA operations shall be described in the Operations Manual and must contain specific policies and related procedures on the following:- 
+							<ul>
+								<li>medical control procedures.</li>
+								<li>patient loading and unloading procedures.</li>
+								<li>protocols for patient handoff.</li>
+								<li>procedures for handling and securing of medical equipment.</li>
+								<li>patient safety and use of harness and restraining devices.</li>
+								<li>Infection and Biohazard Control policy.</li>
+								<li>refuelling procedures with medical personnel and/or patient on board.</li>
+								<li>initial and recurrent training programme for medical personnel.</li>
+								<li>physiological factors affecting well- being of patient during AMT.</li>
+								<li>procedures for handling of portable electrical sources.</li>
+								<li>evacuation procedures</li>
+							</ul>
+						</div>
+						<div class="row text-left">
+							Onboard medical equipment when fitted in the aircraft shall be positioned in a manner such that it:- 
+							<ul>
+								<li>allows medical personnel a clear view of and access to the patient to perform monitoring and therapeutic intervention as needed. </li>
+								<li>permits access to normal and emergency exits. </li>
+								<li>permits access to emergency equipment. </li>
+								<li>does not interfere or is likely to interfere with the operation of aircraft controls. </li>
+								<li>is appropriately secured to avoid potential injury to occupants. </li>
+							</ul>
+							8.5 Onboard medical equipment shall:- 
+							<ul>
+								<li>be secured and restrained to sustain inertia forces experienced during aborted take-off and emergency landings in conformity to FAR 25.561 and FAR 25.785 standards or as appropriate for aircraft size and type (FAR 23,25 for aeroplanes and FAR 27,29 for helicopters). </li>
+								<li>in case of oxygen bottles be in conformity to FAR 25.1443, 25.1447 and 25.1453. </li>
+								<li>in case utilising lithium-ion battery be in conformity to DO-311 MOPS for Rechargeable Lithium Battery Systems. CIVIL</li>
+								<li>in case of infusion devices be automated and designed to be independent of gravitational flow. </li>
+								<li>if carrying dangerous goods be governed by the provisions of Aircraft (Carriage of Dangerous Goods) Rules, 2003.</li>
+							</ul>
+						</div>
+
+						<div class="container text-center">
+							<br><br>
+							<a class="btn btn-sm " href="bcl_335619015.htm">Legal Document: Operation Of Aeromedical Transportation (AMT)</a>
+							<br><br><br><br>
+						</div>
+
+						<div class="row text-left">
+
+							<div class="col-md-12 col-sm-12 text-left">
+								<b>We Provide Air Ambulance Services from All Major Cities in India, Including–</b><br><br><br>
+								<b>We Provide Air Ambulance Services from All Major Cities Worldwide, Including –</b><br><br><br>
+								<b>Our tie up with hospitals:-</b><br>
+								<div class="row">
+									<div class="image_hospital_aa col-md-2 offset-md-1 col-sm-4 text-center img-responsive pagination-centered">
+										<img src="http://onlinereports.blkhospital.com/Auth/Images/PortalLogo.png">
+										<p>BLK HOSPITAL</p>
+									</div>
+
+									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+										<img src="http://www.fortishealthcare.com/static_new/img/fortis-logo.png">
+										<p>FORTIS HOSPITAL</p>
+									</div>
+
+									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+										<img src="https://3.imimg.com/data3/JF/LP/MY-9646176/akash-hospital-logo-120x120.jpg">
+										<p>AKASH HOSPITAL</p>
+									</div>
+
+									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+										<img src="https://www.maxhealthcare.in/sites/default/files/max-logo.png">
+										<p>MAX HOSPITAL</p>
+									</div>
+
+									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+										<img src="https://lh3.googleusercontent.com/FVJoHtenN4oee1XvShgPnOm3TYazvrcaDdnmvDy21ITxqTXP3OsdIAU0TsU6O4zr6A=w300">
+										<p>AAYUSHMAN HOSPITAL</p>
+									</div>
+								</div>			
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+	<div id="pg_legal_aviation_assistancy" class="dynamic-content">
+		<section class="pg_it_software" id="pg_it_software" style="padding: 50px 0;">
+
+			<div class="container text-center underline">
+				<h1>
+					Legal Aviation Assistancy
+				</h1>
+			</div>
+
+			<div class="container-fluid text-center underline">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+						<br>
+						<h2 class="web_content_title">Role Mission</h2><br>
+						<div class="row">
+							<div class="container text-center">
+								<i class="fa fa-quote-left" style="float:left;"></i>
+								To provide legal advice, services and support to the command and management of all aspects of law and the
+								management of legal affairs.
+
+								<i class="fa fa-quote-right" style="float:right;"></i>
+								<br>
+								<br>
+								<br>								
+							</div>
+						</div>
+
+						<h2 class="web_content_title">Our services</h2><br>
+						<div class="row">
+
+							<div class="icon_pad col-md-3 col-sm-6 text-center">
+								<i class="fa fa-plane" style="font-size: 60px;"></i> 
+								<br>AVIATION LEGAL<br>service
+							</div>
+							<div class="icon_pad col-md-3 col-sm-6 text-center">
+								<i class="fa fa-plane" style="font-size: 60px;"></i> 
+								<br>EDUCATION LEGAL<br>service
+							</div>
+							<div class="icon_pad col-md-3 col-sm-6 text-center">
+								<i class="fa fa-plane" style="font-size: 60px;"></i> 
+								<br>DEFENCE LEGAL<br>service
+							</div>
+							<div class="icon_pad col-md-3 col-sm-6 text-center">
+								<i class="fa fa-plane" style="font-size: 60px;"></i> 
+								<br>MARITIME LEGAL<br>service
+							</div>
+
+						</div>
+
+						<br>
+						<br>
+
+						<h2 class="web_content_title">Our Expertise in</h2><br>
+						<div class="row">
+
+							<div class="container">
+								<ol>
+									<li>Airport Slot Allotment</li>
+									<li>Leasing and Financing of Aircraft</li>
+									<li>Airline Economics and Pricing Strategies</li>
+									<li>Aircraft Leasing</li>
+									<li>Airport Privatization</li>
+									<li>Aeronautical Charges and Airline Operations</li>
+									<li>Alliances and Joint Ventures in Civil Aviation</li>
+									<li>Financing of Aircraft</li>
+									<li>DGCA and Air Safety Regulations</li>
+									<li>ICAO’s Role and Responsibility</li>
+									<li>Civil and Criminal Liability</li>
+									<li>Air Safety</li>
+									<li>ICAO and Aviation Safety Regulation</li>
+									<li>Liability of the Carrier</li>
+									<li>Liability for passenger injury or death</li>
+									<li>Liability Limit/or Delay, Baggage and Cargo, Jurisdiction, Types of Damages,Advance Payments, Aviation Insurance</li>
+									<li>Aircraft Rules, 1937 and Various Amendments</li>
+									<li>Civil Aviation Regulations</li>
+									<li>UN CHARTER</li>
+									<li> Montreal Agreement, Warsaw Convention……</li>
+								</ol>
+							</div>
+							
+							<br>
+							<br>
+							<br>
+						</div>
+
+
+						<h2 class="web_content_title">Current Cases</h2><br>
+						<div class="row">
+
+							<div class="container">
+								Suspended the Engineering degrees...<br>
+								JRN Rajasthan Vidyapeeth, Rajasthan (JRN), Institute of Advanced Studies in Education, Rajasthan (IASE) and Allahabad Agricultural Institute, Allahabad (AAI)<br>
+								<br>
+								Case status: - Review has been filed .<br>
+								Action-Pending<br>
+								<br>
+								Supreme court order: ( pdf)<br>
+								More details contact ..
+							</div>
+							
+							<br>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="site-footer">
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-6 col-xs-12 text-lg-left text-center">
+						<p class="copyright-text">
+							© NPDS-MANI GROUP
+						</p>
+						<div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+            -->
+            <a href="https://kshitijtomar.github.io/">Website by Kshitij Tomar</a>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+    	<ul class="list-inline">
+    		<li class="list-inline-item">
+    			<a href="index.html">Home</a>
+    		</li>
+
+    		<li class="list-inline-item">
+    			<a href="index.html#about">About Us</a>
+    		</li>
+
+    		<li class="list-inline-item">
+    			<a href="index.html#features">Services</a>
+    		</li>
+
+              <!-- <li class="list-inline-item">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#team">Team</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">Contact</a>
+            </li> -->
+        </ul>
+    </div>
+
+</div>
+</div>
+</div>
+</footer>
+<a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+<!-- Required JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/tether/js/tether.min.js"></script>
+<script src="lib/stellar/stellar.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/easing/easing.js"></script>
+<script src="lib/stickyjs/sticky.js"></script>
+<script src="lib/parallax/parallax.js"></script>
+<script src="lib/lockfixed/lockfixed.min.js"></script>
+
+<!-- Template Specisifc Custom Javascript File -->
+<script src="js/custom.js"></script>
+
+<script src="contactform/contactform.js"></script>
+
+</body>
+
+<script type="text/javascript">
+	// Parse the URL parameter
+	function getParameterByName(name, url) {
+		if (!url) url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	// Give the parameter a variable name
+	var dynamicContent = getParameterByName('dc');
+
+	$(document).ready(function() {
+		if (dynamicContent == 'pgits') {
+			$('#pg_it_software').show();
+		} 
+		else if (dynamicContent == 'pgaas') {
+			$('#pg_air_ambulance').show();
+		} 
+		else if (dynamicContent == 'pglaa') {
+			$('#pg_legal_aviation_assistancy').show();
+		} 
+		else {
+			$('#default-content').show();
+		}
+	});
+</script>
+
+</html>

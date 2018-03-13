@@ -490,7 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #tooltiptext{
-	font-size: 14px;
+	font-size: 12px;
 }
 
 #tooltip #tooltiptext {
@@ -621,7 +621,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   display: inline-block;
 }
-.feature-col:hover .feature-icon:hover {
+.feature-col .card:hover .feature-icon {
   background: #BB1E84;
 }
 
@@ -630,7 +630,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #265fd3;
 }
 
-.feature-col h3:hover {
+.feature-col h3:hover{
   color: #BB1E84;
 }
 

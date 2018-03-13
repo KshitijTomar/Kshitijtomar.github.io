@@ -45,6 +45,14 @@
     ======================================================= -->
 
     <style type="text/css">
+    body{
+    	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none;
+    }
     .underline h2 {
     	text-decoration: none; 
     	position: relative;
@@ -73,7 +81,7 @@
 
 
     /* optional hover classes used with anmiation */
-    .underline h2:hover:after {
+    .underline:hover h2:after {
     	width: 200px;
     	background: #BB1E84;
     }
@@ -82,8 +90,11 @@
     	text-align: justify;
     }
     #features .card{
-    	background-color: #ddd;
+    	background-color: #eee;
     	padding: 20px;
+    }
+    .invisible_section{
+    	display: none;
     }
 </style>
 </head>
@@ -110,7 +121,7 @@
 
 
   					<p class="tagline">
-  						This is a powerful theme with some great features that you can use in your future projects.
+  						Leading Service Provider Company
   					</p>
   					<a class="btn btn-full" href="#about">Click to know more</a>
   				</div>
@@ -124,7 +135,7 @@
   			<div class="container">
 
   				<div id="logo" class="pull-left">
-  					<a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img><b> NMG</b></a>
+  					<a href="index.html"><img src="img/logo-nav.png" alt="" title=""><b> NMG</b></a>
   					<!-- Uncomment below if you prefer to use a text image -->
   					<!--<h1><a href="#hero">Bell</a></h1>-->
   				</div>
@@ -134,12 +145,12 @@
   						<li><a href="#about">About Us</a></li>
   						<li class="menu-has-children"><a href="#features">Services</a>
   							<ul>
-  								<li><a href="#">IT and Software</a></li>
-  								<li><a href="#">Air Ambulance Service</a></li>
-  								<li><a href="#">Projects &amp; Model</a></li>
-  								<li><a href="#">Mani Aerospace &amp; Drone Club</a></li>
-  								<li><a href="#">Legal Aviation Assistancy</a></li>
-  								<li><a href="#">Admission Consultacy Services</a></li>
+  								<li><a href="content.html?dc=pgits">IT and Software</a></li>
+  								<li><a href="content.html?dc=pgaas">Air Ambulance Service</a></li>
+  								<li><a href="content.html?dc=pgpnm">Projects &amp; Model</a></li>
+  								<li><a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">Mani Aerospace &amp; Drone Club</a></li>
+  								<li><a href="content.html?dc=pglaa">Legal Aviation Assistancy</a></li>
+  								<li><a href="content.html?dc=pgacs">Admission Consultacy Services</a></li>
   							</ul>
   						</li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
@@ -175,10 +186,10 @@
 		</div>
 	</a> 
 	<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
-	<a href="mailto:mani_emailid@gmail.com">
+	<a href="mailto:npdsmanigroup64@gmail.com">
 		<div id="tooltip">
 			<i class="fa fa-envelope"></i>
-			<span id="tooltiptext">mani_emailid@gmail.com</span>
+			<span id="tooltiptext">npdsmanigroup64@gmail.com</span>
 		</div>
 	</a>
 
@@ -197,7 +208,7 @@
 		<div class="row">
 			<div class="col-md-4 underline text-left">
 				<h2>Who are we</h2>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a total Services provider company boasting of a proven track record in providing cost-effective, innovative and robust business solutions, in the ﬁeld of IT &SOFTWARE, AEROSPACE/AVIATION, EDUCATION HOSPITALITY, REAL ESTATE. We focus on combining web- based application development, market-savvy design, and reliable business strategy to advance a client’s business goals. We offer solutions right through all stages of project development, website design, web development, e-commerce applications, ofﬂine/online software, web hosting, IT outsourcing and web marketing. With the sound knowledge, we aim to deliver value to our customers through our innovative software solutions and services. Since our inception, we have steadily grown into a reputed provider of high-quality and cost-effective software development services. Our ability to evolve continuously, doubled with our ﬂexible approach towards the dynamic business world has helped us to gain success in short span of time.
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a total Services provider company boasting of a proven track record in providing cost-effective, innovative and robust business solutions, in the ﬁeld of IT & SOFTWARE, AEROSPACE/AVIATION, EDUCATION HOSPITALITY, REAL ESTATE. We focus on combining web- based application development, market-savvy design, and reliable business strategy to advance a client’s business goals. We offer solutions right through all stages of project development, website design, web development, e-commerce applications, ofﬂine/online software, web hosting, IT outsourcing and web marketing. With the sound knowledge, we aim to deliver value to our customers through our innovative software solutions and services. Since our inception, we have steadily grown into a reputed provider of high-quality and cost-effective software development services. Our ability to evolve continuously, doubled with our ﬂexible approach towards the dynamic business world has helped us to gain success in short span of time.
 				</p>
 			</div>
 
@@ -248,7 +259,7 @@
 
 <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
 	<h2>
-		Welcome to NPDS-MANI GROUP
+		Welcome to <strong>NPDS-MANI GROUP</strong>
 	</h2>
 
 	<p>
@@ -262,102 +273,97 @@
 <section class="features" id="features">
 	<div class="container">
 		<h2 class="text-center">
-			<b>Services<b>
-			</h2>
+			<b>Services</b>
+		</h2>
 
-			<div class="row">
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<a href="#">
-								<div class="feature-icon">
-									<span class="fa fa-cloud"></span>
-								</div>
+		<div class="row">
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<div>
+						<a href="content.html?dc=pgits" onclick="myFunction('my_tabs')">
+							<div class="feature-icon">
+								<span class="fa fa-cloud"></span>
 							</div>
-
 							<div>
 								<h3>
 									IT and Software
 								</h3>
-							</a>
+							</div>
+						</a>
 
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
-						</div>
+						<p>
+							Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+						</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<a href="#">
-								<div class="feature-icon">
-									<span class="fa fa-medkit"></span>
-								</div>
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<div>
+						<a href="content.html?dc=pgaas">
+							<div class="feature-icon">
+								<span class="fa fa-medkit"></span>
 							</div>
 
 							<div>
 								<h3>
 									Air Ambulance Service
 								</h3>
-							</a>
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
-						</div>
+							</div>
+						</a>
+						<p>
+							Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+						</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<a href="#">
-								<div class="feature-icon">
-									<span class="fa fa-tasks"></span>
-								</div>
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<div>
+						<a href="content.html?dc=pgpnm">
+							<div class="feature-icon">
+								<span class="fa fa-tasks"></span>
 							</div>
 
 							<div>
 								<h3>
 									Projects &amp; Model
 								</h3>
-							</a>
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
-						</div>
+							</div>
+						</a>
+						<p>
+							Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+						</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<div class="feature-icon">
-								<span class="fa fa-cubes"></span>
-							</div>
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">
+						<div class="feature-icon">
+							<span class="fa fa-cubes"></span>
 						</div>
 
 						<div>
 							<h3>
 								Mani Aerospace &amp; Drone Club
 							</h3>
-
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
 						</div>
-					</div>
+					</a>
+					<p>
+						Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+					</p>
 				</div>
+			</div>
 
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<div class="feature-icon">
-								<span class="fa fa-plane"></span>
-							</div>
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<a href="content.html?dc=pglaa">
+						<div class="feature-icon">
+							<span class="fa fa-plane"></span>
 						</div>
 
 						<div>
@@ -365,19 +371,19 @@
 								Legal Aviation Assistancy
 							</h3>
 
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
 						</div>
-					</div>
+					</a>
+					<p>
+						Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+					</p>
 				</div>
+			</div>
 
-				<div class="feature-col col-lg-4 col-xs-12">
-					<div class="card card-block text-center">
-						<div>
-							<div class="feature-icon">
-								<span class="fa fa-info"></span>
-							</div>
+			<div class="feature-col col-lg-4 col-xs-12">
+				<div class="card card-block text-center">
+					<a href="content.html?dc=pgacs">
+						<div class="feature-icon">
+							<span class="fa fa-info"></span>
 						</div>
 
 						<div>
@@ -385,16 +391,64 @@
 								Admission Consultacy Services 
 							</h3>
 
-							<p>
-								Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-							</p>
 						</div>
-					</div>
+					</a>
+					<p>
+						Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- /Features -->
+
+
+
+
+
+
+
+	<section id="my_tabs" class="invisible_section">
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		function myFunction(div_id) {
+			var x = document.getElementById("my_tabs");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- Call to Action -->
 
 	<section class="cta">
@@ -770,11 +824,11 @@
     		</li>
 
     		<li class="list-inline-item">
-    			<a href="#about">About Us</a>
+    			<a href="index.html#about">About Us</a>
     		</li>
 
     		<li class="list-inline-item">
-    			<a href="#features">Services</a>
+    			<a href="index.html#features">Services</a>
     		</li>
 
               <!-- <li class="list-inline-item">
