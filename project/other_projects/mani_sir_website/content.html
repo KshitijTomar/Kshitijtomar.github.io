@@ -252,6 +252,16 @@
     .pg_admission_consultancy_service form input{
     	width: 100%;
     }
+
+    .course_btn_down .dropdown-item:hover{
+    	background: #ccc;
+    }
+    .course_btn_down .dropdown-menu{
+    	background: #eee;
+    }
+    .course_btn_down button{
+    	border-radius: 10px;
+    }
 </style>
 </head>
 
@@ -979,266 +989,729 @@
 
 
 
-	<div id="pg_admission_consultancy_service" class="dynamic-content">
-		<section class="pg_it_software" id="pg_it_software" style="padding: 50px 0;">
+	<section class="pg_it_software dynamic-content" id="pg_admission_consultancy_service" style="padding: 50px 0;">
 
-			<div class="container text-center underline">
-				<h1>
-					Admission Consultancy Service
-				</h1>
-				<br>
+		<div class="container text-center underline">
+			<h1 style="font-size: 52px;">
+				Admission Consultancy Service
+			</h1>
+			<br>
+		</div>
+
+		<div class="container text-center underline">
+			<div class="row admission_img_div">
+				<div class="col-md-3 col-sm-12">
+					<img src="img/admission/5.png" class="img-thumbnail" alt="5.png">
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<img src="img/admission/campus.jpg" class="img-thumbnail" alt="5.png">
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<img src="img/admission/library.jpg" class="img-thumbnail" alt="5.png">
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<img src="img/admission/transportation.png" class="img-thumbnail" alt="5.png">
+				</div>
 			</div>
+			<div class="row text-left">
+				<div class="col">
+					<br>
+					<div class="dropdown course_btn_down">
+						<button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							View Courses
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="content.html?dc=pgdmp">Distance Mode Programme</a></li>
+							<li><a class="dropdown-item" href="content.html?dc=pgrmp">Regular Mode Programme</a></li>
+						</ul>
+						<div style="float:right;">
+							<a class="btn btn-sm btn-primary course_btn_down" href="Copy of Merit_Scholarship_2017-18.htm" target="_blank">Merit_Scholarship_2017-18</a>
+							<a class="btn btn-sm btn-primary course_btn_down" href="Fee Structure with Component 2017-18.htm" target="_blank">Fee Structure with Component 2017-18</a>
+						</div>
+					</div>
 
-			<div class="container text-center underline">
-				<div class="row admission_img_div">
-					<div class="col-md-3 col-sm-12">
-						<img src="img/admission/5.png" class="img-thumbnail" alt="5.png">
-					</div>
-					<div class="col-md-3 col-sm-12">
-						<img src="img/admission/campus.jpg" class="img-thumbnail" alt="5.png">
-					</div>
-					<div class="col-md-3 col-sm-12">
-						<img src="img/admission/library.jpg" class="img-thumbnail" alt="5.png">
-					</div>
-					<div class="col-md-3 col-sm-12">
-						<img src="img/admission/transportation.png" class="img-thumbnail" alt="5.png">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<br>
+					<h2 class="web_content_title">Application Form</h2><br>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card card-block bg-light" style="padding: 30px 50px;border-radius: 10px;">
+				<form class="form-horizontal" action="action.php" method="POST">
+					<fieldset >
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Full Name</label>
+							<div class="col-md-9">												
+								<div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text" required="required"></div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Date of Birth</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+									<input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Father's Name</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-user"></i></div>
+									<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Father's Name" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Father's Occupation</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-briefcase"></i></div>
+									<input type="text" class="form-control" id="fatheroccu" name="fatheroccu" placeholder="Father's Occupation" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Mother's Name</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-user"></i></div>
+									<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Mother's Name" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Mother's Occupation</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-briefcase"></i></div>
+									<input type="text" class="form-control" id="motheroccu" name="motheroccu" placeholder="Mother's Occupation" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-3 col-form-label">Annual Family Income</label>
+							<div class="col-md-9">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><b>₹</b></div>
+									<input type="text" class="form-control" id="famincome" name="famincome" placeholder="Annual Family Income" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12 col-form-label">Address for correspondence</label>
+							<div class="col-md-8">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-home"></i></div>
+									<input type="text" class="form-control" id="address" name="address" placeholder="Address for correspondence" required="required">
+								</div>
+							</div>
+							<div class="col-md-4">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-list"></i></div>
+									<input type="text" class="form-control" id="pin" name="pin" placeholder="Pin" maxlength="6" size="6" required="required">
+								</div>
+							</div>
+							<!-- <label class="col-2 col-form-label">Pin</label> -->
+							<div class="col-md-7">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-phone"></i></div>
+									<input type="text" class="form-control" id="Telephone" name="Telephone" placeholder="Telephone No.- with STD Code" maxlength="11" size="11">
+								</div>
+							</div>
+							<div class="col-md-5">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-mobile"></i> +91</div>
+									<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" maxlength="10" size="10" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12 col-form-label">Permanent Address</label>
+							<div class="col-md-8">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-home"></i></div>
+									<input type="text" class="form-control" id="paddress" name="paddress" placeholder="Permanent Address">
+								</div>
+							</div>
+							<div class="col-md-4">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-list"></i></div>
+									<input type="text" class="form-control" id="ppin" name="ppin" placeholder="Pin" maxlength="6" size="6">
+								</div>
+							</div>
+							<!-- <label class="col-2 col-form-label">Pin</label> -->
+							<div class="col-md-7">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-phone"></i></div>
+									<input type="text" class="form-control" id="pTelephone" name="pTelephone" placeholder="Telephone No.- with STD Code" maxlength="11" size="11">
+								</div>
+							</div>
+							<div class="col-md-5">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-mobile"></i> +91</div>
+									<input type="text" class="form-control" id="pmobile" name="pmobile" placeholder="Mobile Number" maxlength="10" size="10">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12 col-form-label">Academic Details - Xth</label>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Xth</div>
+									<input type="text" class="form-control" id="xuniversity" name="xuniversity" placeholder="Board/University" required="required">
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Xth</div>
+									<input type="text" class="form-control" id="xsubjects" name="xsubjects" placeholder="Subjects" required="required">
+								</div>
+							</div>
+							<!-- <label class="col-2 col-form-label">Pin</label> -->
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Xth</div>
+									<input type="number" class="form-control" id="xyear" name="xyear" placeholder="Year of Passing" min="1900" max="2099" step="1" required="required">
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Xth</div>
+									<input type="number" class="form-control" id="xmarks" name="xmarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1" required="required">
+									<div class="input-group-addon">%</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12 col-form-label">Academic Details - XIIth</label>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">XIIth</div>
+									<input type="text" class="form-control" id="xiiuniversity" name="xiiuniversity" placeholder="Board/University" required="required">
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">XIIth</div>
+									<input type="text" class="form-control" id="xiisubjects" name="xiisubjects" placeholder="Subjects" required="required">
+								</div>
+							</div>
+							<!-- <label class="col-2 col-form-label">Pin</label> -->
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">XIIth</div>
+									<input type="number" class="form-control" id="xiiyear" name="xiiyear" placeholder="Year of Passing" min="1900" max="2099" step="1" required="required">
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">XIIth</div>
+									<input type="number" class="form-control" id="xiimarks" name="xiimarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1" required="required">
+									<div class="input-group-addon">%</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12 col-form-label">Academic Details - Others</label>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Others</div>
+									<input type="text" class="form-control" id=otheruniversity" name=otheruniversity" placeholder="Board/University" >
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Others</div>
+									<input type="text" class="form-control" id="othersubjects" name="othersubjects" placeholder="Subjects" >
+								</div>
+							</div>
+							<!-- <label class="col-2 col-form-label">Pin</label> -->
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Others</div>
+									<input type="number" class="form-control" id="otheryear" name="otheryear" placeholder="Year of Passing" min="1900" max="2099" step="1">
+								</div>
+							</div>
+							<div class="col-md-6">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon">Others</div>
+									<input type="number" class="form-control" id="othermarks" name="othermarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1">
+									<div class="input-group-addon">%</div>
+								</div>
+							</div>
+							<br><br><br>
+							<div class="col-md-12 text-center">
+								<input type="submit" class="btn btn-md" value="Submit" >
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	<section class="pg_distance_mode_programme dynamic-content" id="pg_distance_mode_programme" style="padding: 50px 0;">
+
+		<div class="container text-center underline">
+			<h1>
+				Distance Mode Programme
+			</h1>
+			<br>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<a class="btn btn-sm btn-primary course_btn_down" href="content.html?dc=pgacs"> 
+						<i class="fa fa-caret-left"></i> &nbsp; Go Back
+					</a>
+					<div style="float:right;">
+						<a class="btn btn-sm btn-primary course_btn_down" href="content.html?dc=pgrmp">
+							Regular Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
+						</a>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<h2 class="web_content_title">Programs</h2><br>
+				</div>
+			</div>
+		</div>
+
+		<div class="container text-center underline">
+			<div class="row admission_img_div">
+				<div class="col">
+					<h4>1. Management programs</h4>
+				</div>
+				<div class="col">
+					<h4>2. Arts Commerce &amp; social Science</h4>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #f1f1f1">
 			<div class="container-fluid text-center underline">
 				<div class="row">
 					<div class="col-md-10 offset-md-1 col-sm-12 text-left">
 						<br>
-						<h2 class="web_content_title">Application Form</h2><br>
+						<br>
+						<h2 class="web_content_title">Management programs</h2><br>
 					</div>
 				</div>
 			</div>
 
-			<div class="container">
-				<div class="card card-block bg-light" style="padding: 30px 50px;border-radius: 10px;">
-					<form class="form-horizontal" action="action.php" method="POST">
-						<fieldset >
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Full Name</label>
-								<div class="col-md-9">												
-									<div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text" required="required"></div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Date of Birth</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-										<input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Father's Name</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-user"></i></div>
-										<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Father's Name" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Father's Occupation</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-briefcase"></i></div>
-										<input type="text" class="form-control" id="fatheroccu" name="fatheroccu" placeholder="Father's Occupation" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Mother's Name</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-user"></i></div>
-										<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Mother's Name" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Mother's Occupation</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-briefcase"></i></div>
-										<input type="text" class="form-control" id="motheroccu" name="motheroccu" placeholder="Mother's Occupation" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-3 col-form-label">Annual Family Income</label>
-								<div class="col-md-9">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><b>₹</b></div>
-										<input type="text" class="form-control" id="famincome" name="famincome" placeholder="Annual Family Income" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-12 col-form-label">Address for correspondence</label>
-								<div class="col-md-8">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-home"></i></div>
-										<input type="text" class="form-control" id="address" name="address" placeholder="Address for correspondence" required="required">
-									</div>
-								</div>
-								<div class="col-md-4">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-list"></i></div>
-										<input type="text" class="form-control" id="pin" name="pin" placeholder="Pin" maxlength="6" size="6" required="required">
-									</div>
-								</div>
-								<!-- <label class="col-2 col-form-label">Pin</label> -->
-								<div class="col-md-7">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-phone"></i></div>
-										<input type="text" class="form-control" id="Telephone" name="Telephone" placeholder="Telephone No.- with STD Code" maxlength="11" size="11">
-									</div>
-								</div>
-								<div class="col-md-5">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-mobile"></i> +91</div>
-										<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" maxlength="10" size="10" required="required">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-12 col-form-label">Permanent Address</label>
-								<div class="col-md-8">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-home"></i></div>
-										<input type="text" class="form-control" id="paddress" name="paddress" placeholder="Permanent Address">
-									</div>
-								</div>
-								<div class="col-md-4">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-list"></i></div>
-										<input type="text" class="form-control" id="ppin" name="ppin" placeholder="Pin" maxlength="6" size="6">
-									</div>
-								</div>
-								<!-- <label class="col-2 col-form-label">Pin</label> -->
-								<div class="col-md-7">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-phone"></i></div>
-										<input type="text" class="form-control" id="pTelephone" name="pTelephone" placeholder="Telephone No.- with STD Code" maxlength="11" size="11">
-									</div>
-								</div>
-								<div class="col-md-5">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon"><i class="fa fa-mobile"></i> +91</div>
-										<input type="text" class="form-control" id="pmobile" name="pmobile" placeholder="Mobile Number" maxlength="10" size="10">
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-12 col-form-label">Academic Details - Xth</label>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Xth</div>
-										<input type="text" class="form-control" id="xuniversity" name="xuniversity" placeholder="Board/University" required="required">
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Xth</div>
-										<input type="text" class="form-control" id="xsubjects" name="xsubjects" placeholder="Subjects" required="required">
-									</div>
-								</div>
-								<!-- <label class="col-2 col-form-label">Pin</label> -->
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Xth</div>
-										<input type="number" class="form-control" id="xyear" name="xyear" placeholder="Year of Passing" min="1900" max="2099" step="1" required="required">
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Xth</div>
-										<input type="number" class="form-control" id="xmarks" name="xmarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1" required="required">
-										<div class="input-group-addon">%</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-12 col-form-label">Academic Details - XIIth</label>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">XIIth</div>
-										<input type="text" class="form-control" id="xiiuniversity" name="xiiuniversity" placeholder="Board/University" required="required">
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">XIIth</div>
-										<input type="text" class="form-control" id="xiisubjects" name="xiisubjects" placeholder="Subjects" required="required">
-									</div>
-								</div>
-								<!-- <label class="col-2 col-form-label">Pin</label> -->
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">XIIth</div>
-										<input type="number" class="form-control" id="xiiyear" name="xiiyear" placeholder="Year of Passing" min="1900" max="2099" step="1" required="required">
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">XIIth</div>
-										<input type="number" class="form-control" id="xiimarks" name="xiimarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1" required="required">
-										<div class="input-group-addon">%</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-md-12 col-form-label">Academic Details - Others</label>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Others</div>
-										<input type="text" class="form-control" id=otheruniversity" name=otheruniversity" placeholder="Board/University" >
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Others</div>
-										<input type="text" class="form-control" id="othersubjects" name="othersubjects" placeholder="Subjects" >
-									</div>
-								</div>
-								<!-- <label class="col-2 col-form-label">Pin</label> -->
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Others</div>
-										<input type="number" class="form-control" id="otheryear" name="otheryear" placeholder="Year of Passing" min="1900" max="2099" step="1">
-									</div>
-								</div>
-								<div class="col-md-6">												
-									<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-										<div class="input-group-addon">Others</div>
-										<input type="number" class="form-control" id="othermarks" name="othermarks" placeholder="% Marks" maxlength="3" size="3" min="0" max="100" step="1">
-										<div class="input-group-addon">%</div>
-									</div>
-								</div>
-								<br><br><br>
-								<div class="col-md-12 text-center">
-									<input type="submit" class="btn btn-md" value="Submit" >
-								</div>
-							</div>
-						</fieldset>
-					</form>
+			<div class="container text-center underline">
+				<div class="row admission_img_div">
+					<div class="col">
+						<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<th scope="col">
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
+										<tr>                                                
+											<td align="left"  style="width:5%;">S.No</td>
+											<td align="left"  style="width:5%;">Code</td>    
+											<td align="left"  style="width:24%;">Name</td> 
+											<td align="left"  style="width:30%;">Eligibility</td> 
+											<td align="left"  style="width:10%;">Duration</td>  
+											<td align="left"  style="width:12%;">Admission Fee</td>  
+											<td align="right"  style="width:14%;">Tuition Fee(p.a)</td>
+										</tr>
+									</table>
+								</th>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('~/admin/Programme/B.B.A.(BachelorofBusinessAdministration)_165901.pdf');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">1</td> 
+												<td align="left" style="width:5%;">B1</td>
+												<td align="left" style="width:24%;">B.B.A.( Bachelor of Business Administration)</td>
+												<td align="left" style="width:30%;">10+2 in any stream or equivalent</td>
+												<td align="left" style="width:10%;">3 Years</td>
+												<td align="center" style="width:12%;">300</td>
+												<td align="right" style="width:14%;">14700</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">2</td> 
+												<td align="left" style="width:5%;">B2</td>
+												<td align="left" style="width:24%;">B.C.A. (Bachelor of Computer Applications)</td>
+												<td align="left" style="width:30%;">10 +2 in any stream or its equivalent</td>
+												<td align="left" style="width:10%;">3 years</td>
+												<td align="center" style="width:12%;">300</td>
+												<td align="right" style="width:14%;">17700</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(MasterofBusinessAdministration)_767388.pdf');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">3</td> 
+												<td align="left" style="width:5%;">B3</td>
+												<td align="left" style="width:24%;">M.B.A. (Master of Business Administration)</td>
+												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+												<td align="left" style="width:10%;">2 Years</td>
+												<td align="center" style="width:12%;">500</td>
+												<td align="right" style="width:14%;">24000</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(IT)InformationTechnology_034335.pdf');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">4</td> 
+												<td align="left" style="width:5%;">B4</td>
+												<td align="left" style="width:24%;">M.B.A.(IT) Information Technology</td>
+												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+												<td align="left" style="width:10%;">2 Years</td>
+												<td align="center" style="width:12%;">500</td>
+												<td align="right" style="width:14%;">24000</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.C.A.(MasterofComputerApplications)_947768.pdf');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">5</td> 
+												<td align="left" style="width:5%;">B6</td>
+												<td align="left" style="width:24%;">M.C.A. (Master of Computer Applications)</td>
+												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) from any recognized University 
+													(i) with min. 50% marks (45% for SC/ST)
+													(ii) with Mathematics/statistics at 12th std OR graduate level.
+												Note: (ii) is not applica</td>
+												<td align="left" style="width:10%;">3 Years</td>
+												<td align="center" style="width:12%;">500</td>
+												<td align="right" style="width:14%;">20000</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr><tr>
+								<td>
+									<a ID="aa" onclick="sendonpage('');">
+
+										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+											<tr>                                                
+												<td align="left" style="width:5%;">6</td> 
+												<td align="left" style="width:5%;">B9</td>
+												<td align="left" style="width:24%;">E.M.B.A. (Executive Master Of Business Administration)</td>
+												<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+												<td align="left" style="width:10%;">2 year</td>
+												<td align="center" style="width:12%;">500</td>
+												<td align="right" style="width:14%;">30000</td>
+
+											</tr>
+										</table>
+									</a>
+
+								</td>
+							</tr>
+						</table>
+						<br>
+						<br>
+						<br>
+					</div>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<br>
+					<br>
+					<br>
+					<h2 class="web_content_title">Arts Commerce &amp; social Science</h2><br>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center underline">
+			<div class="row admission_img_div">
+				<div class="col">
+					<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<th scope="col">
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">S.No</td>
+										<td align="left" style="width:5%;">Code</td>    
+										<td align="left" style="width:24%;">Name</td> 
+										<td align="left" style="width:30%;">Eligibility</td> 
+										<td align="left" style="width:10%;">Duration</td>  
+										<td align="left" style="width:12%;">Admission Fee</td>  
+										<td align="right" style="width:14%;">Tuition Fee(p.a)</td>                                                          
+
+									</tr>
+								</tbody></table>
+							</th>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('~/admin/Programme/B.A.(BachelorofArts)_084593.pdf');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">1</td> 
+											<td align="left" style="width:5%;">A1</td>
+											<td align="left" style="width:24%;">B.A. (Bachelor of Arts)</td>
+											<td align="left" style="width:30%;">10+2 or its equivalent</td>
+											<td align="left" style="width:10%;">3 Years</td>
+											<td align="center" style="width:12%;">200</td>
+											<td align="right" style="width:14%;">3800</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('~/admin/Programme/B.Com(BachelorofCommerce)_660532.pdf');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">2</td> 
+											<td align="left" style="width:5%;">A2</td>
+											<td align="left" style="width:24%;">B.Com (Bachelor of Commerce)</td>
+											<td align="left" style="width:30%;">10+2 Commerce &amp; Science or its equivalent</td>
+											<td align="left" style="width:10%;">3 Years</td>
+											<td align="center" style="width:12%;">200</td>
+											<td align="right" style="width:14%;">3800</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">3</td> 
+											<td align="left" style="width:5%;">A3</td>
+											<td align="left" style="width:24%;">B.Lib. &amp; I.Sc. (Bachelor of Library &amp; Information Science)</td>
+											<td align="left" style="width:30%;">Bachelor Degree in any discipline from any recognized university.</td>
+											<td align="left" style="width:10%;">1 Year</td>
+											<td align="center" style="width:12%;">300</td>
+											<td align="right" style="width:14%;">9900</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">4</td> 
+											<td align="left" style="width:5%;">A4</td>
+											<td align="left" style="width:24%;">M.Lib. &amp; I.Sc. (Master of Library &amp; Information Science)</td>
+											<td align="left" style="width:30%;">B.Lib &amp; I.Sc. degree From any recognized university.</td>
+											<td align="left" style="width:10%;">1 year</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">12000</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">5</td> 
+											<td align="left" style="width:5%;">A5</td>
+											<td align="left" style="width:24%;">M.A. (Master of Arts (English))</td>
+											<td align="left" style="width:30%;">Bachelor degree with special / entire english from any recognized university</td>
+											<td align="left" style="width:10%;">2 year</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">4600</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">6</td> 
+											<td align="left" style="width:5%;">A6</td>
+											<td align="left" style="width:24%;">M.A. (Master of Arts (Economics))</td>
+											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+											<td align="left" style="width:10%;">2 year</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">4600</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">7</td> 
+											<td align="left" style="width:5%;">A7</td>
+											<td align="left" style="width:24%;">M.A. (Master of Arts (Sociology))</td>
+											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+											<td align="left" style="width:10%;">2 year</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">4600</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">8</td> 
+											<td align="left" style="width:5%;">A8</td>
+											<td align="left" style="width:24%;">B.A. (Bachelor Of Tourism Management)</td>
+											<td align="left" style="width:30%;">10 + 2 or its equivalent</td>
+											<td align="left" style="width:10%;">3 years</td>
+											<td align="center" style="width:12%;">200</td>
+											<td align="right" style="width:14%;">3800</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a id="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tbody><tr>                                                
+											<td align="left" style="width:5%;">9</td> 
+											<td align="left" style="width:5%;">A9</td>
+											<td align="left" style="width:24%;">M.Com (Master Of Commerce)</td>
+											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+											<td align="left" style="width:10%;">2 year</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">4600</td>
+
+										</tr>
+									</tbody></table>
+								</a>
+
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
 
 
+	<section class="pg_regular_mode_programme dynamic-content" id="pg_regular_mode_programme" style="padding: 50px 0;">
+		<div class="container text-center underline">
+			<h1>
+				Regular Mode Programme
+			</h1>
+			<br>
+		</div>
 
-
-
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<a class="btn btn-sm btn-primary course_btn_down" href="content.html?dc=pgacs"> 
+						<i class="fa fa-caret-left"></i> &nbsp; Go Back
+					</a>
+					<div style="float:right;">
+						<a class="btn btn-sm btn-primary course_btn_down" href="content.html?dc=pgdmp">
+							Distance Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<br>
+					<h2 class="web_content_title">Programs</h2><br>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center underline">
+			<div class="row admission_img_div">
+				<div class="col-md-3 col-sm-12">
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -1363,6 +1836,12 @@
 		} 
 		else if (dynamicContent == 'pgacs') {
 			$('#pg_admission_consultancy_service').show();
+		} 
+		else if (dynamicContent == 'pgdmp') {
+			$('#pg_distance_mode_programme').show();
+		} 
+		else if (dynamicContent == 'pgrmp') {
+			$('#pg_regular_mode_programme').show();
 		} 
 		else {
 			$('#default-content').show();
