@@ -274,9 +274,9 @@
     		width:100%;
     		margin-top: 5px;
     	}
-		.course_right{
-			float:none;
-		}
+    	.course_right{
+    		float:none;
+    	}
     }
 </style>
 </head>
@@ -1061,7 +1061,7 @@
 		<div class="container">
 			<div class="card card-block bg-light" style="padding: 30px 50px;border-radius: 10px;">
 				<form class="form-horizontal" action="action.php" method="POST">
-					<fieldset >
+					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-3 col-form-label">Full Name</label>
 							<div class="col-md-9">												
@@ -1264,501 +1264,568 @@
 									<div class="input-group-addon">%</div>
 								</div>
 							</div>
-							<br><br><br>
-							<div class="col-md-12 text-center">
-								<input type="submit" class="btn btn-md" value="Submit" >
+						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label">Program Type:</label>
+							<div class="col" style="padding-top: 10px;">
+								<input type="radio" name="program" value="distance" checked> Distance &nbsp;&nbsp;&nbsp;
+								<input type="radio" name="program" value="regular"> Regular<br>	
+							</div>
+							<div class="col-md-7">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><i class="fa fa-graduation-cap"></i></div>
+									<input type="text" class="form-control" id="course" name="course" placeholder="Name of Course" required="required">
+								</div>
 							</div>
 						</div>
-					</fieldset>
-				</form>
-			</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label">Payment method:</label>
+							<div class="col" style="padding-top: 10px;">
+								<input type="radio" name="paymentmethod" value="cash" 	id="payment_method_cash" 	onclick="javascript:return EnableDDbox();" required="required"> Cash  &nbsp;&nbsp;&nbsp;
+								<input type="radio" name="paymentmethod" value="dd" 	id="payment_method_dd" 		onclick="javascript:return EnableDDbox();" required="required"> DD &nbsp;&nbsp;&nbsp;
+								<input type="radio" name="paymentmethod" value="online" id="payment_method_online" 	onclick="javascript:return EnableDDbox();" required="required"> online<br>	
+							</div>
+						</div>
+						<div class="form-group row" id="payment_method_dd">
+							<label class="col-md-12 col-form-label">Payment by DD (details):</label>
+							<div class="col-md-4">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><strong>₹</strong></div>
+									<input type="text" class="form-control" id="ddno" name="ddno" placeholder="DD No." disabled="disabled" required="required">
+								</div>
+							</div>
+							<div class="col-md-4">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><strong>₹</strong></div>
+									<input type="text" class="form-control" id="bankname" name="bankname" placeholder="Bank Name" disabled="disabled" required="required">
+								</div>
+							</div>
+							<div class="col-md-4">												
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+									<div class="input-group-addon"><strong>₹</strong></div>
+									<input type="date" class="form-control" id="dateofissue" name="dateofissue" placeholder="Date of Issue" disabled="disabled" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label">Hostel Required?</label>
+							<div class="col" style="padding-top: 10px;">
+								<input type="radio" name="hostel" value="yes" required="required"> Yes  &nbsp;&nbsp;&nbsp;
+								<input type="radio" name="hostel" value="no" required="required"> No <br>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="col-md-12 text-center">
+						<br><br><br>
+						<input type="submit" class="btn btn-md" value="Submit and continue to Document submission" >
+					</div>
+
+				</fieldset>
+			</form>
 		</div>
-	</section>
+	</div>
+</section>
+
+
+
+<script type="text/javascript">
+	function EnableDDbox() {
+		if (document.getElementById("payment_method_dd").checked == false) {
+			document.getElementById("ddno").disabled = true;
+			document.getElementById("bankname").disabled = true;
+			document.getElementById("dateofissue").disabled = true;
+		}
+		else {
+			document.getElementById("ddno").disabled = false;
+			document.getElementById("bankname").disabled = false;
+			document.getElementById("dateofissue").disabled = false;
+		}
+	}
+</script>
 
 
 
 
 
+<section class="pg_distance_mode_programme dynamic-content" id="pg_distance_mode_programme" style="padding: 50px 0;">
 
-
-
-
-	<section class="pg_distance_mode_programme dynamic-content" id="pg_distance_mode_programme" style="padding: 50px 0;">
-
-		<div class="container text-center underline">
-			<h1>
-				Distance Mode Programme
-			</h1>
-			<br>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgacs"> 
-						<i class="fa fa-caret-left"></i> &nbsp; Go Back
+	<div class="container text-center underline">
+		<h1>
+			Distance Mode Programme
+		</h1>
+		<br>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgacs"> 
+					<i class="fa fa-caret-left"></i> &nbsp; Go Back
+				</a>
+				<div class="course_right">
+					<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgrmp">
+						Regular Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
 					</a>
-					<div class="course_right">
-						<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgrmp">
-							Regular Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid text-center underline">
-			<div class="row">
-				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
-					<h2 class="web_content_title">Programs</h2><br>
-				</div>
+	</div>
+	<div class="container-fluid text-center underline">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+				<h2 class="web_content_title">Programs</h2><br>
 			</div>
 		</div>
+	</div>
 
-		<div class="container text-center underline">
-			<div class="row admission_img_div">
-				<div class="col">
-					<h4>1. Management programs</h4>
-				</div>
-				<div class="col">
-					<h4>2. Arts Commerce &amp; social Science</h4>
-					<br>
-					<br>
-				</div>
+	<div class="container text-center underline">
+		<div class="row admission_img_div">
+			<div class="col">
+				<h4>1. Management programs</h4>
+			</div>
+			<div class="col">
+				<h4>2. Arts Commerce &amp; social Science</h4>
+				<br>
+				<br>
 			</div>
 		</div>
-		<div class="container-fluid" style="background: #f1f1f1">
-			<div class="container-fluid text-center underline">
-				<div class="row">
-					<div class="col-md-10 offset-md-1 col-sm-12 text-left">
-						<br>
-						<br>
-						<h2 class="web_content_title">Management programs</h2><br>
-					</div>
-				</div>
-			</div>
-
-			<div class="container text-center underline">
-				<div class="row admission_img_div">
-					<div class="col">
-						<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
-							<tr>
-								<th scope="col">
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
-										<tr>                                                
-											<td align="left"  style="width:5%;">S.No</td>
-											<td align="left"  style="width:5%;">Code</td>    
-											<td align="left"  style="width:24%;">Name</td> 
-											<td align="left"  style="width:30%;">Eligibility</td> 
-											<td align="left"  style="width:10%;">Duration</td>  
-											<td align="left"  style="width:12%;">Admission Fee</td>  
-											<td align="right"  style="width:14%;">Tuition Fee(p.a)</td>
-										</tr>
-									</table>
-								</th>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('~/admin/Programme/B.B.A.(BachelorofBusinessAdministration)_165901.pdf');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">1</td> 
-												<td align="left" style="width:5%;">B1</td>
-												<td align="left" style="width:24%;">B.B.A.( Bachelor of Business Administration)</td>
-												<td align="left" style="width:30%;">10+2 in any stream or equivalent</td>
-												<td align="left" style="width:10%;">3 Years</td>
-												<td align="center" style="width:12%;">300</td>
-												<td align="right" style="width:14%;">14700</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">2</td> 
-												<td align="left" style="width:5%;">B2</td>
-												<td align="left" style="width:24%;">B.C.A. (Bachelor of Computer Applications)</td>
-												<td align="left" style="width:30%;">10 +2 in any stream or its equivalent</td>
-												<td align="left" style="width:10%;">3 years</td>
-												<td align="center" style="width:12%;">300</td>
-												<td align="right" style="width:14%;">17700</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(MasterofBusinessAdministration)_767388.pdf');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">3</td> 
-												<td align="left" style="width:5%;">B3</td>
-												<td align="left" style="width:24%;">M.B.A. (Master of Business Administration)</td>
-												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
-												<td align="left" style="width:10%;">2 Years</td>
-												<td align="center" style="width:12%;">500</td>
-												<td align="right" style="width:14%;">24000</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(IT)InformationTechnology_034335.pdf');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">4</td> 
-												<td align="left" style="width:5%;">B4</td>
-												<td align="left" style="width:24%;">M.B.A.(IT) Information Technology</td>
-												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
-												<td align="left" style="width:10%;">2 Years</td>
-												<td align="center" style="width:12%;">500</td>
-												<td align="right" style="width:14%;">24000</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('~/admin/Programme/M.C.A.(MasterofComputerApplications)_947768.pdf');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">5</td> 
-												<td align="left" style="width:5%;">B6</td>
-												<td align="left" style="width:24%;">M.C.A. (Master of Computer Applications)</td>
-												<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) from any recognized University 
-													(i) with min. 50% marks (45% for SC/ST)
-													(ii) with Mathematics/statistics at 12th std OR graduate level.
-												Note: (ii) is not applica</td>
-												<td align="left" style="width:10%;">3 Years</td>
-												<td align="center" style="width:12%;">500</td>
-												<td align="right" style="width:14%;">20000</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr><tr>
-								<td>
-									<a ID="aa" onclick="sendonpage('');">
-
-										<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-											<tr>                                                
-												<td align="left" style="width:5%;">6</td> 
-												<td align="left" style="width:5%;">B9</td>
-												<td align="left" style="width:24%;">E.M.B.A. (Executive Master Of Business Administration)</td>
-												<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-												<td align="left" style="width:10%;">2 year</td>
-												<td align="center" style="width:12%;">500</td>
-												<td align="right" style="width:14%;">30000</td>
-
-											</tr>
-										</table>
-									</a>
-
-								</td>
-							</tr>
-						</table>
-						<br>
-						<br>
-						<br>
-					</div>
-				</div>
-			</div>
-		</div>
+	</div>
+	<div class="container-fluid" style="background: #f1f1f1">
 		<div class="container-fluid text-center underline">
 			<div class="row">
 				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
 					<br>
 					<br>
-					<br>
-					<h2 class="web_content_title">Arts Commerce &amp; social Science</h2><br>
+					<h2 class="web_content_title">Management programs</h2><br>
 				</div>
 			</div>
 		</div>
+
 		<div class="container text-center underline">
 			<div class="row admission_img_div">
 				<div class="col">
 					<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
-						<tbody><tr>
+						<tr>
 							<th scope="col">
 								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">S.No</td>
-										<td align="left" style="width:5%;">Code</td>    
-										<td align="left" style="width:24%;">Name</td> 
-										<td align="left" style="width:30%;">Eligibility</td> 
-										<td align="left" style="width:10%;">Duration</td>  
-										<td align="left" style="width:12%;">Admission Fee</td>  
-										<td align="right" style="width:14%;">Tuition Fee(p.a)</td>                                                          
-
+									<tr>                                                
+										<td align="left"  style="width:5%;">S.No</td>
+										<td align="left"  style="width:5%;">Code</td>    
+										<td align="left"  style="width:24%;">Name</td> 
+										<td align="left"  style="width:30%;">Eligibility</td> 
+										<td align="left"  style="width:10%;">Duration</td>  
+										<td align="left"  style="width:12%;">Admission Fee</td>  
+										<td align="right"  style="width:14%;">Tuition Fee(p.a)</td>
 									</tr>
-								</tbody></table>
+								</table>
 							</th>
 						</tr><tr>
 							<td>
-								<a id="aa" onclick="sendonpage('~/admin/Programme/B.A.(BachelorofArts)_084593.pdf');">
+								<a ID="aa" onclick="sendonpage('~/admin/Programme/B.B.A.(BachelorofBusinessAdministration)_165901.pdf');">
 
 									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
+										<tr>                                                
 											<td align="left" style="width:5%;">1</td> 
-											<td align="left" style="width:5%;">A1</td>
-											<td align="left" style="width:24%;">B.A. (Bachelor of Arts)</td>
-											<td align="left" style="width:30%;">10+2 or its equivalent</td>
+											<td align="left" style="width:5%;">B1</td>
+											<td align="left" style="width:24%;">B.B.A.( Bachelor of Business Administration)</td>
+											<td align="left" style="width:30%;">10+2 in any stream or equivalent</td>
 											<td align="left" style="width:10%;">3 Years</td>
-											<td align="center" style="width:12%;">200</td>
-											<td align="right" style="width:14%;">3800</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('~/admin/Programme/B.Com(BachelorofCommerce)_660532.pdf');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">2</td> 
-											<td align="left" style="width:5%;">A2</td>
-											<td align="left" style="width:24%;">B.Com (Bachelor of Commerce)</td>
-											<td align="left" style="width:30%;">10+2 Commerce &amp; Science or its equivalent</td>
-											<td align="left" style="width:10%;">3 Years</td>
-											<td align="center" style="width:12%;">200</td>
-											<td align="right" style="width:14%;">3800</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">3</td> 
-											<td align="left" style="width:5%;">A3</td>
-											<td align="left" style="width:24%;">B.Lib. &amp; I.Sc. (Bachelor of Library &amp; Information Science)</td>
-											<td align="left" style="width:30%;">Bachelor Degree in any discipline from any recognized university.</td>
-											<td align="left" style="width:10%;">1 Year</td>
 											<td align="center" style="width:12%;">300</td>
-											<td align="right" style="width:14%;">9900</td>
+											<td align="right" style="width:14%;">14700</td>
 
 										</tr>
-									</tbody></table>
+									</table>
 								</a>
 
 							</td>
 						</tr><tr>
 							<td>
-								<a id="aa" onclick="sendonpage('');">
+								<a ID="aa" onclick="sendonpage('');">
 
 									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">4</td> 
-											<td align="left" style="width:5%;">A4</td>
-											<td align="left" style="width:24%;">M.Lib. &amp; I.Sc. (Master of Library &amp; Information Science)</td>
-											<td align="left" style="width:30%;">B.Lib &amp; I.Sc. degree From any recognized university.</td>
-											<td align="left" style="width:10%;">1 year</td>
-											<td align="center" style="width:12%;">500</td>
-											<td align="right" style="width:14%;">12000</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">5</td> 
-											<td align="left" style="width:5%;">A5</td>
-											<td align="left" style="width:24%;">M.A. (Master of Arts (English))</td>
-											<td align="left" style="width:30%;">Bachelor degree with special / entire english from any recognized university</td>
-											<td align="left" style="width:10%;">2 year</td>
-											<td align="center" style="width:12%;">500</td>
-											<td align="right" style="width:14%;">4600</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">6</td> 
-											<td align="left" style="width:5%;">A6</td>
-											<td align="left" style="width:24%;">M.A. (Master of Arts (Economics))</td>
-											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-											<td align="left" style="width:10%;">2 year</td>
-											<td align="center" style="width:12%;">500</td>
-											<td align="right" style="width:14%;">4600</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">7</td> 
-											<td align="left" style="width:5%;">A7</td>
-											<td align="left" style="width:24%;">M.A. (Master of Arts (Sociology))</td>
-											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-											<td align="left" style="width:10%;">2 year</td>
-											<td align="center" style="width:12%;">500</td>
-											<td align="right" style="width:14%;">4600</td>
-
-										</tr>
-									</tbody></table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a id="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">8</td> 
-											<td align="left" style="width:5%;">A8</td>
-											<td align="left" style="width:24%;">B.A. (Bachelor Of Tourism Management)</td>
-											<td align="left" style="width:30%;">10 + 2 or its equivalent</td>
+										<tr>                                                
+											<td align="left" style="width:5%;">2</td> 
+											<td align="left" style="width:5%;">B2</td>
+											<td align="left" style="width:24%;">B.C.A. (Bachelor of Computer Applications)</td>
+											<td align="left" style="width:30%;">10 +2 in any stream or its equivalent</td>
 											<td align="left" style="width:10%;">3 years</td>
-											<td align="center" style="width:12%;">200</td>
-											<td align="right" style="width:14%;">3800</td>
+											<td align="center" style="width:12%;">300</td>
+											<td align="right" style="width:14%;">17700</td>
 
 										</tr>
-									</tbody></table>
+									</table>
 								</a>
 
 							</td>
 						</tr><tr>
 							<td>
-								<a id="aa" onclick="sendonpage('');">
+								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(MasterofBusinessAdministration)_767388.pdf');">
 
 									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tbody><tr>                                                
-											<td align="left" style="width:5%;">9</td> 
-											<td align="left" style="width:5%;">A9</td>
-											<td align="left" style="width:24%;">M.Com (Master Of Commerce)</td>
+										<tr>                                                
+											<td align="left" style="width:5%;">3</td> 
+											<td align="left" style="width:5%;">B3</td>
+											<td align="left" style="width:24%;">M.B.A. (Master of Business Administration)</td>
+											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+											<td align="left" style="width:10%;">2 Years</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">24000</td>
+
+										</tr>
+									</table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(IT)InformationTechnology_034335.pdf');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tr>                                                
+											<td align="left" style="width:5%;">4</td> 
+											<td align="left" style="width:5%;">B4</td>
+											<td align="left" style="width:24%;">M.B.A.(IT) Information Technology</td>
+											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+											<td align="left" style="width:10%;">2 Years</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">24000</td>
+
+										</tr>
+									</table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.C.A.(MasterofComputerApplications)_947768.pdf');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tr>                                                
+											<td align="left" style="width:5%;">5</td> 
+											<td align="left" style="width:5%;">B6</td>
+											<td align="left" style="width:24%;">M.C.A. (Master of Computer Applications)</td>
+											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) from any recognized University 
+												(i) with min. 50% marks (45% for SC/ST)
+												(ii) with Mathematics/statistics at 12th std OR graduate level.
+											Note: (ii) is not applica</td>
+											<td align="left" style="width:10%;">3 Years</td>
+											<td align="center" style="width:12%;">500</td>
+											<td align="right" style="width:14%;">20000</td>
+
+										</tr>
+									</table>
+								</a>
+
+							</td>
+						</tr><tr>
+							<td>
+								<a ID="aa" onclick="sendonpage('');">
+
+									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+										<tr>                                                
+											<td align="left" style="width:5%;">6</td> 
+											<td align="left" style="width:5%;">B9</td>
+											<td align="left" style="width:24%;">E.M.B.A. (Executive Master Of Business Administration)</td>
 											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
 											<td align="left" style="width:10%;">2 year</td>
 											<td align="center" style="width:12%;">500</td>
-											<td align="right" style="width:14%;">4600</td>
+											<td align="right" style="width:14%;">30000</td>
 
 										</tr>
-									</tbody></table>
+									</table>
 								</a>
 
 							</td>
 						</tr>
-					</tbody></table>
+					</table>
+					<br>
+					<br>
+					<br>
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-
-
-
-	<section class="pg_regular_mode_programme dynamic-content" id="pg_regular_mode_programme" style="padding: 50px 0;">
-		<div class="container text-center underline">
-			<h1>
-				Regular Mode Programme
-			</h1>
-			<br>
+	</div>
+	<div class="container-fluid text-center underline">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+				<br>
+				<br>
+				<br>
+				<h2 class="web_content_title">Arts Commerce &amp; social Science</h2><br>
+			</div>
 		</div>
+	</div>
+	<div class="container text-center underline">
+		<div class="row admission_img_div">
+			<div class="col">
+				<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<th scope="col">
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">S.No</td>
+									<td align="left" style="width:5%;">Code</td>    
+									<td align="left" style="width:24%;">Name</td> 
+									<td align="left" style="width:30%;">Eligibility</td> 
+									<td align="left" style="width:10%;">Duration</td>  
+									<td align="left" style="width:12%;">Admission Fee</td>  
+									<td align="right" style="width:14%;">Tuition Fee(p.a)</td>                                                          
 
+								</tr>
+							</tbody></table>
+						</th>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('~/admin/Programme/B.A.(BachelorofArts)_084593.pdf');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">1</td> 
+										<td align="left" style="width:5%;">A1</td>
+										<td align="left" style="width:24%;">B.A. (Bachelor of Arts)</td>
+										<td align="left" style="width:30%;">10+2 or its equivalent</td>
+										<td align="left" style="width:10%;">3 Years</td>
+										<td align="center" style="width:12%;">200</td>
+										<td align="right" style="width:14%;">3800</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('~/admin/Programme/B.Com(BachelorofCommerce)_660532.pdf');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">2</td> 
+										<td align="left" style="width:5%;">A2</td>
+										<td align="left" style="width:24%;">B.Com (Bachelor of Commerce)</td>
+										<td align="left" style="width:30%;">10+2 Commerce &amp; Science or its equivalent</td>
+										<td align="left" style="width:10%;">3 Years</td>
+										<td align="center" style="width:12%;">200</td>
+										<td align="right" style="width:14%;">3800</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">3</td> 
+										<td align="left" style="width:5%;">A3</td>
+										<td align="left" style="width:24%;">B.Lib. &amp; I.Sc. (Bachelor of Library &amp; Information Science)</td>
+										<td align="left" style="width:30%;">Bachelor Degree in any discipline from any recognized university.</td>
+										<td align="left" style="width:10%;">1 Year</td>
+										<td align="center" style="width:12%;">300</td>
+										<td align="right" style="width:14%;">9900</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">4</td> 
+										<td align="left" style="width:5%;">A4</td>
+										<td align="left" style="width:24%;">M.Lib. &amp; I.Sc. (Master of Library &amp; Information Science)</td>
+										<td align="left" style="width:30%;">B.Lib &amp; I.Sc. degree From any recognized university.</td>
+										<td align="left" style="width:10%;">1 year</td>
+										<td align="center" style="width:12%;">500</td>
+										<td align="right" style="width:14%;">12000</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">5</td> 
+										<td align="left" style="width:5%;">A5</td>
+										<td align="left" style="width:24%;">M.A. (Master of Arts (English))</td>
+										<td align="left" style="width:30%;">Bachelor degree with special / entire english from any recognized university</td>
+										<td align="left" style="width:10%;">2 year</td>
+										<td align="center" style="width:12%;">500</td>
+										<td align="right" style="width:14%;">4600</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">6</td> 
+										<td align="left" style="width:5%;">A6</td>
+										<td align="left" style="width:24%;">M.A. (Master of Arts (Economics))</td>
+										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+										<td align="left" style="width:10%;">2 year</td>
+										<td align="center" style="width:12%;">500</td>
+										<td align="right" style="width:14%;">4600</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">7</td> 
+										<td align="left" style="width:5%;">A7</td>
+										<td align="left" style="width:24%;">M.A. (Master of Arts (Sociology))</td>
+										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+										<td align="left" style="width:10%;">2 year</td>
+										<td align="center" style="width:12%;">500</td>
+										<td align="right" style="width:14%;">4600</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">8</td> 
+										<td align="left" style="width:5%;">A8</td>
+										<td align="left" style="width:24%;">B.A. (Bachelor Of Tourism Management)</td>
+										<td align="left" style="width:30%;">10 + 2 or its equivalent</td>
+										<td align="left" style="width:10%;">3 years</td>
+										<td align="center" style="width:12%;">200</td>
+										<td align="right" style="width:14%;">3800</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a id="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tbody><tr>                                                
+										<td align="left" style="width:5%;">9</td> 
+										<td align="left" style="width:5%;">A9</td>
+										<td align="left" style="width:24%;">M.Com (Master Of Commerce)</td>
+										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+										<td align="left" style="width:10%;">2 year</td>
+										<td align="center" style="width:12%;">500</td>
+										<td align="right" style="width:14%;">4600</td>
+
+									</tr>
+								</tbody></table>
+							</a>
+
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<section class="pg_regular_mode_programme dynamic-content" id="pg_regular_mode_programme" style="padding: 50px 0;">
+	<div class="container text-center underline">
+		<h1>
+			Regular Mode Programme
+		</h1>
+		<br>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgacs"> 
+					<i class="fa fa-caret-left"></i> &nbsp; Go Back
+				</a>
+				<div class="course_right">
+					<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgdmp">
+						Distance Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid text-center underline">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+				<br>
+				<h2 class="web_content_title">Programs</h2><br>
+			</div>
+		</div>
+	</div>
+	<div class="container text-center underline">
+		<div class="row admission_img_div">
+			<div class="col-md-3 col-sm-12">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+	<div class="bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgacs"> 
-						<i class="fa fa-caret-left"></i> &nbsp; Go Back
-					</a>
-					<div class="course_right">
-						<a class="btn btn-sm btn-primary course_btn_link" href="content.html?dc=pgdmp">
-							Distance Mode Programme &nbsp;  <i class="fa fa-caret-right"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid text-center underline">
-			<div class="row">
-				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
-					<br>
-					<h2 class="web_content_title">Programs</h2><br>
-				</div>
-			</div>
-		</div>
-		<div class="container text-center underline">
-			<div class="row admission_img_div">
-				<div class="col-md-3 col-sm-12">
-				</div>
-			</div>
-		</div>
-	</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<footer class="site-footer">
-		<div class="bottom">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-6 col-xs-12 text-lg-left text-center">
-						<p class="copyright-text">
-							© NPDS-MANI GROUP
-						</p>
-						<div class="credits">
+				<div class="col-lg-6 col-xs-12 text-lg-left text-center">
+					<p class="copyright-text">
+						© NPDS-MANI GROUP
+					</p>
+					<div class="credits">
               <!--
                 All the links in the footer should remain intact.
                 You can delete the links only if you purchased the pro version.
