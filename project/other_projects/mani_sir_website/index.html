@@ -26,7 +26,7 @@
 	<link href="img/favicon.ico" rel="icon">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900|Carter+One|Monoton" rel="stylesheet">
 
 	<!-- Bootstrap CSS File -->
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,6 +45,9 @@
     ======================================================= -->
 
     <style type="text/css">
+    .logo img{
+    	background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0));
+    }
     body{
     	-webkit-touch-callout: none;
     	-webkit-user-select: none;
@@ -52,6 +55,24 @@
     	-moz-user-select: none;
     	-ms-user-select: none;
     	user-select: none;
+    }
+    #hero h1{
+    	margin-top:80px; 
+    	font-family: 'Monoton', cursive;
+    }
+    #hero p{
+    	font-weight: 700;
+    }
+    #hero sup{
+    	font-size: 20px; position: absolute; top: 10px;
+    }
+    @media (max-width: 61.9em){
+    	#hero sup{
+    		font-size: 16px; position: absolute; top: 10px;
+    	}
+    }
+    .dynamic-content {
+    	display:none;
     }
     .underline h2 {
     	text-decoration: none; 
@@ -90,7 +111,7 @@
     	text-align: justify;
     }
     #features .card{
-    	background-color: #eee;
+    	background-color: rgba(255,255,255,0.7);
     	padding: 20px;
     }
     .invisible_section{
@@ -104,55 +125,54 @@
   	================================================== -->
   	<!-- Hero -->
 
-  	<section class="hero">
+
+  	<section class="hero" id="hero">
   		<div class="container text-center">
   			<div class="row">
-  				<div class="col-md-12">
-  					<!-- <a class="hero-brand" href="index.html" title="Home"> -->
-  						<img class="hero-image" alt="Logo" src="img/logo.png">
-  						<!-- </a> -->
-  					</div>
-  				</div>
+  				<div class="col-md-12 logo">
+  					
+  					<img class="hero-image" alt="Logo" src="img/logo.png">
 
-  				<div class="col-md-12">
-  					<h1>
-  						NPDS-MANI GROUP <!-- <sup>TM</sup> -->
-  					</h1>
-
-
-  					<p class="tagline">
-  						Leading Service Provider Company
-  					</p>
-  					<a class="btn btn-full" href="#about">Click to know more</a>
   				</div>
   			</div>
 
-  		</section>
-  		<!-- /Hero -->
+  			<div class="col-md-12">
+  				<h1>
+  					NPDS-MANI GROUP <sup>TM</sup>
+  				</h1>
 
-  		<!-- Header -->
-  		<header id="header">
-  			<div class="container">
 
-  				<div id="logo" class="pull-left">
-  					<a href="index.html"><img src="img/logo-nav.png" alt="" title=""><b> NPDS</b></a>
-  					<!-- Uncomment below if you prefer to use a text image -->
-  					<!--<h1><a href="#hero">Bell</a></h1>-->
-  				</div>
+  				<p class="tagline">
+  					Leading Service Provider Company
+  				</p>
+  				<a class="btn btn-full" href="#about">Click to know more</a>
+  			</div>
+  		</div>
+  	</section>
+  	<!-- /Hero -->
 
-  				<nav id="nav-menu-container">
-  					<ul class="nav-menu">
-  						<li><a href="#about">About Us</a></li>
-  						<li class="menu-has-children"><a href="#features">Services</a>
-  							<ul>
-  								<li><a href="content.html?dc=pgits">IT and Software</a></li>
-  								<li><a href="content.html?dc=pgaas">Air Ambulance Service</a></li>
-  								<li><a href="content.html?dc=pgpnm">Projects &amp; Model</a></li>
-  								<li><a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">Mani Aerospace &amp; Drone Club</a></li>
-  								<li><a href="content.html?dc=pglaa">Legal Aviation Assistancy</a></li>
-  								<li><a href="content.html?dc=pgacs">Admission Consultacy Services</a></li>
-  							</ul>
-  						</li>
+  	<!-- Header -->
+  	<header id="header">
+  		<div class="container">
+  			<div id="logo" class="pull-left logo">
+  				<a href="index.html"><img src="img/logo.png" alt="" title=""><b> NPDS</b></a>
+  				<!-- Uncomment below if you prefer to use a text image -->
+  				<!--<h1><a href="#hero">Bell</a></h1>-->
+  			</div>
+
+  			<nav id="nav-menu-container">
+  				<ul class="nav-menu">
+  					<li><a href="content.html?dc=abt">About Us</a></li>
+  					<li class="menu-has-children"><a href="#features">Services</a>
+  						<ul>
+  							<li><a href="content.html?dc=pgits">IT and Software</a></li>
+  							<li><a href="content.html?dc=pgaas">Air Ambulance Service</a></li>
+  							<li><a href="content.html?dc=pgpnm">Projects &amp; Model</a></li>
+  							<li><a href="content.html?dc=pgmasdc">Mani Aerospace &amp; Drone Club</a></li>
+  							<li><a href="content.html?dc=pglaa">Legal Aviation Assistancy</a></li>
+  							<li><a href="content.html?dc=pgacs">Admission Consultacy Services</a></li>
+  						</ul>
+  					</li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
@@ -182,7 +202,7 @@
 	<a href="">
 		<div id="tooltip">
 			<i class="fa fa-phone"></i>
-			<span id="tooltiptext">+91 851 280 0851</span>
+			<span id="tooltiptext">+91 931 216 0469</span>
 		</div>
 	</a> 
 	<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
@@ -198,9 +218,13 @@
 </header>
 <!-- #header -->
 
+
+
+
+
 <!-- About -->
 
-<section class="about" id="about">
+<!-- <section class="about dynamic-content" id="about">
 	<div class="container text-center">
 		<h2>
 			<b>About NPDS Mani Group</b>
@@ -226,8 +250,9 @@
 				</p>
 			</div>
 		</div>
-
-		<div class="row stats-row">
+	</div>
+</section> -->
+		<!-- <div class="row stats-row">
 			<div class="stats-col text-center col-md-3 col-sm-6">
 				<div class="circle">
 					<span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
@@ -251,13 +276,11 @@
 					<span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!-- /About -->
-<!-- Parallax -->
+		</div> -->
+		<!-- /About -->
+		<!-- Parallax -->
 
-<div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+<!-- <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
 	<h2>
 		Welcome to <strong>NPDS-MANI GROUP</strong>
 	</h2>
@@ -266,11 +289,15 @@
 		We believe and thrive to be your first choice.
 	</p>
 	<img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadget.png">
-</div>
+</div> -->
 <!-- /Parallax -->
+
+
+
+
 <!-- Features -->
 
-<section class="features" id="features">
+<section class="features" id="features" >
 	<div class="container">
 		<h2 class="text-center">
 			<b>Services</b>
@@ -342,7 +369,7 @@
 
 			<div class="feature-col col-lg-4 col-xs-12">
 				<div class="card card-block text-center">
-					<a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">
+					<a href="content.html?dc=pgmasdc">
 						<div class="feature-icon">
 							<span class="fa fa-cubes"></span>
 						</div>
@@ -400,39 +427,116 @@
 			</div>
 		</div>
 	</section>
-	<!-- /Features -->
 
 
 
 
 
-
-
-	<section id="my_tabs" class="invisible_section">
-		<nav>
-			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-			</div>
-		</nav>
-		<div class="tab-content" id="nav-tabContent">
-			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-		</div>
-	</section>
-
-	<script type="text/javascript">
-		function myFunction(div_id) {
-			var x = document.getElementById("my_tabs");
-			if (x.style.display === "none") {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
+	<style type="text/css">
+	.carousel-inner{
+		text-align: center;
+		background: #222;
+	}
+	.slide1{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.9) 100%), url('img/attachments/12778764_914726311973848_4859395378570490407_o.jpg') no-repeat;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.slide2{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.9) 100%), url('img/attachments/20160317_103143.jpg') no-repeat;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.slide3{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.9) 100%), url('img/attachments/20160317_112134.jpg') no-repeat;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.slide4{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.9) 100%), url('img/attachments/29249442_1585237858256020_3937882881786904576_o.jpg') no-repeat;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.carousel-inner img {
+		height: 500px;
+	}
+	.carousel-inner h3 {
+		font-family: 'Carter One', cursive;
+		font-size: 50px;
+	}
+	.carousel-inner p {
+		font-family: 'Carter One', cursive;
+		color: #265fd3;
+	}
+	@media (max-width: 61.9em){
+		.slide1, .slide2, .slide3, .slide4{
+			background-size: cover;
+			height: 300px;
 		}
-	</script>
+		.carousel-inner img {
+			height: 300px;
+		}
+		.carousel-inner h3 {
+			font-size: 20px;
+		}
+		.carousel-inner p {
+			font-family: 'Carter One', cursive;
+			color: #427fff;
+			font-size: 14px;
+		}
+	}
+</style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+		<li data-target="#demo" data-slide-to="3"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active slide1">
+			<div class="carousel-caption">
+				<h3>Welcome to NPDS-MANI GROUP</h3>
+				<p>We believe and thrive to be your first choice.</p>
+			</div>   
+		</div>
+		<div class="carousel-item slide2">
+			<div class="carousel-caption">
+				<h3>Welcome to NPDS-MANI GROUP</h3>
+				<p>We believe and thrive to be your first choice.</p>
+			</div>   
+		</div>
+		<div class="carousel-item slide3">
+			<div class="carousel-caption">
+				<h3>Welcome to NPDS-MANI GROUP</h3>
+				<p>We believe and thrive to be your first choice.</p>
+			</div>   
+		</div>
+		<div class="carousel-item slide4">
+			<div class="carousel-caption">
+				<h3>Welcome to NPDS-MANI GROUP</h3>
+				<p>We believe and thrive to be your first choice.</p>
+			</div>   
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+
+<!-- /Features -->
 
 
 
@@ -444,14 +548,9 @@
 
 
 
+<!-- Call to Action -->
 
-
-
-
-
-	<!-- Call to Action -->
-
-	<section class="cta">
+	<!-- <section class="cta">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-9 col-sm-12 text-lg-left text-center">
@@ -469,7 +568,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Call to Action -->
 	<!-- Portfolio -->
 
@@ -741,7 +840,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2 class="section-title">Contact Us</h2>
+				<h2 class="section-title"><b>Contact Us</b></h2>
 			</div>
 		</div>
 
@@ -817,19 +916,55 @@
         </div>
     </div>
 
-    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-    	<ul class="list-inline">
-    		<li class="list-inline-item">
-    			<a href="index.html">Home</a>
-    		</li>
+    <style type="text/css">
+    .social-nav-bottom {
+    	font-size: 18px;
+    	margin-bottom: -20px;
+    	width:auto;
+    	margin:0 auto;
+    }
 
-    		<li class="list-inline-item">
-    			<a href="index.html#about">About Us</a>
-    		</li>
+    .social-nav-bottom {
+    	font-size: 18px;
+    	margin-bottom: -20px;
+    }
 
-    		<li class="list-inline-item">
-    			<a href="index.html#features">Services</a>
-    		</li>
+    .social-nav-bottom a{
+    	padding-left: 16px;
+    }
+</style>
+
+<div class="col-lg-6 col-xs-12 text-lg-right text-center">
+	<nav class="nav social-nav-bottom d-inline">
+		<a href="https://www.facebook.com/Mani-Aerospace-Drone-Club-516500421796441"><i class="fa fa-facebook"></i></a> 
+		<a href="">
+			<div id="tooltip">
+				<i class="fa fa-phone"></i>
+				<span id="tooltiptext">+91 931 216 0469</span>
+			</div>
+		</a> 
+		<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
+		<a href="mailto:npdsmanigroup64@gmail.com">
+			<div id="tooltip">
+				<i class="fa fa-envelope"></i>
+				<span id="tooltiptext">npdsmanigroup64@gmail.com</span>
+			</div>
+		</a>
+
+	</nav>
+	<br>
+	<ul class="list-inline">
+		<li class="list-inline-item">
+			<a href="index.html">Home</a>
+		</li>
+
+		<li class="list-inline-item">
+			<a href="index.html#about">About Us</a>
+		</li>
+
+		<li class="list-inline-item">
+			<a href="index.html#features">Services</a>
+		</li>
 
               <!-- <li class="list-inline-item">
                 <a href="#portfolio">Portfolio</a>
@@ -843,6 +978,8 @@
                 <a href="#contact">Contact</a>
             </li> -->
         </ul>
+
+
     </div>
 
 </div>
@@ -873,4 +1010,32 @@
 <script src="contactform/contactform.js"></script>
 
 </body>
+
+<script type="text/javascript">
+	// Parse the URL parameter
+	function getParameterByName(name, url) {
+		if (!url) url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	// Give the parameter a variable name
+	var dynamicContent = getParameterByName('dc');
+
+	$(document).ready(function() {
+		if (dynamicContent == 'abt') {
+			$('#about').show();
+		} 
+		// else if (dynamicContent == 'pgaas') {
+		// 	$('#pg_air_ambulance').show();
+		// } 
+		else {
+			$('#default-content').show();
+		}
+	});
+</script>
+
 </html>

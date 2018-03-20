@@ -26,10 +26,11 @@
 	<link href="img/favicon.ico" rel="icon">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900|Carter+One" rel="stylesheet">
 
 	<!-- Bootstrap CSS File -->
-	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Libraries CSS Files -->
 	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -52,6 +53,10 @@
     	-moz-user-select: none;
     	-ms-user-select: none;
     	user-select: none;
+    }
+
+    .logo img{
+    	background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0));
     }
     @media (max-width: 61.9em){
     	h3 {
@@ -113,6 +118,92 @@
     	width: 300px;
     	background: #BB1E84;
     }
+
+
+
+    .carousel-inner{
+    	text-align: center;
+    	background: #222;
+    }
+    .slide1{
+    	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%), url('img/attachments/12778764_914726311973848_4859395378570490407_o.jpg') no-repeat;
+    	height: 400px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+    }
+    .slide2{
+    	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%), url('img/attachments/20160317_103143.jpg') no-repeat;
+    	height: 400px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+    }
+    .slide3{
+    	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%), url('img/attachments/1412419_848697325243414_680471450171717950_o.jpg') no-repeat;
+    	height: 400px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+    }
+    .slide4{
+    	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%), url('img/attachments/20160317_112134.jpg') no-repeat;
+    	height: 400px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+    }
+    .slide5{
+    	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%), url('img/attachments/29249442_1585237858256020_3937882881786904576_o.jpg') no-repeat;
+    	height: 400px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+    }
+    .carousel-inner img {
+    	height: 400px;
+    }
+    .carousel-inner h3 {
+    	font-family: 'Carter One', cursive;
+    	font-size: 50px;
+    }
+    .carousel-inner p {
+    	font-family: 'Carter One', cursive;
+    	color: #265fd3;
+    }
+    @media (max-width: 61.9em){
+    	.slide1, .slide2, .slide3, .slide4, .slide5{
+    		background-size: cover;
+    		height: 300px;
+    	}
+    	.carousel-inner img {
+    		height: 300px;
+    	}
+    	.carousel-inner h3 {
+    		font-size: 20px;
+    	}
+    	.carousel-inner p {
+    		font-family: 'Carter One', cursive;
+    		color: #427fff;
+    		font-size: 14px;
+    	}
+    }
+    .about{
+    	background: linear-gradient(to bottom, rgba(255,255,255, 0.5) 0%,  rgba(255,255,255, 0.5) 100%), url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/IoehFAQ/dot-silver-christmas-background-glitters-for-festive-decoration-4k-2160p-uh_e1hpw7y4e__F0010.png");
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	padding-bottom: 0;
+    }
+    .about_content{
+    	padding-bottom: 50px;
+    }
+    .about_content p{
+    	font-size: 12px;
+    	text-align: justify;
+    }
+
+
+
     #pg_it_software p{
     	text-align: justify;
     }
@@ -278,6 +369,147 @@
     		float:none;
     	}
     }
+    .image_hover_zoom:hover{    	
+    	transform: translateY(-10px) scale(1.02);
+    	opacity: 0.9;
+    }
+
+
+    .ekko-lightbox {
+    	display: flex !important;
+    	align-items: center;
+    	justify-content: center;
+    	padding-right: 0px!important;
+    }
+    .ekko-lightbox-container {
+    	position: relative;
+    }
+    .ekko-lightbox-container > div.ekko-lightbox-item {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	width: 100%;
+    }
+    .ekko-lightbox iframe {
+    	width: 100%;
+    	height: 100%;
+    }
+    .ekko-lightbox-nav-overlay {
+    	z-index: 100;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	display: flex;
+    }
+    .ekko-lightbox-nav-overlay a {
+    	flex: 1;
+    	display: flex;
+    	align-items: center;
+    	opacity: 0;
+    	transition: opacity 0.5s;
+    	color: #fff;
+    	font-size: 30px;
+    	z-index: 100;
+    }
+    .ekko-lightbox-nav-overlay a > * {
+    	flex-grow: 1;
+    }
+    .ekko-lightbox-nav-overlay a > *:focus {
+    	outline: none;
+    }
+    .ekko-lightbox-nav-overlay a span {
+    	padding: 0 30px;
+    	color:#ffff;
+    	font-size: 40px;
+    	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
+    .ekko-lightbox-nav-overlay a:last-child span {
+    	text-align: right;
+    }
+    .ekko-lightbox-nav-overlay a:hover {
+    	text-decoration: none;
+    }
+    .ekko-lightbox-nav-overlay a:focus {
+    	outline: none;
+    }
+    .ekko-lightbox-nav-overlay a.disabled {
+    	cursor: default;
+    	visibility: hidden;
+    }
+    .ekko-lightbox a:hover {
+    	opacity: 1;
+    	text-decoration: none;
+    }
+    .ekko-lightbox .modal-dialog {
+    	display: none;
+    }
+    .ekko-lightbox .modal-footer {
+    	text-align: left;
+    }
+    .ekko-lightbox-loader {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	width: 100%;
+    	display: flex;
+    	/* establish flex container */
+    	flex-direction: column;
+    	/* make main axis vertical */
+    	justify-content: center;
+    	/* center items vertically, in this case */
+    	align-items: center;
+    }
+    .ekko-lightbox-loader > div {
+    	width: 40px;
+    	height: 40px;
+    	position: relative;
+    	text-align: center;
+    }
+    .ekko-lightbox-loader > div > div {
+    	width: 100%;
+    	height: 100%;
+    	border-radius: 50%;
+    	background-color: #fff;
+    	opacity: 0.6;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	animation: sk-bounce 2s infinite ease-in-out;
+    }
+    .ekko-lightbox-loader > div > div:last-child {
+    	animation-delay: -1s;
+    }
+    .modal-dialog .ekko-lightbox-loader > div > div {
+    	background-color: #333;
+    }
+    @-webkit-keyframes sk-bounce {
+    	0%,
+    	100% {
+    		-webkit-transform: scale(0);
+    	}
+    	50% {
+    		-webkit-transform: scale(1);
+    	}
+    }
+    @keyframes sk-bounce {
+    	0%,
+    	100% {
+    		transform: scale(0);
+    		-webkit-transform: scale(0);
+    	}
+    	50% {
+    		transform: scale(1);
+    		-webkit-transform: scale(1);
+    	}
+    }
+    
 </style>
 </head>
 
@@ -289,9 +521,9 @@
   	<header id="header">
   		<div class="container">
 
-  			<div id="logo" class="pull-left">
+  			<div id="logo" class="pull-left logo">
   				<a href="index.html">
-  					<img src="img/logo-nav.png"><b> NPDS</b>
+  					<img src="img/logo.png"><b> NPDS</b>
   				</a>
   				<!-- Uncomment below if you prefer to use a text image -->
   				<!--<h1><a href="#hero">Bell</a></h1>-->
@@ -299,14 +531,14 @@
 
   			<nav id="nav-menu-container">
   				<ul class="nav-menu">
-  					<li><a href="index.html">Home</a></li>
+  					<li><a href="index.html#features">Home</a></li>
   					<li><a href="index.html#about">About Us</a></li>
   					<li class="menu-has-children"><a href="index.html#features">Services</a>
   						<ul>
   							<li><a href="content.html?dc=pgits">IT and Software</a></li>
   							<li><a href="content.html?dc=pgaas">Air Ambulance Service</a></li>
   							<li><a href="content.html?dc=pgpnm">Projects &amp; Model</a></li>
-  							<li><a href="https://www.facebook.com/pg/Mani-Aerospace-Drone-Club-516500421796441">Mani Aerospace &amp; Drone Club</a></li>
+  							<li><a href="content.html?dc=masdc">Mani Aerospace &amp; Drone Club</a></li>
   							<li><a href="content.html?dc=pglaa">Legal Aviation Assistancy</a></li>
   							<li><a href="content.html?dc=pgacs">Admission Consultacy Services</a></li>
   						</ul>
@@ -361,533 +593,695 @@
 		<img src="http://almaoasislonghai.com/wp-content/uploads/2016/03/coming-soon.png" style="width: 50%;margin-top: 8px;">
 	</div>
 
-
-	<div id="pg_it_software" class="dynamic-content">
-		<section class="pg_it_software" id="pg_it_software" style="padding: 50px 0;">
-
-			<div class="container text-center underline">
-				<h1>
-					IT & Software
-				</h1>
-			</div>
-
-			<div class="container-fluid text-center underline">
-				<div class="row">
-					<div class="col-md-10 offset-md-1 col-sm-12 text-left">
-						<br><br><br>
-						<h2 class="web_content_title">Industries we serve</h2><br>
-						<div>
-							<div class="row">
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-heartbeat" style="font-size: 60px;"></i>
-									<br>
-									Health
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-home" style="font-size: 60px;"></i>
-									<br>
-									Insurance
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-graduation-cap" style="font-size: 60px;"></i>
-									<br>
-									Education
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-users" style="font-size: 60px;"></i>
-									<br>
-									Consultancy
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-cogs" style="font-size: 60px;"></i>
-									<br>
-									Manufacturing
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-book" style="font-size: 60px;"></i>
-									<br>
-									Publication
-								</div>
-
-								<div class="icon_pad col-md-2 offset-md-2 text-center">
-									<i class="fa fa-bed" style="font-size: 60px;"></i>
-									<br>
-									Hotels
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-bus" style="font-size: 60px;"></i>
-									<br>
-									Tour & Travels
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-phone" style="font-size: 60px;"></i>
-									<br>
-									Telecommunication
-								</div>
-
-								<div class="icon_pad col-md-2 col-sm-4 text-center">
-									<i class="fa fa-truck" style="font-size: 60px;"></i>
-									<br>
-									Shipping
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<br>
-				<br>
-				<div class="container text-center underline">
+	<section id="pg_about" class="about dynamic-content">
+		<div class="container text-center about_content">
+			<h2>
+				<b>About NPDS Mani Group</b>
+			</h2>
+			<div class="row">
+				<div class="col-md-4 underline text-left">
+					<h2>Who are we</h2>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a total Services provider company boasting of a proven track record in providing cost-effective, innovative and robust business solutions, in the ﬁeld of <strong>IT & SOFTWARE, AIR AMBULANCE SERVICE, PROJECTS &AMP; MODEL, MANI AEROSPACE DRONE AND CLUB, LEGAL AVIATION ASSISTANCY</strong> and <strong>ADMISSION CINSULTANCY SERVICES</strong>. We focus on combining web- based application development, market-savvy design, and reliable business strategy to advance a client’s business goals. We offer solutions right through all stages of project development, website design, web development, e-commerce applications, ofﬂine/online software, web hosting, IT outsourcing and web marketing. With the sound knowledge, we aim to deliver value to our customers through our innovative software solutions and services. Since our inception, we have steadily grown into a reputed provider of high-quality and cost-effective software development services. Our ability to evolve continuously, doubled with our ﬂexible approach towards the dynamic business world has helped us to gain success in short span of time.
+					</p>
 					<br>
-					<div class="row">
-						<div class="col-md-6 col-sm-12 text-left">
-							<h3 class="web_content_title">Services We Offer</h3>
-							<div class="web_content">
-								1. Application Development<br>
-								2. Application Maintenance<br><br>
+				</div>
+
+				<div class="col-md-4 underline text-left">
+					<h2>What we do</h2>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here at NPDS Mani Group, we believe in providing services that are phenomenally cost effective and caters to your every minute need. We do so by pursuing a methodical process that is structured to provide powerful efﬁciency to our development scale and furnishing our services in no time and a cost effective manner. We employ a deep analysis of our client’s requirements on a comprehensive level to understand every minute need and intricacies of those needs of the client that we aim to furnish through our services. Our dedicated professionals thrive to maintain high quality standards in every process and engagement in all the development stages to provide you with robust products that are a touchstone of perfection. Through our optimized development and management techniques we reduce the quality risk to an inﬁnitesimally small value.
+					</p>
+					<br>
+				</div>
+
+				<div class="col-md-4 underline text-left">
+					<h2>Why choose us</h2>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here at NPDS Mani Group, we believe and thrive to be your ﬁrst choice. We metamorphose your eloquent idea into powerful and hardcore software reality that gives you a rich experience with its features and keeps you one step ahead in your business with its outstanding functionality. We focus on keeping a world class work environment for our professionals that helps them to bloom their talents and nurture personal growth in our organization. Our teams of experienced developers are immensely sound in technical knowledge and use their deep experience of handling hundreds of complex projects to provide you a swift and immaculate service.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+				<li data-target="#demo" data-slide-to="3"></li>
+				<li data-target="#demo" data-slide-to="4"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active slide1">
+					<div class="carousel-caption">
+						<!-- <h3>Welcome to NPDS-MANI GROUP</h3> -->
+						<!-- <p>We believe and thrive to be your first choice.</p> -->
+					</div>   
+				</div>
+				<div class="carousel-item slide2">
+					<div class="carousel-caption">
+						<!-- <h3>Welcome to NPDS-MANI GROUP</h3> -->
+						<!-- <p>We believe and thrive to be your first choice.</p> -->
+					</div>   
+				</div>
+				<div class="carousel-item slide3">
+					<div class="carousel-caption">
+						<!-- <h3>Welcome to NPDS-MANI GROUP</h3> -->
+						<!-- <p>We believe and thrive to be your first choice.</p> -->
+					</div>   
+				</div>
+				<div class="carousel-item slide4">
+					<div class="carousel-caption">
+						<!-- <h3>Welcome to NPDS-MANI GROUP</h3> -->
+						<!-- <p>We believe and thrive to be your first choice.</p> -->
+					</div>   
+				</div>
+				<div class="carousel-item slide5">
+					<div class="carousel-caption">
+						<!-- <h3>Welcome to NPDS-MANI GROUP</h3> -->
+						<!-- <p>We believe and thrive to be your first choice.</p> -->
+					</div>   
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+	</section> 
+	<section class="pg_it_software dynamic-content" id="pg_it_software" style="padding: 50px 0;">
+
+		<div class="container text-center underline">
+			<h1>
+				IT & Software
+			</h1>
+		</div>
+
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<br><br><br>
+					<h2 class="web_content_title">Industries we serve</h2><br>
+					<div>
+						<div class="row">
+
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-heartbeat" style="font-size: 60px;"></i>
+								<br>
+								Health
 							</div>
-						</div>
 
-						<div class="col-md-6 col-sm-12 text-left">
-							<h4 class="web_content_title">What we do in Application Development & Maintenance</h4>
-							<div class="web_content" >
-								Application Development is basically categories in two ways:
-								<ol>
-									<li>Online Application</li>
-									<li>Offline Application</li>
-								</ol>
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-home" style="font-size: 60px;"></i>
+								<br>
+								Insurance
 							</div>
-						</div>
 
-						<div class="col-md-6 col-sm-12 text-left">
-							<h4 class="web_content_title">Online Application</h4>
-							<div class="web_content" >
-								We are dealing with following Applications:
-								<ul>
-									<li>Website Development</li>
-									<ul>
-										<li>HTML Website Development</li>
-										<li>PHP Website Development</li>
-										<li>Flash Websites</li>
-										<li>Magento Website Development</li>
-										<li>Custom Website Development</li>
-										<li>Social Network Websites</li>
-										<li>Classified Websites</li>
-									</ul>
-									<li>Website Designing</li>
-									<ul>
-										<li>Graphic Design illustration</li>
-										<li>I Phone Graphic Design</li>
-										<li>Photoshop Graphic Design</li>
-										<li>Android Graphic Design</li>
-										<li>Game Graphic Design</li>
-									</ul>
-									<li>E-Commerce Websites</li>
-									<li>Web-Portals</li>
-									<li>Complete School Management Software</li>
-									<li>Examination System</li>
-									<li>Cable Management Software</li>
-									<li>Cooperate Management Software</li>
-									<li>Search Engine Optimization</li>
-									<li>Payment Gateway Integration</li>
-									<li>SMS integration with your website</li>
-								</ul>
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-graduation-cap" style="font-size: 60px;"></i>
+								<br>
+								Education
 							</div>
-						</div>
 
-						<div class="col-md-6 col-sm-12 text-left">
-							<h4 class="web_content_title">Technologies Expertise</h4>
-							<div class="web_content" >
-								<ul>
-									<li>PHP / MYSQL</li>
-									<li>.Net Framework</li>
-									<li>Java Framework</li>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>J Query</li>
-								</ul>
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-users" style="font-size: 60px;"></i>
+								<br>
+								Consultancy
 							</div>
-							<h4 class="web_content_title">Offline Application</h4>
-							<div class="web_content" >
-								We are dealing with following Applications:
-								<ul>
-									<li>Complete School Management Software</li>
-									<li>Desktop Based EBook</li>
-									<li>Cable Management Software</li>
-									<li>Cooperate Management Software</li>
-									<li>Complete ERP Solution</li>
-									<li>Customized Software</li>
-								</ul>
-								Technologies we are using for Online Applications
-								<ul>
-									<li>.Net Framework</li>
-									<li>Java Framework</li>
-								</ul>
 
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-cogs" style="font-size: 60px;"></i>
+								<br>
+								Manufacturing
+							</div>
 
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-book" style="font-size: 60px;"></i>
+								<br>
+								Publication
+							</div>
+
+							<div class="icon_pad col-md-2 offset-md-2 text-center">
+								<i class="fa fa-bed" style="font-size: 60px;"></i>
+								<br>
+								Hotels
+							</div>
+
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-bus" style="font-size: 60px;"></i>
+								<br>
+								Tour & Travels
+							</div>
+
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-phone" style="font-size: 60px;"></i>
+								<br>
+								Telecommunication
+							</div>
+
+							<div class="icon_pad col-md-2 col-sm-4 text-center">
+								<i class="fa fa-truck" style="font-size: 60px;"></i>
+								<br>
+								Shipping
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid text-center underline">
-				<div class="row">
-
-					<div class="col-md-12 text-left" style="padding: 20px;">
-						<h2 class="web_content_title">Other Services</h2>
-						<br>
-						<div class="tab">
-							<button class="tablinks" onclick="openCity(event, 'Logo Designing')" id="defaultOpen">Logo Designing</button>
-							<button class="tablinks" onclick="openCity(event, 'Graphic Designing')">Graphic Designing</button>
-							<button class="tablinks" onclick="openCity(event, 'Web Design')">Web Design</button>
-							<button class="tablinks" onclick="openCity(event, 'Search Engine Optimization')">Search Engine Optimization</button>
-							<button class="tablinks" onclick="openCity(event, 'Social Media Marketing')">Social Media Marketing</button>
-							<button class="tablinks" onclick="openCity(event, 'E-mail Marketing')">E-mail Marketing</button>
-							<button class="tablinks" onclick="openCity(event, 'Content Writing')">Content Writing</button>
-							<button class="tablinks" onclick="openCity(event, 'Multimedia Animation')">Multimedia Animation</button>
-							<button class="tablinks" onclick="openCity(event, 'Product Development')">Product Development</button>
-							<button class="tablinks" onclick="openCity(event, 'MLM Software')">MLM Software</button>
-						</div>
-
-						<div id="Logo Designing" class="tabcontent">
-							<h3>Logo Designing</h3>
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logos are very important to any business. These simple layouts serve as the company’s brand, trademark, and identity. It is something that would make your business stand out from the rest. It is also the seal that would remind your customers about your company. With all of those said, it is then very important that businesses carefully create logos for their firm. Their logo should be something suitable, remarkable, and interesting. The right logo could propel your business towards success. Businesses who are looking for expert ideas on what they should put in their corporate seal and how they should go about creating it must consult only with the experts in the field. Logo designing is not purely artwork. It also requires analysis, research, and evaluation.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is what we do at NPDS Mani Group. We can provide you with the service and that logo that you’re looking for all along. NPDS Mani Group is a Delhi-based company in India that offers premium corporate logo designing for business branding and identity.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our experts would analyze your business and industry, along with your company’s mission and vision to create the ideal logo that would carry your name. Our logo design team had impressed lots of clients worldwide. Trust us with this job as we are one of the most respected logo designing companies in India.
-							</p>
-						</div>
-
-						<div id="Graphic Designing" class="tabcontent">
-							<h3>Graphic Designing</h3>
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the world that almost runs on advertising, it is quite imperative to beautify information as one is providing it. Most importantly if providing that information is going to fetch a plethora of business activity for you. That is why discounts are not just called discounts but bumper discounts and a bumper discount is a bonanza. We at DISTINCT TECHNOLOGIES understand the intuitive world of marketing and thus focus on providing creative graphic designs with carefully sorted out color schemes and themes that exactly complement the feel in your content. Every bit of information you provide is arranged in the most aesthetics of fashions to craft an eye catching design that mesmerizes its onlookers and makes a positive and lasting impression about your business. We provide designs in both digital and print media so that you don’t have to worry about the hassles of a computer when you can get it done in print. Our team of experts analyzes your every requirement and the target audience you would like to reach to provide immaculate cleverly thought design solutions that are impeccable in style and strongly appeals to its target audience.
-							</p>
-						</div>
-
-						<div id="Web Design" class="tabcontent">
-							<h3>Web Design</h3>
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distinct Technologies is leading web Development Company in India aiming & providing you with the branded customized web solutions offering, high quality web design, web development, e-commerce web development pre- build CMS integration & customization, domain registration, web hosting & much more… Search engine optimization is also been one of our specialty, on which we can assist you to achieve higher ranking on search engines. With our longstanding experience we provide you with different types of web enabled services under one roof, we can ensure to develop top quality work from our side that’s gives your business an edge & ready to provide samples & references if needed in case. With our unparalleled expertise & intricate craftsmanship your companies surely gain an instant attention. Customer satisfaction is our prime motto & we ensure that we provide with 100% customized solutions to our clients. No matter how complex the project is, we are confident that you can count on NPDS MANI GROUP to deliver a refine quality within the time frame. We are committed & dedicated to build long lasting partnerships with our clients & ensure their satisfaction on our top list priority. Our business- driven approach separates us from the rest; we offer a wide range of web services at affordable prices from the inception by registering the domain name to search engine optimization & internet marketing.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We believe that a website of a company is the face of that company to their online visitors so it’s equally important the creation of professional website should be done in a way that leaves the user informed & impress with the aesthetic sense & side by side understanding their needs. Website is a medium that can potentially convert your visitors into the customers itself which can provide you with a fair return on your investment. Make a quality website with DISTINCT TECHNOLOGIES & convert Internet browsers/surfers to customers.
-							</p>
-						</div>
-
-						<div id="Search Engine Optimization" class="tabcontent">
-							<h3>Search Engine Optimization</h3>
-							<p>
-								<b>Search Engine Optimization in Brief</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEO or Search Engine Optimization is the process of optimizing the website to bring the websites position on the higher ranks on search engine results pages. In the process of SEO, when a user goes through any search engine and makes a search with a keyword then, it provides you the whole page listing in the top results. And this result shows the Page Rank of the website. Whether it is coming on the first page which means a good position or or on some other pages means need improvement. Mainly different methods followed to increase the traffic on the websites.
-								<br><br>
-								<b>Search Engine Optimization in Depth</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the process of SEO, it is done with the effective usage of Meta tags, placing the correct keywords in the original text and doing careful analysis of keyword density using popular SEO software tools and techniques. All these tools are good enough to increase the page rank and website traffic.
-								<br><br>
-								<b>To be always on top, choose us for SEO services</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are counted in the top SEO services company, providing Search engine optimization in Delhi. Our dedicated team of SEO professionals focuses only in enhancing your business by looking at the competitive marketplace for your chosen keywords. Being a Search engine optimization firm, we always ensures Guaranteed Top 10 search engine ranking on Google, Yahoo and MSN.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We at NPDS MANI GROUP stand to announce ourselves as a Reputable India SEO company which promises guaranteed SEO services at the cheap and affordable price. Providing SEO services at competitive rates, we guarantee you that we know all the rules of the search engines and will follow all the guidelines needed. Being a Search engine optimization consultant, we develop the strategies to reach the top with very advanced SEO techniques to explore better business prospects for the clients.
-
-
-							</p>
-						</div>
-
-						<div id="Social Media Marketing" class="tabcontent">
-							<h3>Social Media Marketing</h3>
-							<p>
-								<b>Social Media Marketing - Newest and best marketing tool</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you in a mood to start a new business, then it is sure that you will be thinking of its marketing work. As marketing is the major point of any business also the important aspect of any business strategy. The profit and loss of any business is equally depends on its marketing policies and ways of marketing. If the product is really good but not advertised nicely then the product will have no market and no buyers. So, in today fast changing world, when every work is done online then how can marketing be left behind. With the involvement of social media in marketing, it has become easier and quicker.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Social media marketing</b> is the latest and faster way of marketing done through social media such as blogs, community sites, video sharing sites etc. Today the popular sites like LinkedIn, Facebook, Twitter, Flickr and YouTube has more than five million visitors every day and are considered to be an important hub for marketing. Today social media marketing Facebook is the most common which has a large number of users, using the site on a regular basis.
-								<br>
-								<br>
-
-								<b>Importance of Social Media Marketing</b>
-							</p>
-							<ul>
-								<li>Today Social media marketing has become the part of the social media optimization. With the popularity and good results of social media marketing, promotion of business through social media are now also done by professionals of social media marketing company.</li>
-								<li>Consisting of several social media things like blogs, video sharing and community, through this type of marketing we can pass our information to vast number of people within a very short period of time.</li>
-								<li>Sponsoring the business using through these types of social media sites is a very smart business proposal since they provide a huge amount of constant traffic every day.</li>
-							</ul>
-							<p>
-								<b>Choose us for best social media marketing</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to SEO services, it's a well-known SEO company providing all types of SEO services. With the good name in the industry, this Social media marketing company Delhi has pushed various sites to a great height through its best services. Being a Social media marketing agency, we provide social media marketing with blogging, Facebook and even Twitter. Choose seoservices.co.in for your social media marketing of your business firm and find your company at the top in the search engine rankings.
-							</p> 
-						</div>
-
-						<div id="E-mail Marketing" class="tabcontent">
-							<h3>E-mail Marketing</h3>
-							<p>
-								<b>Email marketing - The biggest marketing tool of online business</b> 
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today everything is online, whether it's your business or you shopping, by just clicking a button, you can easily finish all your works. So when the internet has become so much important than it can also use as a good source of marketing. In Search Engine Optimization, Email marketing is used as a social media marketing and social media optimization tool. This online marketing is a great idea to raise the level of success. Being the most effective way to advertise on the internet, Email marketing is one of the effective ways to attract new customers by keeping touch with existing ones and minimizing operating cost.
-								<br>
-								<b>How its work?</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Being performed by a SEO company, email marketing is a form of direct marketing which is done by using an electronic mail as a means of communicating tool used among audience. In this process, email is sent to a potential or current user which can be considered as email marketing.
-								<br>
-								It is done by sending email messages to the new customers and the current customers to purchase the things quickly.
-								<br>
-								Some companies also do this by adding the advertisements to the other emails send by others.
-								<br>
-								Some emails messages are also send in the PPC formats.
-								<br>
-								<b>Need of Email marketing</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email marketing done by a SEO company encourages business and help in conveying the message to the direct audience through emails. It allows targeting and also data driven. Email marketing builds relationships, loyalty and trust and as a result derives direct sales. Including to all these it also support sales through other channels. Choose from different types of Email marketing
-								<ul>
-									<li>Direct email</li>
-									<li>Retention email</li>
-									<li>Advertising in other people's emails</li>
-								</ul>
-
-							</p>
-						</div>
-
-
-						<div id="Content Writing" class="tabcontent">
-							<h3>Content Writing</h3>
-							<p>
-								<b>Content - The King of the Website</b> 
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must be aware of the great saying that Content is the king and the Marketing is the Queen of any website. It is clear that content rules over whole of the websites. Where a good content can catch the whole attention and increase the traffic on your sites there only the old and wrong content can cause a great downfall in the traffic. Unique design, keyword rich and understandable content can make your website more attractive and also helps in gaining attention of the users.
-								<br>
-								<br>							
-								<b>How it is done?</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today content marketing is very common among all online business. The user can find overall view of the whole business type and its values by viewing the content only. By informative and catchy content on your site it can ensure regular flow of traffic leading to a powerful impact on the targeted audience.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Writing is a very important part of any SEO services providing company. Being done by expert content writers and copywriters, there are different ways of content writing according to the need and demand of the clients. Some of the common Web content writings are-
-							</p>
-							<ul>
-								<li>
-									<b>Website Content Writing:</b>
-									<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can you imagine of a website only with the images without any content? It is sure your answer will be no! Your website should contain the overall view of your business and should be more informative. It should be easily understandable and keyword rich through which the search can be easily done.<br>
-								</li>
-								<li>
-									<b>SEO Copywriting:</b>
-									<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any website, SEO copywriting is very important in website designing. Mainly the home page of the site leaves a great impression on any user, so taking from good landing page to proper headings and metatags each is done in this.<br>
-								</li>
-								<li>
-									<b>Blog writing:</b>
-									<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today blog is the only thing which is commonly used for all types of online promotions. Blog writing for a website is as much useful as updating new things on sites. It can be done on the daily basis taking very less time.<br>
-								</li>
-								<li>
-									<b>Article writing:</b>
-									<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The demand for the articles on different topics is increasing day by day. Users expect to gain vast knowledge of each and every thing through these types of articles.<br>
-								</li>
-							</ul>
-							<p>
-								<b>Why choose us for making the content of your website?</b>
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a well-known SEO company, which provides best content writing in Delhi. With a large number of best copywriters, we provide content focusing direct to the targeted audience. Providing quality service in content, our content writers keeps focus on attracting more and more traffic on the website.<br>
-							</p>
-						</div>
-
-
-
-						<div id="Multimedia Animation" class="tabcontent">
-							<h3>Multimedia Animation</h3>
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presenting your ideas, products, or your entire business to your clients is not an easy job. It requires you to use all possible resources to get the right idea across. When you only have one chance to present, there is no room for errors.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employ the best Multimedia Presentation experts to help you create an impressive profile for your business, services, and products. Captivate your clients and customers the first time. The more effective the presentation that you make, the higher are the chances that it would work as well as you have expected it.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multimedia presentations have to be interesting to be notable. The project has to be done by real professionals that have your company best interest in mind. This is the only way that you can be assured that your presentation is going to make a big impact on its audience.
-								<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a Delhi-based company in India that can help you with your Multimedia Presentationneeds. We have the talents, the expertise, and the technology needed to create a presentation that would impress your clients and customers. Trust us to deliver your company with sales and deals with our striking, professional works. We assure quality in every project that we do.
-							</p>
-						</div>
-
-
-						<div id="Product Development" class="tabcontent">
-							<h3>Product Development</h3>
-							<p>
-								Product development is a promotional technique in which whole new creation of product is done, with new & innovative techniques that offers & add advantage to the customers & helps to increase their brand value & reach to its potential customers.
-								<br>
-								Product development involve many different stages such as modifications of an existing product or improving it style of presentation, by adding different promotional technique to it such as -via mobile advertisement, e-mail marketing, banner ads on a specific websites.
-								<ul>
-									<li>We in help you to define your products in an outstanding manner to create a market niche for yourself. We help you to create a new pipeline of whole new products, or helps you in developing &extending the existing product line with our innovative product development skills, such as refreshing the existing product line by introducing new & exciting product development features.</li>
-
-									<li>We offers a completely different & highly effective strategy to enhance your product image via our extensive link building, digital promotions technique like e-mail ads as well as e-marketing techniques. Our work begins with extensive research together required information about the product & for the overall scope & development of the product.</li>
-
-									<li>We pay hard attention on- who will be the target audience of that very product? & pay emphasis on the usability of the product to reach the appropriate potential buyers.We believe in coming out with the best & try to do full justice to your product enhancement with our innovative product development techniques.</li>
-
-									<li>We aim at delivering successful product development services through our extensive research & massive link building- all this is done with a prime motive- to ensure to come out with the best output for the product development services. We in store the best for you!</li>
-								</ul>
-							</p>
-						</div>
-
-
-
-						<div id="MLM Software" class="tabcontent">
-							<h3>MLM Software</h3>
-							<p>
-								With the tremendous increase in the number of mobile phone users accessing the internet on their handheld, it is equally important to reach	& grab the opportunity to advance n your parameter to your target audience globally.
-								<ul>
-									<li>At NPDS MANI GROUP we offers you first rate mobile web designs services to help you reach your target audience worldwide with one touch solutions which can be easily accessed on any of the smart phone browsers &amp; successfully accommodate their audience.</li>
-
-									<li>There are plenty of ways to develop their mobile web contents through XHTML, CSS, ASP.NET, and Hand help style sheets or whatever the method may be, We believe any mobile web development strategy must begin with considering the target audience.</li>
-
-									<li>A mobile optimized site must integrate & align with following firstly how the content is accessed, Secondly how the content is accessed? Technically speaking, contents before aesthetics, functions before form, helps in providing the users excessive bandwidth & a faster browsing experience.</li>
-
-									<li>Redefine the parameters of net accessing through the mobile web development with us like never before. According to the market survey, mobile handset proliferation is expected to increase about 3 billion subscribers worldwide. No, doubt it will surely be the next big thing in the online marketing zone.</li>
-
-									<li>We, in NPDS MANI GROUP helps you to utilize & exhibit your publish web contents beyond the desktop. We precisely keep focus on what the contextual relevance of such a site or app is? & comes up with the solution for the same & implicit in dselivering a rich, navigable content experience.</li>
-								</ul>
-							</p>
-						</div>
-
-						<script>
-							function openCity(evt, cityName) {
-								var i, tabcontent, tablinks;
-								tabcontent = document.getElementsByClassName("tabcontent");
-								for (i = 0; i < tabcontent.length; i++) {
-									tabcontent[i].style.display = "none";
-								}
-								tablinks = document.getElementsByClassName("tablinks");
-								for (i = 0; i < tablinks.length; i++) {
-									tablinks[i].className = tablinks[i].className.replace(" active", "");
-								}
-								document.getElementById(cityName).style.display = "block";
-								evt.currentTarget.className += " active";
-							}
-
-							document.getElementById("defaultOpen").click();
-						</script>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-	</div>
-
-	<div id="pg_air_ambulance" class="dynamic-content">
-		<section class="pg_air_ambulance" style="padding: 50px 0;">
-
+			<br>
+			<br>
 			<div class="container text-center underline">
-				<h1>
-					Air Ambulance Service
-				</h1>
 				<br>
-				<p><b>Emergency medical services (EMS)</b> role such as <b>HEMS (Helicopter Emergency Medical Service)</b>.</p>
-
-			</div>
-
-			<div class="container text-center underline">
 				<div class="row">
-					<div class="col-md-12 col-sm-12 text-left">
-						<br><br><br>
-						<h2 class="web_content_title">GEMS and the AA</h2><br>
-						<div class="text-center" style="opacity: 0.7;">
-							Our Doctors and Paramedics are well-qualified professionals, trained to manage patients in the most challenging of situations, and execute efficient and coordinated “bed-to- bed” transfers worldwide.<br><br>
+					<div class="col-md-6 col-sm-12 text-left">
+						<h3 class="web_content_title">Services We Offer</h3>
+						<div class="web_content">
+							1. Application Development<br>
+							2. Application Maintenance<br><br>
 						</div>
-						<div class="text-left">
-							Aspects of AA operations shall be described in the Operations Manual and must contain specific policies and related procedures on the following:- 
+					</div>
+
+					<div class="col-md-6 col-sm-12 text-left">
+						<h4 class="web_content_title">What we do in Application Development & Maintenance</h4>
+						<div class="web_content" >
+							Application Development is basically categories in two ways:
+							<ol>
+								<li>Online Application</li>
+								<li>Offline Application</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12 text-left">
+						<h4 class="web_content_title">Online Application</h4>
+						<div class="web_content" >
+							We are dealing with following Applications:
 							<ul>
-								<li>medical control procedures.</li>
-								<li>patient loading and unloading procedures.</li>
-								<li>protocols for patient handoff.</li>
-								<li>procedures for handling and securing of medical equipment.</li>
-								<li>patient safety and use of harness and restraining devices.</li>
-								<li>Infection and Biohazard Control policy.</li>
-								<li>refuelling procedures with medical personnel and/or patient on board.</li>
-								<li>initial and recurrent training programme for medical personnel.</li>
-								<li>physiological factors affecting well- being of patient during AMT.</li>
-								<li>procedures for handling of portable electrical sources.</li>
-								<li>evacuation procedures</li>
+								<li>Website Development</li>
+								<ul>
+									<li>HTML Website Development</li>
+									<li>PHP Website Development</li>
+									<li>Flash Websites</li>
+									<li>Magento Website Development</li>
+									<li>Custom Website Development</li>
+									<li>Social Network Websites</li>
+									<li>Classified Websites</li>
+								</ul>
+								<li>Website Designing</li>
+								<ul>
+									<li>Graphic Design illustration</li>
+									<li>I Phone Graphic Design</li>
+									<li>Photoshop Graphic Design</li>
+									<li>Android Graphic Design</li>
+									<li>Game Graphic Design</li>
+								</ul>
+								<li>E-Commerce Websites</li>
+								<li>Web-Portals</li>
+								<li>Complete School Management Software</li>
+								<li>Examination System</li>
+								<li>Cable Management Software</li>
+								<li>Cooperate Management Software</li>
+								<li>Search Engine Optimization</li>
+								<li>Payment Gateway Integration</li>
+								<li>SMS integration with your website</li>
 							</ul>
 						</div>
-						<div class="text-left">
-							Onboard medical equipment when fitted in the aircraft shall be positioned in a manner such that it:- 
+					</div>
+
+					<div class="col-md-6 col-sm-12 text-left">
+						<h4 class="web_content_title">Technologies Expertise</h4>
+						<div class="web_content" >
 							<ul>
-								<li>allows medical personnel a clear view of and access to the patient to perform monitoring and therapeutic intervention as needed. </li>
-								<li>permits access to normal and emergency exits. </li>
-								<li>permits access to emergency equipment. </li>
-								<li>does not interfere or is likely to interfere with the operation of aircraft controls. </li>
-								<li>is appropriately secured to avoid potential injury to occupants. </li>
-							</ul>
-							8.5 Onboard medical equipment shall:- 
-							<ul>
-								<li>be secured and restrained to sustain inertia forces experienced during aborted take-off and emergency landings in conformity to FAR 25.561 and FAR 25.785 standards or as appropriate for aircraft size and type (FAR 23,25 for aeroplanes and FAR 27,29 for helicopters). </li>
-								<li>in case of oxygen bottles be in conformity to FAR 25.1443, 25.1447 and 25.1453. </li>
-								<li>in case utilising lithium-ion battery be in conformity to DO-311 MOPS for Rechargeable Lithium Battery Systems. CIVIL</li>
-								<li>in case of infusion devices be automated and designed to be independent of gravitational flow. </li>
-								<li>if carrying dangerous goods be governed by the provisions of Aircraft (Carriage of Dangerous Goods) Rules, 2003.</li>
+								<li>PHP / MYSQL</li>
+								<li>.Net Framework</li>
+								<li>Java Framework</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>J Query</li>
 							</ul>
 						</div>
+						<h4 class="web_content_title">Offline Application</h4>
+						<div class="web_content" >
+							We are dealing with following Applications:
+							<ul>
+								<li>Complete School Management Software</li>
+								<li>Desktop Based EBook</li>
+								<li>Cable Management Software</li>
+								<li>Cooperate Management Software</li>
+								<li>Complete ERP Solution</li>
+								<li>Customized Software</li>
+							</ul>
+							Technologies we are using for Online Applications
+							<ul>
+								<li>.Net Framework</li>
+								<li>Java Framework</li>
+							</ul>
 
-						<div class="text-center">
-							<br><br>
-							<div class="col-md-12">
-								<a class="btn btn-sm" href="bcl_335619015.htm" style="width: 100%">Legal Document: Operation Of<br>Aeromedical Transportation (AMT)</a>
-							</div>
-							<br><br><br><br>
-						</div>
 
-						<div class="text-left">
-
-							<div class="col-md-12 col-sm-12 text-left">
-								<b>We Provide Air Ambulance Services from All Major Cities in India, Including–</b><br><br><br>
-								<b>We Provide Air Ambulance Services from All Major Cities Worldwide, Including –</b><br><br><br>
-								<b>Our tie up with hospitals:-</b><br>
-								<div class="row">
-									<div class="image_hospital_aa col-sm-4 col-md-2 offset-md-1 text-center img-responsive pagination-centered">
-										<img src="http://onlinereports.blkhospital.com/Auth/Images/PortalLogo.png">
-										<p>BLK HOSPITAL</p>
-									</div>
-
-									<div class="image_hospital_aa col-sm-4 col-md-2 text-center img-responsive pagination-centered">
-										<img src="http://www.fortishealthcare.com/static_new/img/fortis-logo.png">
-										<p>FORTIS HOSPITAL</p>
-									</div>
-
-									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
-										<img src="https://3.imimg.com/data3/JF/LP/MY-9646176/akash-hospital-logo-120x120.jpg">
-										<p>AKASH HOSPITAL</p>
-									</div>
-
-									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
-										<img src="https://www.maxhealthcare.in/sites/default/files/max-logo.png">
-										<p>MAX HOSPITAL</p>
-									</div>
-
-									<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
-										<img src="https://lh3.googleusercontent.com/FVJoHtenN4oee1XvShgPnOm3TYazvrcaDdnmvDy21ITxqTXP3OsdIAU0TsU6O4zr6A=w300">
-										<p>AAYUSHMAN HOSPITAL</p>
-									</div>
-									
-								</div>			
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+		<div class="container-fluid text-center underline">
+			<div class="row">
+
+				<div class="col-md-12 text-left" style="padding: 20px;">
+					<h2 class="web_content_title">Other Services</h2>
+					<br>
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Logo Designing')" id="defaultOpen">Logo Designing</button>
+						<button class="tablinks" onclick="openCity(event, 'Graphic Designing')">Graphic Designing</button>
+						<button class="tablinks" onclick="openCity(event, 'Web Design')">Web Design</button>
+						<button class="tablinks" onclick="openCity(event, 'Search Engine Optimization')">Search Engine Optimization</button>
+						<button class="tablinks" onclick="openCity(event, 'Social Media Marketing')">Social Media Marketing</button>
+						<button class="tablinks" onclick="openCity(event, 'E-mail Marketing')">E-mail Marketing</button>
+						<button class="tablinks" onclick="openCity(event, 'Content Writing')">Content Writing</button>
+						<button class="tablinks" onclick="openCity(event, 'Multimedia Animation')">Multimedia Animation</button>
+						<button class="tablinks" onclick="openCity(event, 'Product Development')">Product Development</button>
+						<button class="tablinks" onclick="openCity(event, 'MLM Software')">MLM Software</button>
+					</div>
+
+					<div id="Logo Designing" class="tabcontent">
+						<h3>Logo Designing</h3>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logos are very important to any business. These simple layouts serve as the company’s brand, trademark, and identity. It is something that would make your business stand out from the rest. It is also the seal that would remind your customers about your company. With all of those said, it is then very important that businesses carefully create logos for their firm. Their logo should be something suitable, remarkable, and interesting. The right logo could propel your business towards success. Businesses who are looking for expert ideas on what they should put in their corporate seal and how they should go about creating it must consult only with the experts in the field. Logo designing is not purely artwork. It also requires analysis, research, and evaluation.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is what we do at NPDS Mani Group. We can provide you with the service and that logo that you’re looking for all along. NPDS Mani Group is a Delhi-based company in India that offers premium corporate logo designing for business branding and identity.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our experts would analyze your business and industry, along with your company’s mission and vision to create the ideal logo that would carry your name. Our logo design team had impressed lots of clients worldwide. Trust us with this job as we are one of the most respected logo designing companies in India.
+						</p>
+					</div>
+
+					<div id="Graphic Designing" class="tabcontent">
+						<h3>Graphic Designing</h3>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the world that almost runs on advertising, it is quite imperative to beautify information as one is providing it. Most importantly if providing that information is going to fetch a plethora of business activity for you. That is why discounts are not just called discounts but bumper discounts and a bumper discount is a bonanza. We at DISTINCT TECHNOLOGIES understand the intuitive world of marketing and thus focus on providing creative graphic designs with carefully sorted out color schemes and themes that exactly complement the feel in your content. Every bit of information you provide is arranged in the most aesthetics of fashions to craft an eye catching design that mesmerizes its onlookers and makes a positive and lasting impression about your business. We provide designs in both digital and print media so that you don’t have to worry about the hassles of a computer when you can get it done in print. Our team of experts analyzes your every requirement and the target audience you would like to reach to provide immaculate cleverly thought design solutions that are impeccable in style and strongly appeals to its target audience.
+						</p>
+					</div>
+
+					<div id="Web Design" class="tabcontent">
+						<h3>Web Design</h3>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distinct Technologies is leading web Development Company in India aiming & providing you with the branded customized web solutions offering, high quality web design, web development, e-commerce web development pre- build CMS integration & customization, domain registration, web hosting & much more… Search engine optimization is also been one of our specialty, on which we can assist you to achieve higher ranking on search engines. With our longstanding experience we provide you with different types of web enabled services under one roof, we can ensure to develop top quality work from our side that’s gives your business an edge & ready to provide samples & references if needed in case. With our unparalleled expertise & intricate craftsmanship your companies surely gain an instant attention. Customer satisfaction is our prime motto & we ensure that we provide with 100% customized solutions to our clients. No matter how complex the project is, we are confident that you can count on NPDS MANI GROUP to deliver a refine quality within the time frame. We are committed & dedicated to build long lasting partnerships with our clients & ensure their satisfaction on our top list priority. Our business- driven approach separates us from the rest; we offer a wide range of web services at affordable prices from the inception by registering the domain name to search engine optimization & internet marketing.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We believe that a website of a company is the face of that company to their online visitors so it’s equally important the creation of professional website should be done in a way that leaves the user informed &amp; impress with the aesthetic sense & side by side understanding their needs. Website is a medium that can potentially convert your visitors into the customers itself which can provide you with a fair return on your investment. Make a quality website with DISTINCT TECHNOLOGIES & convert Internet browsers/surfers to customers.
+						</p>
+					</div>
+
+					<div id="Search Engine Optimization" class="tabcontent">
+						<h3>Search Engine Optimization</h3>
+						<p>
+							<b>Search Engine Optimization in Brief</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEO or Search Engine Optimization is the process of optimizing the website to bring the websites position on the higher ranks on search engine results pages. In the process of SEO, when a user goes through any search engine and makes a search with a keyword then, it provides you the whole page listing in the top results. And this result shows the Page Rank of the website. Whether it is coming on the first page which means a good position or or on some other pages means need improvement. Mainly different methods followed to increase the traffic on the websites.
+							<br><br>
+							<b>Search Engine Optimization in Depth</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the process of SEO, it is done with the effective usage of Meta tags, placing the correct keywords in the original text and doing careful analysis of keyword density using popular SEO software tools and techniques. All these tools are good enough to increase the page rank and website traffic.
+							<br><br>
+							<b>To be always on top, choose us for SEO services</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are counted in the top SEO services company, providing Search engine optimization in Delhi. Our dedicated team of SEO professionals focuses only in enhancing your business by looking at the competitive marketplace for your chosen keywords. Being a Search engine optimization firm, we always ensures Guaranteed Top 10 search engine ranking on Google, Yahoo and MSN.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We at NPDS MANI GROUP stand to announce ourselves as a Reputable India SEO company which promises guaranteed SEO services at the cheap and affordable price. Providing SEO services at competitive rates, we guarantee you that we know all the rules of the search engines and will follow all the guidelines needed. Being a Search engine optimization consultant, we develop the strategies to reach the top with very advanced SEO techniques to explore better business prospects for the clients.
+
+
+						</p>
+					</div>
+
+					<div id="Social Media Marketing" class="tabcontent">
+						<h3>Social Media Marketing</h3>
+						<p>
+							<b>Social Media Marketing - Newest and best marketing tool</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you in a mood to start a new business, then it is sure that you will be thinking of its marketing work. As marketing is the major point of any business also the important aspect of any business strategy. The profit and loss of any business is equally depends on its marketing policies and ways of marketing. If the product is really good but not advertised nicely then the product will have no market and no buyers. So, in today fast changing world, when every work is done online then how can marketing be left behind. With the involvement of social media in marketing, it has become easier and quicker.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Social media marketing</b> is the latest and faster way of marketing done through social media such as blogs, community sites, video sharing sites etc. Today the popular sites like LinkedIn, Facebook, Twitter, Flickr and YouTube has more than five million visitors every day and are considered to be an important hub for marketing. Today social media marketing Facebook is the most common which has a large number of users, using the site on a regular basis.
+							<br>
+							<br>
+
+							<b>Importance of Social Media Marketing</b>
+						</p>
+						<ul>
+							<li>Today Social media marketing has become the part of the social media optimization. With the popularity and good results of social media marketing, promotion of business through social media are now also done by professionals of social media marketing company.</li>
+							<li>Consisting of several social media things like blogs, video sharing and community, through this type of marketing we can pass our information to vast number of people within a very short period of time.</li>
+							<li>Sponsoring the business using through these types of social media sites is a very smart business proposal since they provide a huge amount of constant traffic every day.</li>
+						</ul>
+						<p>
+							<b>Choose us for best social media marketing</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to SEO services, it's a well-known SEO company providing all types of SEO services. With the good name in the industry, this Social media marketing company Delhi has pushed various sites to a great height through its best services. Being a Social media marketing agency, we provide social media marketing with blogging, Facebook and even Twitter. Choose seoservices.co.in for your social media marketing of your business firm and find your company at the top in the search engine rankings.
+						</p> 
+					</div>
+
+					<div id="E-mail Marketing" class="tabcontent">
+						<h3>E-mail Marketing</h3>
+						<p>
+							<b>Email marketing - The biggest marketing tool of online business</b> 
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today everything is online, whether it's your business or you shopping, by just clicking a button, you can easily finish all your works. So when the internet has become so much important than it can also use as a good source of marketing. In Search Engine Optimization, Email marketing is used as a social media marketing and social media optimization tool. This online marketing is a great idea to raise the level of success. Being the most effective way to advertise on the internet, Email marketing is one of the effective ways to attract new customers by keeping touch with existing ones and minimizing operating cost.
+							<br>
+							<b>How its work?</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Being performed by a SEO company, email marketing is a form of direct marketing which is done by using an electronic mail as a means of communicating tool used among audience. In this process, email is sent to a potential or current user which can be considered as email marketing.
+							<br>
+							It is done by sending email messages to the new customers and the current customers to purchase the things quickly.
+							<br>
+							Some companies also do this by adding the advertisements to the other emails send by others.
+							<br>
+							Some emails messages are also send in the PPC formats.
+							<br>
+							<b>Need of Email marketing</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email marketing done by a SEO company encourages business and help in conveying the message to the direct audience through emails. It allows targeting and also data driven. Email marketing builds relationships, loyalty and trust and as a result derives direct sales. Including to all these it also support sales through other channels. Choose from different types of Email marketing
+							<ul>
+								<li>Direct email</li>
+								<li>Retention email</li>
+								<li>Advertising in other people's emails</li>
+							</ul>
+
+						</p>
+					</div>
+
+
+					<div id="Content Writing" class="tabcontent">
+						<h3>Content Writing</h3>
+						<p>
+							<b>Content - The King of the Website</b> 
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must be aware of the great saying that Content is the king and the Marketing is the Queen of any website. It is clear that content rules over whole of the websites. Where a good content can catch the whole attention and increase the traffic on your sites there only the old and wrong content can cause a great downfall in the traffic. Unique design, keyword rich and understandable content can make your website more attractive and also helps in gaining attention of the users.
+							<br>
+							<br>							
+							<b>How it is done?</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today content marketing is very common among all online business. The user can find overall view of the whole business type and its values by viewing the content only. By informative and catchy content on your site it can ensure regular flow of traffic leading to a powerful impact on the targeted audience.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Writing is a very important part of any SEO services providing company. Being done by expert content writers and copywriters, there are different ways of content writing according to the need and demand of the clients. Some of the common Web content writings are-
+						</p>
+						<ul>
+							<li>
+								<b>Website Content Writing:</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can you imagine of a website only with the images without any content? It is sure your answer will be no! Your website should contain the overall view of your business and should be more informative. It should be easily understandable and keyword rich through which the search can be easily done.<br>
+							</li>
+							<li>
+								<b>SEO Copywriting:</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any website, SEO copywriting is very important in website designing. Mainly the home page of the site leaves a great impression on any user, so taking from good landing page to proper headings and metatags each is done in this.<br>
+							</li>
+							<li>
+								<b>Blog writing:</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today blog is the only thing which is commonly used for all types of online promotions. Blog writing for a website is as much useful as updating new things on sites. It can be done on the daily basis taking very less time.<br>
+							</li>
+							<li>
+								<b>Article writing:</b>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The demand for the articles on different topics is increasing day by day. Users expect to gain vast knowledge of each and every thing through these types of articles.<br>
+							</li>
+						</ul>
+						<p>
+							<b>Why choose us for making the content of your website?</b>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a well-known SEO company, which provides best content writing in Delhi. With a large number of best copywriters, we provide content focusing direct to the targeted audience. Providing quality service in content, our content writers keeps focus on attracting more and more traffic on the website.<br>
+						</p>
+					</div>
+
+
+
+					<div id="Multimedia Animation" class="tabcontent">
+						<h3>Multimedia Animation</h3>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presenting your ideas, products, or your entire business to your clients is not an easy job. It requires you to use all possible resources to get the right idea across. When you only have one chance to present, there is no room for errors.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employ the best Multimedia Presentation experts to help you create an impressive profile for your business, services, and products. Captivate your clients and customers the first time. The more effective the presentation that you make, the higher are the chances that it would work as well as you have expected it.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multimedia presentations have to be interesting to be notable. The project has to be done by real professionals that have your company best interest in mind. This is the only way that you can be assured that your presentation is going to make a big impact on its audience.
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPDS MANI GROUP is a Delhi-based company in India that can help you with your Multimedia Presentationneeds. We have the talents, the expertise, and the technology needed to create a presentation that would impress your clients and customers. Trust us to deliver your company with sales and deals with our striking, professional works. We assure quality in every project that we do.
+						</p>
+					</div>
+
+
+					<div id="Product Development" class="tabcontent">
+						<h3>Product Development</h3>
+						<p>
+							Product development is a promotional technique in which whole new creation of product is done, with new & innovative techniques that offers & add advantage to the customers & helps to increase their brand value & reach to its potential customers.
+							<br>
+							Product development involve many different stages such as modifications of an existing product or improving it style of presentation, by adding different promotional technique to it such as -via mobile advertisement, e-mail marketing, banner ads on a specific websites.
+							<ul>
+								<li>We in help you to define your products in an outstanding manner to create a market niche for yourself. We help you to create a new pipeline of whole new products, or helps you in developing &extending the existing product line with our innovative product development skills, such as refreshing the existing product line by introducing new & exciting product development features.</li>
+
+								<li>We offers a completely different & highly effective strategy to enhance your product image via our extensive link building, digital promotions technique like e-mail ads as well as e-marketing techniques. Our work begins with extensive research together required information about the product & for the overall scope & development of the product.</li>
+
+								<li>We pay hard attention on- who will be the target audience of that very product? & pay emphasis on the usability of the product to reach the appropriate potential buyers.We believe in coming out with the best & try to do full justice to your product enhancement with our innovative product development techniques.</li>
+
+								<li>We aim at delivering successful product development services through our extensive research & massive link building- all this is done with a prime motive- to ensure to come out with the best output for the product development services. We in store the best for you!</li>
+							</ul>
+						</p>
+					</div>
+
+
+
+					<div id="MLM Software" class="tabcontent">
+						<h3>MLM Software</h3>
+						<p>
+							With the tremendous increase in the number of mobile phone users accessing the internet on their handheld, it is equally important to reach	& grab the opportunity to advance n your parameter to your target audience globally.
+							<ul>
+								<li>At NPDS MANI GROUP we offers you first rate mobile web designs services to help you reach your target audience worldwide with one touch solutions which can be easily accessed on any of the smart phone browsers &amp; successfully accommodate their audience.</li>
+
+								<li>There are plenty of ways to develop their mobile web contents through XHTML, CSS, ASP.NET, and Hand help style sheets or whatever the method may be, We believe any mobile web development strategy must begin with considering the target audience.</li>
+
+								<li>A mobile optimized site must integrate & align with following firstly how the content is accessed, Secondly how the content is accessed? Technically speaking, contents before aesthetics, functions before form, helps in providing the users excessive bandwidth & a faster browsing experience.</li>
+
+								<li>Redefine the parameters of net accessing through the mobile web development with us like never before. According to the market survey, mobile handset proliferation is expected to increase about 3 billion subscribers worldwide. No, doubt it will surely be the next big thing in the online marketing zone.</li>
+
+								<li>We, in NPDS MANI GROUP helps you to utilize & exhibit your publish web contents beyond the desktop. We precisely keep focus on what the contextual relevance of such a site or app is? & comes up with the solution for the same & implicit in dselivering a rich, navigable content experience.</li>
+							</ul>
+						</p>
+					</div>
+
+					<script>
+						function openCity(evt, cityName) {
+							var i, tabcontent, tablinks;
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+							document.getElementById(cityName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+
+						document.getElementById("defaultOpen").click();
+					</script>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="pg_air_ambulance dynamic-content" id="pg_air_ambulance" style="padding: 50px 0;">
+
+		<div class="container text-center underline">
+			<h1>
+				Air Ambulance Service
+			</h1>
+			<br>
+			<p><b>Emergency medical services (EMS)</b> role such as <b>HEMS (Helicopter Emergency Medical Service)</b>.</p>
+
+		</div>
+
+		<div class="container text-center underline">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 text-left">
+					<br><br><br>
+					<h2 class="web_content_title">GEMS and the AA</h2><br>
+					<div class="text-center" style="opacity: 0.7;">
+						Our Doctors and Paramedics are well-qualified professionals, trained to manage patients in the most challenging of situations, and execute efficient and coordinated “bed-to- bed” transfers worldwide.<br><br>
+					</div>
+					<div class="text-left">
+						Aspects of AA operations shall be described in the Operations Manual and must contain specific policies and related procedures on the following:- 
+						<ul>
+							<li>medical control procedures.</li>
+							<li>patient loading and unloading procedures.</li>
+							<li>protocols for patient handoff.</li>
+							<li>procedures for handling and securing of medical equipment.</li>
+							<li>patient safety and use of harness and restraining devices.</li>
+							<li>Infection and Biohazard Control policy.</li>
+							<li>refuelling procedures with medical personnel and/or patient on board.</li>
+							<li>initial and recurrent training programme for medical personnel.</li>
+							<li>physiological factors affecting well- being of patient during AMT.</li>
+							<li>procedures for handling of portable electrical sources.</li>
+							<li>evacuation procedures</li>
+						</ul>
+					</div>
+					<div class="text-left">
+						Onboard medical equipment when fitted in the aircraft shall be positioned in a manner such that it:- 
+						<ul>
+							<li>allows medical personnel a clear view of and access to the patient to perform monitoring and therapeutic intervention as needed. </li>
+							<li>permits access to normal and emergency exits. </li>
+							<li>permits access to emergency equipment. </li>
+							<li>does not interfere or is likely to interfere with the operation of aircraft controls. </li>
+							<li>is appropriately secured to avoid potential injury to occupants. </li>
+						</ul>
+						8.5 Onboard medical equipment shall:- 
+						<ul>
+							<li>be secured and restrained to sustain inertia forces experienced during aborted take-off and emergency landings in conformity to FAR 25.561 and FAR 25.785 standards or as appropriate for aircraft size and type (FAR 23,25 for aeroplanes and FAR 27,29 for helicopters). </li>
+							<li>in case of oxygen bottles be in conformity to FAR 25.1443, 25.1447 and 25.1453. </li>
+							<li>in case utilising lithium-ion battery be in conformity to DO-311 MOPS for Rechargeable Lithium Battery Systems. CIVIL</li>
+							<li>in case of infusion devices be automated and designed to be independent of gravitational flow. </li>
+							<li>if carrying dangerous goods be governed by the provisions of Aircraft (Carriage of Dangerous Goods) Rules, 2003.</li>
+						</ul>
+					</div>
+
+					<div class="text-center">
+						<br><br>
+						<div class="col-md-12">
+							<a class="btn btn-sm" href="bcl_335619015.htm" style="width: 100%">Legal Document: Operation Of<br>Aeromedical Transportation (AMT)</a>
+						</div>
+						<br><br><br><br>
+					</div>
+
+					<div class="text-left">
+
+						<div class="col-md-12 col-sm-12 text-left">
+							<b>We Provide Air Ambulance Services from All Major Cities in India, Including–</b><br><br><br>
+							<b>We Provide Air Ambulance Services from All Major Cities Worldwide, Including –</b><br><br><br>
+							<b>Our tie up with hospitals:-</b><br>
+							<div class="row">
+								<div class="image_hospital_aa col-sm-4 col-md-2 offset-md-1 text-center img-responsive pagination-centered">
+									<img src="http://onlinereports.blkhospital.com/Auth/Images/PortalLogo.png">
+									<p>BLK HOSPITAL</p>
+								</div>
+
+								<div class="image_hospital_aa col-sm-4 col-md-2 text-center img-responsive pagination-centered">
+									<img src="http://www.fortishealthcare.com/static_new/img/fortis-logo.png">
+									<p>FORTIS HOSPITAL</p>
+								</div>
+
+								<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+									<img src="https://3.imimg.com/data3/JF/LP/MY-9646176/akash-hospital-logo-120x120.jpg">
+									<p>AKASH HOSPITAL</p>
+								</div>
+
+								<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+									<img src="https://www.maxhealthcare.in/sites/default/files/max-logo.png">
+									<p>MAX HOSPITAL</p>
+								</div>
+
+								<div class="image_hospital_aa col-md-2 col-sm-4 text-center img-responsive pagination-centered">
+									<img src="https://lh3.googleusercontent.com/FVJoHtenN4oee1XvShgPnOm3TYazvrcaDdnmvDy21ITxqTXP3OsdIAU0TsU6O4zr6A=w300">
+									<p>AAYUSHMAN HOSPITAL</p>
+								</div>
+
+							</div>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="pg_projects_and_model dynamic-content" id="pg_projects_and_model" style="padding: 50px 0;">
+
+		<div class="container text-center underline">
+			<h1>
+				Projects and Model
+			</h1>
+		</div>
+
+		<div class="container-fluid text-center underline">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+					<br>
+					<h2 class="web_content_title">Top Projects and Model</h2><br>
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<img src="img/attachments/12778764_914726311973848_4859395378570490407_o.jpg" class="img-thumbnail image_hover_zoom">
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="img/attachments/12778764_914726311973848_4859395378570490407_o.jpg" class="img-thumbnail image_hover_zoom">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pg_mani_aerospace_and_drone_club dynamic-content" id="pg_mani_aerospace_and_drone_club" style="padding: 50px 0;">
+
+		<div class="container text-center underline">
+			<h1>
+				Mani Aerospace &amp; Drone Club
+			</h1>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<div class="row">
+
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711608_1207498689363274_5522539648351385295_n.jpg?_nc_cat=0&oh=d44cb28063f88b7793a9ba0e31eb14a7&oe=5B31CED6" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711608_1207498689363274_5522539648351385295_n.jpg?_nc_cat=0&oh=d44cb28063f88b7793a9ba0e31eb14a7&oe=5B31CED6" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807760_1207498999363243_1098053518295711350_n.jpg?oh=9153687ef819be320fd6a37ed8b76175&oe=5B291B3B" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807760_1207498999363243_1098053518295711350_n.jpg?oh=9153687ef819be320fd6a37ed8b76175&oe=5B291B3B" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711936_1207498486029961_8953375291881663225_n.jpg?oh=53ee51c775c95b2c1b17316c2de4ae93&oe=5B34F44D" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711936_1207498486029961_8953375291881663225_n.jpg?oh=53ee51c775c95b2c1b17316c2de4ae93&oe=5B34F44D" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711936_1207498486029961_8953375291881663225_n.jpg?oh=53ee51c775c95b2c1b17316c2de4ae93&oe=5B34F44D" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16711936_1207498486029961_8953375291881663225_n.jpg?oh=53ee51c775c95b2c1b17316c2de4ae93&oe=5B34F44D" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/15203343_1129599297153214_9175026479395251634_n.jpg?oh=8a4e7bba761541dc0e18bd2c09fd3009&oe=5B41E30B" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/15203343_1129599297153214_9175026479395251634_n.jpg?oh=8a4e7bba761541dc0e18bd2c09fd3009&oe=5B41E30B" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/15220243_1129598913819919_4183353854801041559_n.jpg?oh=fd3ad1de5ac0a88d560f2f7870487b1d&oe=5B49D331" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/15220243_1129598913819919_4183353854801041559_n.jpg?oh=fd3ad1de5ac0a88d560f2f7870487b1d&oe=5B49D331" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/16807253_1207498259363317_8559931265155110445_n.jpg?oh=294b211f8d8815073c53d8472b934fb5&oe=5B2A2CDF" class="img-fluid img-thumbnail image_hover_zoom">
+						</a>
+					</div>
 
 
 
 
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<div id="pg_legal_aviation_assistancy" class="dynamic-content">
 		<section class="pg_it_software" id="pg_it_software" style="padding: 50px 0;">
@@ -966,7 +1360,7 @@
 									<li> Montreal Agreement, Warsaw Convention……</li>
 								</ol>
 							</div>
-							
+
 							<br>
 							<br>
 							<br>
@@ -986,7 +1380,7 @@
 								Supreme court order: ( pdf)<br>
 								More details contact ..
 							</div>
-							
+
 							<br>
 							<br>
 							<br>
@@ -1404,326 +1798,326 @@
 		</div>
 
 		<style type="text/css">
-			.program_tables .btn{
-				padding: 5px 10px ;
-				font-size: 14px;
-			}
-		</style>
-		<div class="container text-center underline">
-			<div class="row program_tables">
-				<div class="col">
-					<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
-						<tr>
-							<th scope="col">
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
-									<tr>                                                
-										<td align="left"  style="width:5%;">S.No</td>  
-										<td align="left"  style="width:24%;">Name</td> 
-										<td align="left"  style="width:30%;">Eligibility</td> 
-										<td align="left"  style="width:10%;">Duration</td>  
-										<td align="left" style="width:12%;"></td>  
-									</tr>
-								</table>
-							</th>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('~/admin/Programme/B.B.A.(BachelorofBusinessAdministration)_165901.pdf');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">1</td> 
-											<td align="left" style="width:24%;">B.B.A.( Bachelor of Business Administration)</td>
-											<td align="left" style="width:30%;">10+2 in any stream or equivalent</td>
-											<td align="left" style="width:10%;">3 Years</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">2</td> 
-											<td align="left" style="width:24%;">B.C.A. (Bachelor of Computer Applications)</td>
-											<td align="left" style="width:30%;">10 +2 in any stream or its equivalent</td>
-											<td align="left" style="width:10%;">3 years</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(MasterofBusinessAdministration)_767388.pdf');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">3</td> 
-											<td align="left" style="width:24%;">M.B.A. (Master of Business Administration)</td>
-											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
-											<td align="left" style="width:10%;">2 Years</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(IT)InformationTechnology_034335.pdf');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">4</td> 
-											<td align="left" style="width:24%;">M.B.A.(IT) Information Technology</td>
-											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
-											<td align="left" style="width:10%;">2 Years</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('~/admin/Programme/M.C.A.(MasterofComputerApplications)_947768.pdf');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">5</td> 
-											<td align="left" style="width:24%;">M.C.A. (Master of Computer Applications)</td>
-											<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) from any recognized University 
-												(i) with min. 50% marks (45% for SC/ST)
-												(ii) with Mathematics/statistics at 12th std OR graduate level.
-											Note: (ii) is not applica</td>
-											<td align="left" style="width:10%;">3 Years</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr><tr>
-							<td>
-								<a ID="aa" onclick="sendonpage('');">
-
-									<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-										<tr>                                                
-											<td align="left" style="width:5%;">6</td> 
-											<td align="left" style="width:24%;">E.M.B.A. (Executive Master Of Business Administration)</td>
-											<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-											<td align="left" style="width:10%;">2 year</td>
-											<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-										</tr>
-									</table>
-								</a>
-
-							</td>
-						</tr>
-					</table>
-					<br>
-					<br>
-					<br>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid text-center underline">
-		<div class="row">
-			<div class="col-md-10 offset-md-1 col-sm-12 text-left">
-				<br>
-				<br>
-				<br>
-				<h2 class="web_content_title">Arts Commerce &amp; social Science</h2><br>
-			</div>
-		</div>
-	</div>
+		.program_tables .btn{
+			padding: 5px 10px ;
+			font-size: 14px;
+		}
+	</style>
 	<div class="container text-center underline">
 		<div class="row program_tables">
 			<div class="col">
 				<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
-					<tbody><tr>
+					<tr>
 						<th scope="col">
 							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
-								<tbody><tr>                                                
-									<td align="left" style="width:5%;">S.No</td>  
-									<td align="left" style="width:24%;">Name</td> 
-									<td align="left" style="width:30%;">Eligibility</td> 
-									<td align="left" style="width:10%;">Duration</td>  
-									<td align="left" style="width:12%;"></td>                                                          
-
+								<tr>                                                
+									<td align="left"  style="width:5%;">S.No</td>  
+									<td align="left"  style="width:24%;">Name</td> 
+									<td align="left"  style="width:30%;">Eligibility</td> 
+									<td align="left"  style="width:10%;">Duration</td>  
+									<td align="left" style="width:12%;"></td>  
 								</tr>
-							</tbody></table>
+							</table>
 						</th>
 					</tr><tr>
 						<td>
-							<a id="aa" onclick="sendonpage('~/admin/Programme/B.A.(BachelorofArts)_084593.pdf');">
+							<a ID="aa" onclick="sendonpage('~/admin/Programme/B.B.A.(BachelorofBusinessAdministration)_165901.pdf');">
 
 								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
+									<tr>                                                
 										<td align="left" style="width:5%;">1</td> 
-										<td align="left" style="width:24%;">B.A. (Bachelor of Arts)</td>
-										<td align="left" style="width:30%;">10+2 or its equivalent</td>
+										<td align="left" style="width:24%;">B.B.A.( Bachelor of Business Administration)</td>
+										<td align="left" style="width:30%;">10+2 in any stream or equivalent</td>
 										<td align="left" style="width:10%;">3 Years</td>
 										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
 
 									</tr>
-								</tbody></table>
+								</table>
 							</a>
 
 						</td>
 					</tr><tr>
 						<td>
-							<a id="aa" onclick="sendonpage('~/admin/Programme/B.Com(BachelorofCommerce)_660532.pdf');">
+							<a ID="aa" onclick="sendonpage('');">
 
 								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
+									<tr>                                                
 										<td align="left" style="width:5%;">2</td> 
-										<td align="left" style="width:24%;">B.Com (Bachelor of Commerce)</td>
-										<td align="left" style="width:30%;">10+2 Commerce &amp; Science or its equivalent</td>
-										<td align="left" style="width:10%;">3 Years</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">3</td> 
-										<td align="left" style="width:24%;">B.Lib. &amp; I.Sc. (Bachelor of Library &amp; Information Science)</td>
-										<td align="left" style="width:30%;">Bachelor Degree in any discipline from any recognized university.</td>
-										<td align="left" style="width:10%;">1 Year</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">4</td> 
-										<td align="left" style="width:24%;">M.Lib. &amp; I.Sc. (Master of Library &amp; Information Science)</td>
-										<td align="left" style="width:30%;">B.Lib &amp; I.Sc. degree From any recognized university.</td>
-										<td align="left" style="width:10%;">1 year</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">5</td> 
-										<td align="left" style="width:24%;">M.A. (Master of Arts (English))</td>
-										<td align="left" style="width:30%;">Bachelor degree with special / entire english from any recognized university</td>
-										<td align="left" style="width:10%;">2 year</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">6</td> 
-										<td align="left" style="width:24%;">M.A. (Master of Arts (Economics))</td>
-										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-										<td align="left" style="width:10%;">2 year</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">7</td> 
-										<td align="left" style="width:24%;">M.A. (Master of Arts (Sociology))</td>
-										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
-										<td align="left" style="width:10%;">2 year</td>
-										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
-
-									</tr>
-								</tbody></table>
-							</a>
-
-						</td>
-					</tr><tr>
-						<td>
-							<a id="aa" onclick="sendonpage('');">
-
-								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">8</td> 
-										<td align="left" style="width:24%;">B.A. (Bachelor Of Tourism Management)</td>
-										<td align="left" style="width:30%;">10 + 2 or its equivalent</td>
+										<td align="left" style="width:24%;">B.C.A. (Bachelor of Computer Applications)</td>
+										<td align="left" style="width:30%;">10 +2 in any stream or its equivalent</td>
 										<td align="left" style="width:10%;">3 years</td>
 										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
 
 									</tr>
-								</tbody></table>
+								</table>
 							</a>
 
 						</td>
 					</tr><tr>
 						<td>
-							<a id="aa" onclick="sendonpage('');">
+							<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(MasterofBusinessAdministration)_767388.pdf');">
 
 								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
-									<tbody><tr>                                                
-										<td align="left" style="width:5%;">9</td> 
-										<td align="left" style="width:24%;">M.Com (Master Of Commerce)</td>
+									<tr>                                                
+										<td align="left" style="width:5%;">3</td> 
+										<td align="left" style="width:24%;">M.B.A. (Master of Business Administration)</td>
+										<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+										<td align="left" style="width:10%;">2 Years</td>
+										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+									</tr>
+								</table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a ID="aa" onclick="sendonpage('~/admin/Programme/M.B.A.(IT)InformationTechnology_034335.pdf');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tr>                                                
+										<td align="left" style="width:5%;">4</td> 
+										<td align="left" style="width:24%;">M.B.A.(IT) Information Technology</td>
+										<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) in any discipline with min. 50% marks (45% for SC/ST) from any recognized University.</td>
+										<td align="left" style="width:10%;">2 Years</td>
+										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+									</tr>
+								</table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a ID="aa" onclick="sendonpage('~/admin/Programme/M.C.A.(MasterofComputerApplications)_947768.pdf');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tr>                                                
+										<td align="left" style="width:5%;">5</td> 
+										<td align="left" style="width:24%;">M.C.A. (Master of Computer Applications)</td>
+										<td align="left" style="width:30%;">Any graduate (10+2+3 or equivalent) from any recognized University 
+											(i) with min. 50% marks (45% for SC/ST)
+											(ii) with Mathematics/statistics at 12th std OR graduate level.
+										Note: (ii) is not applica</td>
+										<td align="left" style="width:10%;">3 Years</td>
+										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+									</tr>
+								</table>
+							</a>
+
+						</td>
+					</tr><tr>
+						<td>
+							<a ID="aa" onclick="sendonpage('');">
+
+								<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+									<tr>                                                
+										<td align="left" style="width:5%;">6</td> 
+										<td align="left" style="width:24%;">E.M.B.A. (Executive Master Of Business Administration)</td>
 										<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
 										<td align="left" style="width:10%;">2 year</td>
 										<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
 
 									</tr>
-								</tbody></table>
+								</table>
 							</a>
 
 						</td>
 					</tr>
-				</tbody></table>
+				</table>
+				<br>
+				<br>
+				<br>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="container-fluid text-center underline">
+	<div class="row">
+		<div class="col-md-10 offset-md-1 col-sm-12 text-left">
+			<br>
+			<br>
+			<br>
+			<h2 class="web_content_title">Arts Commerce &amp; social Science</h2><br>
+		</div>
+	</div>
+</div>
+<div class="container text-center underline">
+	<div class="row program_tables">
+		<div class="col">
+			<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grid_news" style="width:100%;border-collapse:collapse;">
+				<tbody><tr>
+					<th scope="col">
+						<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hd">
+							<tbody><tr>                                                
+								<td align="left" style="width:5%;">S.No</td>  
+								<td align="left" style="width:24%;">Name</td> 
+								<td align="left" style="width:30%;">Eligibility</td> 
+								<td align="left" style="width:10%;">Duration</td>  
+								<td align="left" style="width:12%;"></td>                                                          
+
+							</tr>
+						</tbody></table>
+					</th>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('~/admin/Programme/B.A.(BachelorofArts)_084593.pdf');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">1</td> 
+									<td align="left" style="width:24%;">B.A. (Bachelor of Arts)</td>
+									<td align="left" style="width:30%;">10+2 or its equivalent</td>
+									<td align="left" style="width:10%;">3 Years</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('~/admin/Programme/B.Com(BachelorofCommerce)_660532.pdf');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">2</td> 
+									<td align="left" style="width:24%;">B.Com (Bachelor of Commerce)</td>
+									<td align="left" style="width:30%;">10+2 Commerce &amp; Science or its equivalent</td>
+									<td align="left" style="width:10%;">3 Years</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">3</td> 
+									<td align="left" style="width:24%;">B.Lib. &amp; I.Sc. (Bachelor of Library &amp; Information Science)</td>
+									<td align="left" style="width:30%;">Bachelor Degree in any discipline from any recognized university.</td>
+									<td align="left" style="width:10%;">1 Year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">4</td> 
+									<td align="left" style="width:24%;">M.Lib. &amp; I.Sc. (Master of Library &amp; Information Science)</td>
+									<td align="left" style="width:30%;">B.Lib &amp; I.Sc. degree From any recognized university.</td>
+									<td align="left" style="width:10%;">1 year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">5</td> 
+									<td align="left" style="width:24%;">M.A. (Master of Arts (English))</td>
+									<td align="left" style="width:30%;">Bachelor degree with special / entire english from any recognized university</td>
+									<td align="left" style="width:10%;">2 year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">6</td> 
+									<td align="left" style="width:24%;">M.A. (Master of Arts (Economics))</td>
+									<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+									<td align="left" style="width:10%;">2 year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">7</td> 
+									<td align="left" style="width:24%;">M.A. (Master of Arts (Sociology))</td>
+									<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+									<td align="left" style="width:10%;">2 year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">8</td> 
+									<td align="left" style="width:24%;">B.A. (Bachelor Of Tourism Management)</td>
+									<td align="left" style="width:30%;">10 + 2 or its equivalent</td>
+									<td align="left" style="width:10%;">3 years</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr><tr>
+					<td>
+						<a id="aa" onclick="sendonpage('');">
+
+							<table align="left" width="100%" cellpadding="5" cellspacing="5" class="gv_hvr">
+								<tbody><tr>                                                
+									<td align="left" style="width:5%;">9</td> 
+									<td align="left" style="width:24%;">M.Com (Master Of Commerce)</td>
+									<td align="left" style="width:30%;">Bachelor degree in any discpline from any recognized university</td>
+									<td align="left" style="width:10%;">2 year</td>
+									<td align="left" style="width:12%;"><a class="btn btn-link" href="#">Click to Apply</a></td>  
+
+								</tr>
+							</tbody></table>
+						</a>
+
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
 </section>
 
 
@@ -1850,7 +2244,7 @@
 <script src="lib/superfish/superfish.min.js"></script>
 <script src="lib/tether/js/tether.min.js"></script>
 <script src="lib/stellar/stellar.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <script src="lib/counterup/counterup.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/easing/easing.js"></script>
@@ -1858,10 +2252,25 @@
 <script src="lib/parallax/parallax.js"></script>
 <script src="lib/lockfixed/lockfixed.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" ></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 <!-- Template Specisifc Custom Javascript File -->
 <script src="js/custom.js"></script>
 
 <script src="contactform/contactform.js"></script>
+
+
+<script>
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
+</script>
 
 </body>
 
@@ -1880,11 +2289,20 @@
 	var dynamicContent = getParameterByName('dc');
 
 	$(document).ready(function() {
-		if (dynamicContent == 'pgits') {
+		if (dynamicContent == 'abt') {
+			$('#pg_about').show();
+		} 
+		else if (dynamicContent == 'pgits') {
 			$('#pg_it_software').show();
 		} 
 		else if (dynamicContent == 'pgaas') {
 			$('#pg_air_ambulance').show();
+		} 
+		else if (dynamicContent == 'pgpnm') {
+			$('#pg_projects_and_model').show();
+		}
+		else if (dynamicContent == 'pgmasdc') {
+			$('#pg_mani_aerospace_and_drone_club').show();
 		} 
 		else if (dynamicContent == 'pglaa') {
 			$('#pg_legal_aviation_assistancy').show();

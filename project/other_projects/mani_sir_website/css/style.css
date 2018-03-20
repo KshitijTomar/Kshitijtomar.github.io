@@ -126,7 +126,7 @@
     .hero {
       background-image: none;
       background: #265fd3; 
-    background: linear-gradient(to top right, #BB1E84,#265fd3);
+      background: linear-gradient(to top right, #BB1E84,#265fd3);
     }
   }
   .hero:after {
@@ -595,6 +595,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   ================================================== */
   .features {
     padding-bottom: 45px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%), url("https://topbackgroundwallpaper.com/wp-content/uploads/2018/03/circle-design-wallpaper-maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .features h2 {
@@ -643,7 +646,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .feature-col p {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #999;
+    color: #777;
   }
 
 /* ==================================================
