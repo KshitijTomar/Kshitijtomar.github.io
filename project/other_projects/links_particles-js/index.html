@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta charset="UTF-8">
+	<title>particles.js</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<style type="text/css">
+	body {
+		margin: 0;
+		font:normal 75% Arial, Helvetica, sans-serif;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	canvas {
+		display: block;
+		vertical-align: bottom;
+	}
+
+	/* ---- particles.js container ---- */
+
+	#particles-js {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #27579b;
+		background-image: url("");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+
+	.content{
+		position: absolute;
+		top: 20%;
+		text-align:center;
+		color: #fff;
+		font-size:50px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 300;
+	}
+	.content h2{
+		font-family: 'Monoton', cursive;
+		font-weight: 300;
+
+	}
+	.content a{
+		text-decoration: none;
+		color:#fff;
+		font-size: 40px;
+		margin-left: 10px;
+	}
+	.fa:hover {
+		padding: 10px;
+		font-size: 20px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: -100px 0 0 10px;
+		border-radius: 50%;
+		box-shadow: 0 0 10px white;
+		transform: translateY(-10px) scale(1.3);
+
+	}
+	@media (max-width: 767px) {
+		.content{
+			position: absolute;
+			top: 10%;
+		}
+	}
+
+	.fa-facebook:hover {   background: #3B5998;   color: white; }  
+	.fa-twitter:hover {   background: #55ACEE;   color: white; }  
+	.fa-google:hover {   background: #dd4b39;   color: white; }  
+	.fa-linkedin:hover {   background: #007bb5;   color: white; }  
+	.fa-youtube:hover {   background: #bb0000;   color: white; }  
+	.fa-instagram:hover {   background: #9d2e54;   color: white; }  
+	.fa-pinterest:hover {   background: #cb2027;   color: white; }  
+	.fa-snapchat-ghost:hover {   background: #fffc00;   color: white;   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }  
+	.fa-skype:hover {   background: #00aff0;   color: white; }  
+	.fa-android:hover {   background: #a4c639;   color: white; }  
+	.fa-dribbble:hover {   background: #ea4c89;   color: white; }  
+	.fa-vimeo:hover {   background: #45bbff;   color: white; }  
+	.fa-tumblr:hover {   background: #2c4762;   color: white; }  
+	.fa-vine:hover {   background: #00b489;   color: white; }  
+	.fa-foursquare:hover {   background: #45bbff;   color: white; }  
+	.fa-stumbleupon:hover {   background: #eb4924;   color: white; }  
+	.fa-flickr:hover {   background: #f40083;   color: white; }  
+	.fa-yahoo:hover {   background: #430297;   color: white; }  
+	.fa-soundcloud:hover {   background: #ff5500;   color: white; }  
+	.fa-reddit:hover {   background: #ff5700;   color: white; }  
+	.fa-behance:hover {   background: #ff5700;   color: white; }  
+	.fa-rss:hover {   background: #ff6600;   color: white; }
+
+</style>
+</head>
+
+<body>
+
+	<!-- particles.js container -->
+	<div id="particles-js"></div>
+	<div class="content">
+		<h2>Kshitij Tomar</h2>
+		
+		<a href="https://www.facebook.com/kshitij.tomar.14" class="fa fa-facebook" target="_blank"></a>
+		<a href="mailto:kshtjtomar40@gmail.com?Subject=Hello.%20Link%20from%20the%20Website" class="fa fa-google"></a>
+		<a href="https://www.linkedin.com/in/kshitij-tomar/" class="fa fa-linkedin" target="_blank"></a>
+		<a href="https://www.youtube.com/channel/UC1ASjBKzpfLWSf6hVEYrPqA?sub_confirmation=1" class="fa fa-youtube" target="_blank"></a>
+		<a href="https://www.instagram.com/kshitij.tomar/" class="fa fa-instagram" target="_blank"></a>
+		<a href="https://in.pinterest.com/kshtjtomar40" class="fa fa-pinterest" target="_blank"></a>
+		<a href="https://www.snapchat.com/add/kshtjtomar" class="fa fa-snapchat-ghost" target="_blank"></a>
+		<a href="skype:kshtjtomar40?chat" class="fa fa-skype" target="_blank"></a>
+		<a href="#" class="fa fa-android" target="_blank"></a>
+		<a href="https://dribbble.com/KshitijTomar" class="fa fa-dribbble" target="_blank"></a>
+		<a href="https://vimeo.com/kshitijtomar" class="fa fa-vimeo" target="_blank"></a>
+		<a href="https://www.tumblr.com/blog/ktomar" class="fa fa-tumblr" target="_blank"></a>
+		<a href="https://foursquare.com/user/467686873" class="fa fa-foursquare" target="_blank"></a>
+		<a href="https://www.reddit.com/user/Kshitij_Tomar" class="fa fa-reddit" target="_blank"></a>
+		<a href="https://www.behance.net/kshtjtomarc810" class="fa fa-behance" target="_blank"></a>
+
+	</div>
+	
+	<!-- stats - count particles -->
+	<!-- <div class="count-particles">
+		<span class="js-count-particles">--</span> particles
+	</div> -->
+
+	<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+	<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+	<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+
+
+
+	<script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
