@@ -14,8 +14,10 @@ $mysql_qry = "INSERT INTO `pps_personality_q` (`id`, `personality_q_question`, `
 
 //$mysqli_result  = mysqli_query($conn,$mysql_qry);
 if ($conn->query($mysql_qry) === TRUE) 
-	{echo "Insert successful !";
-	header('Location: content.html?dc=pgpq');}
+{
+	echo "Insert successful !";
+	header( "refresh:2;url=content.php?dc=pgpq" );
+}
 
 else
 	echo "Error : " . $mysql_qry . "<br>" . $conn->error;

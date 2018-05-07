@@ -7,6 +7,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
+	<link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
 
 	<!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
 	<meta property="og:title" content="">
@@ -2845,7 +2846,7 @@
 
 		<div class="container">
 			<div class="card card-block bg-light" style="padding: 30px 50px;border-radius: 10px;">
-				<form class="form-horizontal" action="application_action.php" method="POST">
+				<form class="form-horizontal" action="application_action_file.php" method="POST" enctype="multipart/form-data">
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-3 col-form-label">Full Name</label>
@@ -3026,7 +3027,7 @@
 							<div class="col-md-6">												
 								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
 									<div class="input-group-addon">Others</div>
-									<input type="text" class="form-control" id=otheruniversity" name=otheruniversity" placeholder="Board/University" >
+									<input type="text" class="form-control" id="otheruniversity" name="otheruniversity" placeholder="Board/University" >
 								</div>
 							</div>
 							<div class="col-md-6">												
@@ -3136,12 +3137,15 @@
 						</div>
 					</div>
 
+					<label for='uploaded_file'>Upload Resume:</label>
+					<input type="file" name="attachment" disabled="disabled">
+
 				</div>
 
 
 				<div class="col-md-12 text-center">
 					<br><br><br>
-					<input type="submit" class="btn btn-md" value="Submit and continue to Document submission" >
+					<input type="submit" name="submit" id="submit" class="btn btn-md" value="Submit Submission" >
 				</div>
 
 			</fieldset>

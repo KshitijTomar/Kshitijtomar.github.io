@@ -7,6 +7,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
+	<link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
 
 	<!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
 	<meta property="og:title" content="">
@@ -67,8 +68,11 @@
     	font-size: 20px; position: absolute; top: 10px;
     }
     @media (max-width: 61.9em){
+    	#hero h1{
+    		margin-top: 10px; 
+    	}
     	#hero sup{
-    		font-size: 16px; position: absolute; top: 10px;
+    		font-size: 16px; position: absolute; top: 8px; margin-left: 45px;
     	}
     }
     .dynamic-content {
@@ -119,6 +123,10 @@
     }
     .info_address:hover{
     	text-decoration: underline;
+    }
+
+    #contact .form{
+    	margin: 30px 0 ;
     }
 </style>
 </head>
@@ -1016,15 +1024,15 @@
 
 
 <script type="text/javascript">
-$(document).ready(function () {
+	$(document).ready(function () {
     //Disable full page
     $("body").on("contextmenu",function(e){
-        return false;
+    	return false;
     });
     
     //Disable part of page
     $("#id").on("contextmenu",function(e){
-        return false;
+    	return false;
     });
 });
 </script>
